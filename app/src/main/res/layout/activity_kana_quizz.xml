@@ -4,15 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="hikari.com.projeto1.VocabularioActivity">
+    tools:context="hikari.com.projeto1.KanaQuizz">
+
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="56dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginTop="0dp"
         android:background="?attr/colorPrimary"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
@@ -24,22 +22,40 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/title_activity_vocabulario"
+            android:text="@string/title_activity_kana_quiz"
             android:textColor="@color/colorWhite"
             android:textSize="20sp"
             android:layout_gravity="center"
             android:id="@+id/toolbar_title" />
     </android.support.v7.widget.Toolbar>
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:id="@+id/kanaQuizzImg"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="235dp"
-        android:text="VOCABULARIO"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:srcCompat="@drawable/kanji_top_placeholder2"
+        app:layout_constraintHorizontal_bias="0.502"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar" />
+
+    <ListView
+        android:id="@+id/optionsLst"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kanaQuizzImg"
+        app:layout_constraintHorizontal_bias="0.494"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
 </android.support.constraint.ConstraintLayout>

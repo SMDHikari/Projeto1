@@ -1,3 +1,52 @@
 <resources>
     <string name="app_name">Projeto1</string>
+    <string name="title_activity_main_menu">Hikari</string>
+    <string name="title_activity_kanji">Kanji</string>
+    <string name="title_activity_kana_quiz">Quiz Kana</string>
+    <string name="title_activity_kana">Kana</string>
+    <string name="title_activity_sobre">Sobre</string>
+    <string name="title_activity_vocabulario">Vocabulário</string>
+
+
+    <string-array name="kanaSpinner1">
+        <item>Hiragana</item>
+        <item>Katakana</item>
+    </string-array>
+
+    <string-array name="kanaSpinner2">
+        <item>Todos</item>
+        <item>Básicos</item>
+        <item>Variáveis</item>
+        <item>Junções</item>
+    </string-array>
+
+
+
+    <string-array name="nichi">
+        <item name="traducao">1. Dia\n2. Sol</item>
+        <item name="on'yomi">にち, じつ</item>
+        <item name="kun'yomi">ひ, -び,-か</item>
+        <item name="tracos">4</item>
+        <item name="exemplo">あしたは日よう日</item>
+        <item name="traducaoExemplo">Amanhã é domingo.</item>
+    </string-array>
+
+    <string-array name="getsu">
+        <item name="traducao">1. Mês \n2.Lua</item>
+        <item name="on'yomi">げつ , がつ</item>
+        <item name="kun'yomi">つき</item>
+        <item name="tracos">4</item>
+        <item name="exemplo">月はおおきい</item>
+        <item name="traducaoExemplo">A lua é grande.</item>
+    </string-array>
+
+    <string-array name="kanji">
+        <item name ="traducao">Exemplo Default</item>
+        <item name="on'yomi">てすと</item>
+        <item name="kun'yomi">て,-で,ふ</item>
+        <item name="tracos">5</item>
+        <item name="exemplo">いっそえうもてすと</item>
+        <item name="traducaoExemplo">Isso é um teste.</item>
+    </string-array>
+
 </resources>
