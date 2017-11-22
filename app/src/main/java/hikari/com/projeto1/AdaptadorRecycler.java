@@ -40,7 +40,7 @@ public class AdaptadorRecycler extends RecyclerView.Adapter<AdaptadorRecycler.Vi
         if(KanaItemData.class.isInstance(mDataset.get(position))){
             holder.mTextView.setText(mDataset.get(position).getTitle());
         }
-        holder.imgViewIcon.setImageBitmap(mDataset.get(position).getImageUrl());
+        holder.imgViewIcon.setImageDrawable(mDataset.get(position).getImage());
     }
 
     @Override

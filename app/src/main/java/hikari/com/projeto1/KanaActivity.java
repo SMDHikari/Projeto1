@@ -1,14 +1,17 @@
 package hikari.com.projeto1;
 
+import android.content.Intent;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
@@ -22,7 +25,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnItemSelected;
 
-public class KanaActivity extends AppCompatActivity {
+public class KanaActivity extends AppCompatActivity implements Runnable{
     @BindView(R.id.kataAndHiraSpn)
     Spinner kataAndHiraSpn;
     @BindView(R.id.levelKanaSpn)
@@ -31,12 +34,12 @@ public class KanaActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
-    private ArrayList<ItemData> arrayKanas;
+    private ArrayList<ItemData> arrayKanas=null;
     int OptionSpn1=0,OptionSpn2=0;
 
     private int[][] kanaList={{R.array.placeholder,R.array.hiraBasico,R.array.hiraVar,R.array.hiraJun},{R.array.placeholder,R.array.kataBasico,R.array.kataVar,R.array.kataJun}};
 
-    private int[][] imgs ={{R.array.placeholder,R.array.hiraBasicoImg,R.array.hiraVarImg,R.array.hiraJunImg},{R.array.placeholder,R.array.kataBasicoImg,R.array.kataVarImg,R.array.kataJunImg}};
+    private int[]/*[]*/ imgs ={R.array.placeholder,R.array.hiraBasicoImg,R.array.hiraVarImg,R.array.hiraJunImg};/*,{R.array.placeholder,R.array.kataBasicoImg,R.array.kataVarImg,R.array.kataJunImg}};*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,21 +52,23 @@ public class KanaActivity extends AppCompatActivity {
 
         mLayoutManager= new LinearLayoutManager(this);
         recyclerView.setLayoutManager(mLayoutManager);
-        atualizarLista(OptionSpn1,OptionSpn2);
         recyclerView.addItemDecoration(new SpacesItemDecoration(10));
         recyclerView.setHasFixedSize(true);
-
+        atualizarLista(OptionSpn1,OptionSpn2);
         //Definindo Spinners e inicializando valores dos spinners
         ArrayAdapter<CharSequence> adapterSpn1 = ArrayAdapter.createFromResource(this,
-                R.array.kanaSpinner1, android.R.layout.simple_spinner_item);
+                R.array.kanaSpinner1, R.layout.spinner_item_top);
         ArrayAdapter<CharSequence> adapterSpn2 = ArrayAdapter.createFromResource(this,
-                R.array.kanaSpinner2, android.R.layout.simple_spinner_item);
+                R.array.kanaSpinner2, R.layout.spinner_item_top);
         // Specificando layout do dropdown
-        adapterSpn1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        adapterSpn2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adapterSpn1.setDropDownViewResource(R.layout.spinner_item_dropdown);
+        adapterSpn2.setDropDownViewResource(R.layout.spinner_item_dropdown);
+
         // Aplicando o adaptador no spinner
         kataAndHiraSpn.setAdapter(adapterSpn1);
         levelKanaSpn.setAdapter(adapterSpn2);
+
+
 
 
         /*Implementação do ClickListener (não existe naturalmente no RecyclerView)
@@ -84,38 +89,71 @@ public class KanaActivity extends AppCompatActivity {
             public void onLongClick(View view, int position) {
             }
         }));
-
+        //limpa as variaveis que não serão mais utilizadas após a criação
+        adapterSpn1=null;
+        adapterSpn2=null;
+        myToolbar=null;
+        Runtime.getRuntime().gc();
     }
 
 
-
     public void atualizarLista(int escolhaSpinner1, int escolhaSpinner2){
+        //caso o ArrayKanas já exista, efetua-se uma limpeza dos dados e da memória antes de reinserir os valores neste.
+        if(arrayKanas!=null){
+            for(int i=0;i<arrayKanas.size();i++){
+                arrayKanas.get(i).clearMemory();
+            }
+        }
+        arrayKanas=null;
+        Runtime.getRuntime().gc();
+
         arrayKanas=new ArrayList<ItemData>();
-        ArrayList<int[]> todos= new ArrayList<int[]>();
         TypedArray imgsTyped;
+
         if(escolhaSpinner2==0){
-            for(int i=0;i< imgs[escolhaSpinner1].length;i++){
-                imgsTyped=getResources().obtainTypedArray(imgs[escolhaSpinner1][i]);
-                for(int x=0;x<getResources().getIntArray(imgs[escolhaSpinner1][i]).length;x++){
-                    Bitmap bitmap = BitmapFactory.decodeResource(getResources(),imgsTyped.getResourceId(x,-1));
-                    arrayKanas.add(new KanaItemData(getResources().getStringArray(kanaList[escolhaSpinner1][i])[x],bitmap));
+            for(int i=0;i< imgs/*[escolhaSpinner1]*/.length;i++){
+                imgsTyped = getResources().obtainTypedArray(imgs[i]);
+                for(int x=0;x<getResources().getIntArray(imgs/*[escolhaSpinner1]*/[i]).length;x++){
+                    //.getResourceId(x,0)
+                    arrayKanas.add(new KanaItemData(getResources().getStringArray(kanaList[escolhaSpinner1][i])[x],imgsTyped.getResources().getDrawable(imgsTyped.getResourceId(x,-1))));
                 }
+
+                imgsTyped.recycle();
+                imgsTyped=null;
             }
         }
         else{
-            imgsTyped = getResources().obtainTypedArray(imgs[escolhaSpinner1][escolhaSpinner2]);
+            imgsTyped = getResources().obtainTypedArray(imgs[escolhaSpinner2]);
             for(int i=0;i<getResources().getStringArray(kanaList[escolhaSpinner1][escolhaSpinner2]).length;i++){
-                Bitmap bitmap = BitmapFactory.decodeResource(getResources(),imgsTyped.getResourceId(i,-1));
-                arrayKanas.add(new KanaItemData(getResources().getStringArray(kanaList[escolhaSpinner1][escolhaSpinner2])[i],bitmap));
+                arrayKanas.add(new KanaItemData(getResources().getStringArray(kanaList[escolhaSpinner1][escolhaSpinner2])[i],imgsTyped.getResources().getDrawable(imgsTyped.getResourceId(i,-1))));
             }
+            //
+            imgsTyped.recycle();
+            imgsTyped=null;
         }
 
         mAdapter= new AdaptadorRecycler(arrayKanas);
         mAdapter.notifyDataSetChanged();
         recyclerView.setAdapter(mAdapter);
+        //limpa a variavel imgsTyped no fim da atualização da lista
+        Runtime.getRuntime().gc();
 
     }
 
+    @Override
+    public Intent getSupportParentActivityIntent() {
+    /*String from = getIntent().getExtras().getString("from");
+    Intent newIntent = null;
+    if(from.equals("MAIN")){
+        newIntent = new Intent(this, MainActivity.class);
+    }else if(from.equals("FAV")){
+        newIntent = new Intent(this, FavoriteActivity.class);
+    }
+
+    return newIntent;*/
+        finish();
+        return null;
+    }
 
 
     @OnItemSelected({R.id.kataAndHiraSpn,R.id.levelKanaSpn})
@@ -131,6 +169,32 @@ public class KanaActivity extends AppCompatActivity {
                 break;
         }
     }
+    //Metodo chamado ao sair da atividade(nativo da classe Activity)
+    @Override
+    public void onDestroy(){
+        clearMemory();
+        super.onDestroy();
+    }
+    //Metodo chamado para limpar com o garbage Collector todas as váriaveis e objetos da atividade.
+    public void clearMemory(){
+        mAdapter=null;
+        recyclerView.addOnItemTouchListener(null);
+        recyclerView.setLayoutManager(null);
+        recyclerView=null;
+        kataAndHiraSpn.setOnItemSelectedListener(null);
+        levelKanaSpn.setOnItemSelectedListener(null);
+        for(int i=0;i<arrayKanas.size();i++){
+            arrayKanas.get(i).clearMemory();
+        }
+        arrayKanas=null;
+        Runtime.getRuntime().gc();
+    }
+//  Metodo runnable, mantem um controle da memória ram enquanto a atividade está rodando.
+    @Override
+    public void run() {
 
-
+        for(int i=0;i<arrayKanas.size();i++){
+            arrayKanas.get(i).clearMemory();
+        }
+    }
 }

@@ -12,7 +12,8 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-    <style name="SpinnerStyle"></style>
+    <style name="DropDownStyle">
+    <item name="android:layout_width">0dp</item></style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 

@@ -41,6 +41,7 @@ public class KanjiActivity extends AppCompatActivity {
     TextView exemploTxt;
     @BindView(R.id.traducaoExemploTxt)
     TextView traducaoExemploTxt;
+    TypedArray kanjiTyped;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,10 +57,12 @@ public class KanjiActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setHasFixedSize(true);
 
-        TypedArray imgsTyped = getResources().obtainTypedArray(R.array.kanjiTopList);
-        for (int i = 0; i < getResources().getIntArray(R.array.kanjiTopList).length; i++) {
+        kanjiTyped= getResources().obtainTypedArray(R.array.KanjiCapitulo1);
+        TypedArray imgsTyped = getResources().obtainTypedArray(R.array.kanjiTopList1);
+
+        for (int i = 0; i < getResources().getIntArray(R.array.kanjiTopList1).length; i++) {
             Bitmap bitmap = BitmapFactory.decodeResource(getResources(), imgsTyped.getResourceId(i, -1));
-            arrayKanji.add(new KanjiItemData(bitmap, getResources().getStringArray(R.array.kanjiList)[i]));
+            //arrayKanji.add(new KanjiItemData(bitmap, getResources().getStringArray(kanjiTyped.getResourceId(i,-1))[1]));
         }
         mAdapter = new AdaptadorRecycler(arrayKanji);
         mAdapter.notifyDataSetChanged();
@@ -89,9 +92,9 @@ public class KanjiActivity extends AppCompatActivity {
     }
 
     public void preencherTextos(int position){
-        int identificador = getResources().getIdentifier(getResources().getStringArray(R.array.kanjiList)[position], "array", getPackageName());
+        int identificador = getResources().getIdentifier(getResources().getStringArray(kanjiTyped.getResourceId(position,-1))[1], "array", getPackageName());
         String[] arrayString = getResources().getStringArray(identificador);
-        kanjiImg.setImageBitmap(arrayKanji.get(position).getImageUrl());
+        kanjiImg.setImageDrawable(arrayKanji.get(position).getImage());
         kanjiTraducao.setText(arrayString[0]);
         onYomiTxt.setText(arrayString[1]);
         kunYomiTxt.setText(arrayString[2]);

@@ -1,6 +1,7 @@
 package hikari.com.projeto1;
 
 import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
 
 /**
  * Created by Gustavo on 28/10/2017.
@@ -8,9 +9,9 @@ import android.graphics.Bitmap;
 
 public class KanjiItemData extends ItemData {
     private String title;
-    private Bitmap image;
+    private Drawable image;
 
-    public KanjiItemData(Bitmap image,String title){
+    public KanjiItemData(Drawable image,String title){
         this.title=title;
         this.image=image;
     }
@@ -19,8 +20,13 @@ public class KanjiItemData extends ItemData {
         return title;
     }
 
-    public Bitmap getImageUrl() {
+    public Drawable getImage() {
         return image;
+    }
+
+    public void clearMemory(){
+        this.title=null;
+        this.image=null;
     }
 
 }

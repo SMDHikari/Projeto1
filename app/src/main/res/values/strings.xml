@@ -2,7 +2,7 @@
     <string name="app_name">Projeto1</string>
     <string name="title_activity_main_menu">Hikari</string>
     <string name="title_activity_kanji">Kanji</string>
-    <string name="title_activity_kana_quiz">Quiz Kana</string>
+    <string name="title_activity_quiz">Quiz</string>
     <string name="title_activity_kana">Kana</string>
     <string name="title_activity_sobre">Sobre</string>
     <string name="title_activity_vocabulario">Vocabulário</string>
@@ -20,6 +20,18 @@
         <item>Junções</item>
     </string-array>
 
+    <string-array name="kanjiSpinner1">
+        <item>Capitulo 1</item>
+        <item>Capitulo 2</item>
+        <item>Capitulo 3</item>
+        <item>Capitulo 4</item>
+        <item>Capitulo 5</item>
+    </string-array>
+
+    <string-array name="kanjiSpinner2">
+        <item>Sequência BK</item>
+        <item>Número de Traços</item>
+    </string-array>
 
 
     <string-array name="nichi">
@@ -41,7 +53,7 @@
     </string-array>
 
     <string-array name="kanji">
-        <item name ="traducao">Exemplo Default</item>
+        <item name="traducao">Exemplo Default</item>
         <item name="on'yomi">てすと</item>
         <item name="kun'yomi">て,-で,ふ</item>
         <item name="tracos">5</item>
