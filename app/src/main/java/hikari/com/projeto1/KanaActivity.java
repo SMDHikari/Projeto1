@@ -1,5 +1,6 @@
 package hikari.com.projeto1;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
@@ -12,6 +13,8 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
+import android.view.animation.LayoutAnimationController;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
@@ -25,7 +28,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnItemSelected;
 
-public class KanaActivity extends AppCompatActivity implements Runnable{
+public class KanaActivity extends AppCompatActivity{
     @BindView(R.id.kataAndHiraSpn)
     Spinner kataAndHiraSpn;
     @BindView(R.id.levelKanaSpn)
@@ -67,7 +70,7 @@ public class KanaActivity extends AppCompatActivity implements Runnable{
         // Aplicando o adaptador no spinner
         kataAndHiraSpn.setAdapter(adapterSpn1);
         levelKanaSpn.setAdapter(adapterSpn2);
-
+        runLayoutAnimation(recyclerView);
 
 
 
@@ -92,8 +95,16 @@ public class KanaActivity extends AppCompatActivity implements Runnable{
         //limpa as variaveis que não serão mais utilizadas após a criação
         adapterSpn1=null;
         adapterSpn2=null;
-        myToolbar=null;
         Runtime.getRuntime().gc();
+    }
+    private void runLayoutAnimation(final RecyclerView recyclerView) {
+        final Context context = recyclerView.getContext();
+        final LayoutAnimationController controller =
+                AnimationUtils.loadLayoutAnimation(context, R.anim.layout_animation_fall_down);
+
+        recyclerView.setLayoutAnimation(controller);
+        recyclerView.getAdapter().notifyDataSetChanged();
+        recyclerView.scheduleLayoutAnimation();
     }
 
 
@@ -132,13 +143,15 @@ public class KanaActivity extends AppCompatActivity implements Runnable{
             imgsTyped=null;
         }
 
-        mAdapter= new AdaptadorRecycler(arrayKanas);
+        mAdapter= new AdaptadorRecycler(arrayKanas,true);
         mAdapter.notifyDataSetChanged();
         recyclerView.setAdapter(mAdapter);
+        runLayoutAnimation(recyclerView);
         //limpa a variavel imgsTyped no fim da atualização da lista
         Runtime.getRuntime().gc();
 
     }
+
 
     @Override
     public Intent getSupportParentActivityIntent() {
@@ -189,12 +202,5 @@ public class KanaActivity extends AppCompatActivity implements Runnable{
         arrayKanas=null;
         Runtime.getRuntime().gc();
     }
-//  Metodo runnable, mantem um controle da memória ram enquanto a atividade está rodando.
-    @Override
-    public void run() {
 
-        for(int i=0;i<arrayKanas.size();i++){
-            arrayKanas.get(i).clearMemory();
-        }
-    }
 }

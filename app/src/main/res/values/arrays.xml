@@ -567,7 +567,7 @@
         <item>@array/carro</item>
         <item>@array/portao</item>
     </array>
-    <!--<array name="KanjiCapitulo1Imgs">
+    <array name="KanjiCapitulo1Imgs">
         <item>@drawable/kanji_dia</item>
         <item>@drawable/kanji_lua</item>
         <item>@drawable/kanji_arvore</item>
@@ -578,7 +578,7 @@
         <item>@drawable/kanji_boca</item>
         <item>@drawable/kanji_carro</item>
         <item>@drawable/kanji_portao</item>
-    </array>-->
+    </array>
     <!--Capitulo2-kanjis -->        <!--...........................Capitulo 2............................................-->
     <string-array name="fogo">
         <item name="traducao">Fogo</item>
@@ -682,18 +682,18 @@
         <item>@array/anterior</item>
         <item>@array/eu</item>
     </array>
-    <!-- <array name="KanjiCapitulo2Imgs">
-         <item>@drawable/KanjiFogo</item>
-         <item>@drawable/KanjiAgua</item>
-         <item>@drawable/KanjiOuro</item>
-         <item>@drawable/KanjiSolo</item>
-         <item>@drawable/KanjiCrianca</item>
-         <item>@drawable/KanjiMulher</item>
-         <item>@drawable/KanjiEstudo</item>
-         <item>@drawable/KanjiViver</item>
-         <item>@drawable/KanjiAnterior</item>
-         <item>@drawable/KanjiEu</item>
-     </array>-->
+    <array name="KanjiCapitulo2Imgs">
+         <item>@drawable/kanji_fogo</item>
+         <item>@drawable/kanji_agua</item>
+         <item>@drawable/kanji_ouro</item>
+         <item>@drawable/kanji_solo</item>
+         <item>@drawable/kanji_crianca</item>
+         <item>@drawable/kanji_mulher</item>
+         <item>@drawable/kanji_estudo</item>
+         <item>@drawable/kanji_viver</item>
+         <item>@drawable/kanji_anterior</item>
+         <item>@drawable/kanji_eu</item>
+     </array>
 
      <!--Capitulo3-kanjis -->        <!--...........................Capitulo 3............................................-->
     <string-array name="um">
@@ -848,23 +848,23 @@
         <item>@array/circulo</item>
         <item>@array/ano</item>
     </array>
-    <!--<array name="KanjiCapitulo3Imgs">
-        <item>@drawable/KanjiUm</item>
-        <item>@drawable/KanjiDois</item>
-        <item>@drawable/KanjiTres</item>
-        <item>@drawable/KanjiQuatro</item>
-        <item>@drawable/KanjiCinco</item>
-        <item>@drawable/KanjiSeis</item>
-        <item>@drawable/KanjiSete</item>
-        <item>@drawable/KanjiOito</item>
-        <item>@drawable/KanjiNove</item>
-        <item>@drawable/KanjiDez</item>
-        <item>@drawable/KanjiCem</item>
-        <item>@drawable/KanjiMil</item>
-        <item>@drawable/KanjiDezmil</item>
-        <item>@drawable/KanjiCirculo</item>
-        <item>@drawable/KanjiAno</item>
-    </array>-->
+    <array name="KanjiCapitulo3Imgs">
+        <item>@drawable/kanji_um</item>
+        <item>@drawable/kanji_dois</item>
+        <item>@drawable/kanji_tres</item>
+        <item>@drawable/kanji_quatro</item>
+        <item>@drawable/kanji_cinco</item>
+        <item>@drawable/kanji_seis</item>
+        <item>@drawable/kanji_sete</item>
+        <item>@drawable/kanji_oito</item>
+        <item>@drawable/kanji_nove</item>
+        <item>@drawable/kanji_dez</item>
+        <item>@drawable/kanji_cem</item>
+        <item>@drawable/kanji_mil</item>
+        <item>@drawable/kanji_dezmil</item>
+        <item>@drawable/kanji_iene</item>
+        <item>@drawable/kanji_ano</item>
+    </array>
     <!--Capitulo4-kanjis -->  <!--........................Capitulo 4...............................................-->
     <string-array name="acima">
         <item name="traducao">Acima,Em cima,Superior </item>
@@ -968,18 +968,18 @@
         <item>@array/forca</item>
         <item>@array/oque</item>
     </array>
-    <!-- <array name="KanjiCapitulo4Imgs">
-         <item>@drawable/KanjiAcima</item>
-         <item>@drawable/KanjiAbaixo</item>
-         <item>@drawable/KanjiDentro</item>
-         <item>@drawable/KanjiGrande</item>
-         <item>@drawable/KanjiPequeno</item>
-         <item>@drawable/KanjiLivro</item>
-         <item>@drawable/KanjiMetade</item>
-         <item>@drawable/KanjiMinuto</item>
-         <item>@drawable/KanjiForca</item>
-         <item>@drawable/KanjiOque</item>
-     </array>-->
+    <array name="KanjiCapitulo4Imgs">
+         <item>@drawable/kanji_acima</item>
+         <item>@drawable/kanji_abaixo</item>
+         <item>@drawable/kanji_dentro</item>
+         <item>@drawable/kanji_grande</item>
+         <item>@drawable/kanji_pequeno</item>
+         <item>@drawable/kanji_livro</item>
+         <item>@drawable/kanji_metade</item>
+         <item>@drawable/kanji_minuto</item>
+         <item>@drawable/kanji_forca</item>
+         <item>@drawable/kanji_oque</item>
+     </array>
 
      <!--Capitulo5 - kanjis-->       <!--........................Capitulo 5...............................................-->
     <string-array name="brilho">
@@ -1085,18 +1085,18 @@
         <item>@array/cultivado</item>
         <item>@array/rocha</item>
     </array>
-    <!--<array name="KanjiCapitulo5Imgs">
-        <item>@drawable/KanjiBrilho</item>
-        <item>@drawable/KanjiDescansar</item>
-        <item>@drawable/KanjiCorpo</item>
-        <item>@drawable/KanjiGostar</item>
-        <item>@drawable/KanjiHomem</item>
-        <item>@drawable/KanjiBosque</item>
-        <item>@drawable/KanjiFloresta</item>
-        <item>@drawable/KanjiEntre</item>
-        <item>@drawable/KanjiCultivado</item>
-        <item>@drawable/KanjiRocha</item>
-    </array>-->
+    <array name="KanjiCapitulo5Imgs">
+        <item>@drawable/kanji_brilho</item>
+        <item>@drawable/kanji_descansar</item>
+        <item>@drawable/kanji_corpo</item>
+        <item>@drawable/kanji_gostar</item>
+        <item>@drawable/kanji_homem</item>
+        <item>@drawable/kanji_bosque</item>
+        <item>@drawable/kanji_floresta</item>
+        <item>@drawable/kanji_entre</item>
+        <item>@drawable/kanji_campocultivado</item>
+        <item>@drawable/kanji_rocha</item>
+    </array>
 
     <!--Arrays de texto e imagens para as opções da KanjiActivity--><!--..................................................................-->
     <integer-array name="kanjiTopList1">

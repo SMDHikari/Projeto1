@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
                                         changeActivity(intent);
                                         break;
                                     case 1:
-                                        intent = new Intent(getApplicationContext(), KanjiActivity.class);
+                                        intent = new Intent(getApplicationContext(), KanjiListActivity.class);
                                         changeActivity(intent);
                                         break;
                                     case 2:

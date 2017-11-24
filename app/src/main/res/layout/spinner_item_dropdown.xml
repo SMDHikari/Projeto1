@@ -3,6 +3,6 @@
     android:layout_width="wrap_content"
     android:layout_height="29dp"
     android:paddingLeft="@dimen/_18dp"
-    android:textSize="16sp"
+    android:textSize="14sp"
     android:gravity="center">
 </TextView>

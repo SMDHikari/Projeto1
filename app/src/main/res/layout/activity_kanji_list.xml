@@ -7,6 +7,28 @@
     android:orientation="vertical"
     tools:context="hikari.com.projeto1.KanjiListActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/title_activity_kanji"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+    </android.support.v7.widget.Toolbar>
 
     <EditText
         android:id="@+id/searchText"
@@ -23,8 +45,8 @@
         android:layout_marginTop="8dp"
         android:orientation="horizontal"
         android:paddingBottom="@dimen/_3dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
         android:paddingTop="10dp"
         android:weightSum="2">
 
@@ -33,7 +55,7 @@
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:layout_centerInParent="true"
-            android:layout_marginRight="20dp"
+            android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="@android:drawable/btn_dropdown"
             android:defaultFocusHighlightEnabled="false"
@@ -48,7 +70,7 @@
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:layout_centerInParent="true"
-            android:layout_marginRight="20dp"
+            android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="@android:drawable/btn_dropdown"
             android:dropDownSelector="@android:drawable/spinner_dropdown_background"
@@ -61,10 +83,10 @@
     </LinearLayout>
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerKanaId"
-        android:nestedScrollingEnabled="false"
+        android:id="@+id/recyclerKanjiId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
         android:paddingBottom="15dp"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"

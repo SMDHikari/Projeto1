@@ -9,7 +9,7 @@ import android.graphics.drawable.Drawable;
 
 public class KanaItemData extends ItemData {
 
-    private String title = "default";
+    private String title;
     private Drawable image;
     private String leitura;
 

@@ -34,31 +34,9 @@
     </string-array>
 
 
-    <string-array name="nichi">
-        <item name="traducao">1. Dia\n2. Sol</item>
-        <item name="on'yomi">にち, じつ</item>
-        <item name="kun'yomi">ひ, -び,-か</item>
-        <item name="tracos">4</item>
-        <item name="exemplo">あしたは日よう日</item>
-        <item name="traducaoExemplo">Amanhã é domingo.</item>
-    </string-array>
-
-    <string-array name="getsu">
-        <item name="traducao">1. Mês \n2.Lua</item>
-        <item name="on'yomi">げつ , がつ</item>
-        <item name="kun'yomi">つき</item>
-        <item name="tracos">4</item>
-        <item name="exemplo">月はおおきい</item>
-        <item name="traducaoExemplo">A lua é grande.</item>
-    </string-array>
-
-    <string-array name="kanji">
-        <item name="traducao">Exemplo Default</item>
-        <item name="on'yomi">てすと</item>
-        <item name="kun'yomi">て,-で,ふ</item>
-        <item name="tracos">5</item>
-        <item name="exemplo">いっそえうもてすと</item>
-        <item name="traducaoExemplo">Isso é um teste.</item>
-    </string-array>
+    <string name="sobreNle">O Curso de Japonês da Uece foi criado em agosto de 1993, atendendo
+        à demanda de um público que manifestava interesse em aprender a língua e a cultura japonesa.
+        O curso está vinculado ao Núcleo de Línguas Estrangeiras, umu projeto de Extenção do Curso
+        de Letras da Universidade Estadu al do Ceará(UECE).</string>
 
 </resources>

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    tools:background="@color/colorGrayBackground"
     tools:context="hikari.com.projeto1.KanaActivity">
 
     <android.support.v7.widget.Toolbar
@@ -15,18 +16,19 @@
         android:layout_marginRight="0dp"
         android:layout_marginTop="0dp"
         android:background="?attr/colorPrimary"
-        app:titleTextColor="@color/colorWhite"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@color/colorWhite">
+
         <TextView
+            android:id="@+id/toolbar_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text="@string/title_activity_kana"
             android:textColor="@color/colorWhite"
-            android:textSize="20sp"
-            android:layout_gravity="center"
-            android:id="@+id/toolbar_title" />
+            android:textSize="20sp" />
     </android.support.v7.widget.Toolbar>
 
     <EditText
@@ -36,48 +38,47 @@
         android:layout_gravity="center_horizontal"
         android:drawableRight="@android:drawable/ic_menu_search"
         android:ems="10"
-        android:inputType="text"
-        />
+        android:inputType="text" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
         android:orientation="horizontal"
-        android:paddingTop="10dp"
+        android:paddingBottom="@dimen/_3dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:paddingBottom="@dimen/_3dp"
+        android:paddingTop="10dp"
         android:weightSum="2">
 
         <Spinner
             android:id="@+id/kataAndHiraSpn"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
-            android:paddingLeft="0dp"
-            android:paddingRight="0dp"
+            android:layout_centerInParent="true"
             android:layout_marginRight="20dp"
-            android:overlapAnchor="false"
-            android:dropDownWidth="match_parent"
             android:layout_weight="1"
             android:background="@android:drawable/btn_dropdown"
             android:defaultFocusHighlightEnabled="false"
-            android:layout_centerInParent="true"/>
+            android:dropDownWidth="match_parent"
+            android:overlapAnchor="false"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp" />
 
 
         <Spinner
             android:id="@+id/levelKanaSpn"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
-            android:overlapAnchor="false"
-            android:paddingLeft="0dp"
-            android:paddingRight="0dp"
+            android:layout_centerInParent="true"
             android:layout_marginRight="20dp"
-            android:dropDownWidth="match_parent"
             android:layout_weight="1"
             android:background="@android:drawable/btn_dropdown"
             android:dropDownSelector="@android:drawable/spinner_dropdown_background"
-            android:layout_centerInParent="true"/>
+            android:dropDownWidth="match_parent"
+            android:overlapAnchor="false"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp" />
 
 
     </LinearLayout>
@@ -86,13 +87,12 @@
         android:id="@+id/recyclerKanaId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="3dp"
+        android:paddingBottom="15dp"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
-        android:paddingBottom="15dp"
+        android:paddingTop="3dp"
         tools:layout_editor_absoluteX="47dp"
         tools:layout_editor_absoluteY="94dp" />
-
 
 
 </LinearLayout>
