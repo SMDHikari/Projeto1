@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="placeholder"></array>
+
+    <!--Arrays de texto e imagens para as opções da KanaActivity--><!--.....................................................................-->
     <string-array name="hiraBasico">
         <item>hiraBasico1</item>
         <item>hiraBasico2</item>
@@ -22,29 +24,81 @@
         <item>hiraBasico18</item>
         <item>hiraBasico19</item>
         <item>hiraBasico20</item>
+        <item>hiraBasico21</item>
+        <item>hiraBasico22</item>
+        <item>hiraBasico23</item>
+        <item>hiraBasico24</item>
+        <item>hiraBasico25</item>
+        <item>hiraBasico26</item>
+        <item>hiraBasico27</item>
+        <item>hiraBasico28</item>
+        <item>hiraBasico29</item>
+        <item>hiraBasico30</item>
+        <item>hiraBasico31</item>
+        <item>hiraBasico32</item>
+        <item>hiraBasico33</item>
+        <item>hiraBasico34</item>
+        <item>hiraBasico35</item>
+        <item>hiraBasico36</item>
+        <item>hiraBasico37</item>
+        <item>hiraBasico38</item>
+        <item>hiraBasico39</item>
+        <item>hiraBasico40</item>
+        <item>hiraBasico41</item>
+        <item>hiraBasico42</item>
+        <item>hiraBasico43</item>
+        <item>hiraBasico44</item>
+        <item>hiraBasico45</item>
+        <item>hiraBasico46</item>
     </string-array>
-    <integer-array name="hiraBasicoImg">
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder2</item>
-    </integer-array>
+    <array name="hiraBasicoImg">
+        <item>@drawable/hira_bas1</item>
+        <item>@drawable/hira_bas2</item>
+        <item>@drawable/hira_bas3</item>
+        <item>@drawable/hira_bas4</item>
+        <item>@drawable/hira_bas5</item>
+        <item>@drawable/hira_bas6</item>
+        <item>@drawable/hira_bas7</item>
+        <item>@drawable/hira_bas8</item>
+        <item>@drawable/hira_bas9</item>
+        <item>@drawable/hira_bas10</item>
+        <item>@drawable/hira_bas11</item>
+        <item>@drawable/hira_bas12</item>
+        <item>@drawable/hira_bas13</item>
+        <item>@drawable/hira_bas14</item>
+        <item>@drawable/hira_bas15</item>
+        <item>@drawable/hira_bas16</item>
+        <item>@drawable/hira_bas17</item>
+        <item>@drawable/hira_bas18</item>
+        <item>@drawable/hira_bas19</item>
+        <item>@drawable/hira_bas20</item>
+        <item>@drawable/hira_bas21</item>
+        <item>@drawable/hira_bas22</item>
+        <item>@drawable/hira_bas23</item>
+        <item>@drawable/hira_bas24</item>
+        <item>@drawable/hira_bas25</item>
+        <item>@drawable/hira_bas26</item>
+        <item>@drawable/hira_bas27</item>
+        <item>@drawable/hira_bas28</item>
+        <item>@drawable/hira_bas29</item>
+        <item>@drawable/hira_bas30</item>
+        <item>@drawable/hira_bas31</item>
+        <item>@drawable/hira_bas32</item>
+        <item>@drawable/hira_bas33</item>
+        <item>@drawable/hira_bas34</item>
+        <item>@drawable/hira_bas35</item>
+        <item>@drawable/hira_bas36</item>
+        <item>@drawable/hira_bas37</item>
+        <item>@drawable/hira_bas38</item>
+        <item>@drawable/hira_bas39</item>
+        <item>@drawable/hira_bas40</item>
+        <item>@drawable/hira_bas41</item>
+        <item>@drawable/hira_bas42</item>
+        <item>@drawable/hira_bas43</item>
+        <item>@drawable/hira_bas44</item>
+        <item>@drawable/hira_bas45</item>
+        <item>@drawable/hira_bas46</item>
+    </array>
 
     <string-array name="hiraVar">
         <item>hiraVar1</item>
@@ -67,29 +121,40 @@
         <item>hiraVar18</item>
         <item>hiraVar19</item>
         <item>hiraVar20</item>
+        <item>hiraVar21</item>
+        <item>hiraVar22</item>
+        <item>hiraVar23</item>
+        <item>hiraVar24</item>
+        <item>hiraVar25</item>
     </string-array>
-    <integer-array name="hiraVarImg">
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder2</item>
-    </integer-array>
+    <array name="hiraVarImg">
+        <item>@drawable/hira_var1</item>
+        <item>@drawable/hira_var2</item>
+        <item>@drawable/hira_var3</item>
+        <item>@drawable/hira_var4</item>
+        <item>@drawable/hira_var5</item>
+        <item>@drawable/hira_var6</item>
+        <item>@drawable/hira_var7</item>
+        <item>@drawable/hira_var8</item>
+        <item>@drawable/hira_var9</item>
+        <item>@drawable/hira_var10</item>
+        <item>@drawable/hira_var11</item>
+        <item>@drawable/hira_var12</item>
+        <item>@drawable/hira_var13</item>
+        <item>@drawable/hira_var14</item>
+        <item>@drawable/hira_var15</item>
+        <item>@drawable/hira_var16</item>
+        <item>@drawable/hira_var17</item>
+        <item>@drawable/hira_var18</item>
+        <item>@drawable/hira_var19</item>
+        <item>@drawable/hira_var20</item>
+        <item>@drawable/hira_var21</item>
+        <item>@drawable/hira_var22</item>
+        <item>@drawable/hira_var23</item>
+        <item>@drawable/hira_var24</item>
+        <item>@drawable/hira_var25</item>
+    </array>
+
 
     <string-array name="hiraJun">
         <item>hiraJun1</item>
@@ -112,29 +177,61 @@
         <item>hiraJun18</item>
         <item>hiraJun19</item>
         <item>hiraJun20</item>
+        <item>hiraJun21</item>
+        <item>hiraJun22</item>
+        <item>hiraJun23</item>
+        <item>hiraJun24</item>
+        <item>hiraJun25</item>
+        <item>hiraJun26</item>
+        <item>hiraJun27</item>
+        <item>hiraJun28</item>
+        <item>hiraJun29</item>
+        <item>hiraJun30</item>
+        <item>hiraJun31</item>
+        <item>hiraJun32</item>
+        <item>hiraJun33</item>
+        <item>hiraJun34</item>
+        <item>hiraJun35</item>
+        <item>hiraJun36</item>
     </string-array>
-    <integer-array name="hiraJunImg">
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder2</item>
-    </integer-array>
+    <array name="hiraJunImg">
+        <item>@drawable/hira_jun1</item>
+        <item>@drawable/hira_jun2</item>
+        <item>@drawable/hira_jun3</item>
+        <item>@drawable/hira_jun4</item>
+        <item>@drawable/hira_jun5</item>
+        <item>@drawable/hira_jun6</item>
+        <item>@drawable/hira_jun7</item>
+        <item>@drawable/hira_jun8</item>
+        <item>@drawable/hira_jun9</item>
+        <item>@drawable/hira_jun10</item>
+        <item>@drawable/hira_jun11</item>
+        <item>@drawable/hira_jun12</item>
+        <item>@drawable/hira_jun13</item>
+        <item>@drawable/hira_jun14</item>
+        <item>@drawable/hira_jun15</item>
+        <item>@drawable/hira_jun16</item>
+        <item>@drawable/hira_jun17</item>
+        <item>@drawable/hira_jun18</item>
+        <item>@drawable/hira_jun19</item>
+        <item>@drawable/hira_jun20</item>
+        <item>@drawable/hira_jun21</item>
+        <item>@drawable/hira_jun22</item>
+        <item>@drawable/hira_jun23</item>
+        <item>@drawable/hira_jun24</item>
+        <item>@drawable/hira_jun25</item>
+        <item>@drawable/hira_jun26</item>
+        <item>@drawable/hira_jun27</item>
+        <item>@drawable/hira_jun28</item>
+        <item>@drawable/hira_jun29</item>
+        <item>@drawable/hira_jun30</item>
+        <item>@drawable/hira_jun31</item>
+        <item>@drawable/hira_jun32</item>
+        <item>@drawable/hira_jun33</item>
+        <item>@drawable/hira_jun4</item>
+        <item>@drawable/hira_jun35</item>
+        <item>@drawable/hira_jun36</item>
+    </array>
 
     <string-array name="kataBasico">
         <item>kataBasico1</item>
@@ -157,29 +254,81 @@
         <item>kataBasico18</item>
         <item>kataBasico19</item>
         <item>kataBasico20</item>
+        <item>kataBasico21</item>
+        <item>kataBasico22</item>
+        <item>kataBasico23</item>
+        <item>kataBasico24</item>
+        <item>kataBasico25</item>
+        <item>kataBasico26</item>
+        <item>kataBasico27</item>
+        <item>kataBasico28</item>
+        <item>kataBasico29</item>
+        <item>kataBasico30</item>
+        <item>kataBasico31</item>
+        <item>kataBasico32</item>
+        <item>kataBasico33</item>
+        <item>kataBasico34</item>
+        <item>kataBasico35</item>
+        <item>kataBasico36</item>
+        <item>kataBasico37</item>
+        <item>kataBasico38</item>
+        <item>kataBasico39</item>
+        <item>kataBasico40</item>
+        <item>kataBasico41</item>
+        <item>kataBasico42</item>
+        <item>kataBasico43</item>
+        <item>kataBasico44</item>
+        <item>kataBasico45</item>
+        <item>kataBasico46</item>
     </string-array>
-    <integer-array name="kataBasicoImg">
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder2</item>
-    </integer-array>
+    <!--<array name="kataBasicoImg">
+        <item>@drawable/kata_bas1</item>
+        <item>@drawable/kata_bas2</item>
+        <item>@drawable/kata_bas3</item>
+        <item>@drawable/kata_bas4</item>
+        <item>@drawable/kata_bas5</item>
+        <item>@drawable/kata_bas6</item>
+        <item>@drawable/kata_bas7</item>
+        <item>@drawable/kata_bas8</item>
+        <item>@drawable/kata_bas9</item>
+        <item>@drawable/kata_bas10</item>
+        <item>@drawable/kata_bas11</item>
+        <item>@drawable/kata_bas12</item>
+        <item>@drawable/kata_bas13</item>
+        <item>@drawable/kata_bas14</item>
+        <item>@drawable/kata_bas15</item>
+        <item>@drawable/kata_bas16</item>
+        <item>@drawable/kata_bas17</item>
+        <item>@drawable/kata_bas18</item>
+        <item>@drawable/kata_bas19</item>
+        <item>@drawable/kata_bas20</item>
+        <item>@drawable/kata_bas21</item>
+        <item>@drawable/kata_bas22</item>
+        <item>@drawable/kata_bas23</item>
+        <item>@drawable/kata_bas24</item>
+        <item>@drawable/kata_bas25</item>
+        <item>@drawable/kata_bas26</item>
+        <item>@drawable/kata_bas27</item>
+        <item>@drawable/kata_bas28</item>
+        <item>@drawable/kata_bas29</item>
+        <item>@drawable/kata_bas30</item>
+        <item>@drawable/kata_bas31</item>
+        <item>@drawable/kata_bas32</item>
+        <item>@drawable/kata_bas33</item>
+        <item>@drawable/kata_bas34</item>
+        <item>@drawable/kata_bas35</item>
+        <item>@drawable/kata_bas36</item>
+        <item>@drawable/kata_bas37</item>
+        <item>@drawable/kata_bas38</item>
+        <item>@drawable/kata_bas39</item>
+        <item>@drawable/kata_bas40</item>
+        <item>@drawable/kata_bas41</item>
+        <item>@drawable/kata_bas42</item>
+        <item>@drawable/kata_bas43</item>
+        <item>@drawable/kata_bas44</item>
+        <item>@drawable/kata_bas45</item>
+        <item>@drawable/kata_bas46</item>
+    </array>-->
 
     <string-array name="kataVar">
         <item>kataVar1</item>
@@ -202,29 +351,39 @@
         <item>kataVar18</item>
         <item>kataVar19</item>
         <item>kataVar20</item>
+        <item>kataVar21</item>
+        <item>kataVar22</item>
+        <item>kataVar23</item>
+        <item>kataVar24</item>
+        <item>kataVar25</item>
     </string-array>
-    <integer-array name="kataVarImg">
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder3</item>
-    </integer-array>
+    <!--<array name="kataVarImg">
+        <item>@drawable/kata_var1</item>
+        <item>@drawable/kata_var2</item>
+        <item>@drawable/kata_var3</item>
+        <item>@drawable/kata_var4</item>
+        <item>@drawable/kata_var5</item>
+        <item>@drawable/kata_var6</item>
+        <item>@drawable/kata_var7</item>
+        <item>@drawable/kata_var8</item>
+        <item>@drawable/kata_var9</item>
+        <item>@drawable/kata_var10</item>
+        <item>@drawable/kata_var11</item>
+        <item>@drawable/kata_var12</item>
+        <item>@drawable/kata_var13</item>
+        <item>@drawable/kata_var14</item>
+        <item>@drawable/kata_var15</item>
+        <item>@drawable/kata_var16</item>
+        <item>@drawable/kata_var17</item>
+        <item>@drawable/kata_var18</item>
+        <item>@drawable/kata_var19</item>
+        <item>@drawable/kata_var20</item>
+        <item>@drawable/kata_var21</item>
+        <item>@drawable/kata_var22</item>
+        <item>@drawable/kata_var23</item>
+        <item>@drawable/kata_var24</item>
+        <item>@drawable/kata_var25</item>
+    </array>-->
 
     <string-array name="kataJun">
         <item>kataJun1</item>
@@ -247,63 +406,700 @@
         <item>kataJun18</item>
         <item>kataJun19</item>
         <item>kataJun20</item>
+        <item>kataJun21</item>
+        <item>kataJun22</item>
+        <item>kataJun23</item>
+        <item>kataJun24</item>
+        <item>kataJun25</item>
+        <item>kataJun26</item>
+        <item>kataJun27</item>
+        <item>kataJun28</item>
+        <item>kataJun29</item>
+        <item>kataJun30</item>
+        <item>kataJun31</item>
+        <item>kataJun32</item>
+        <item>kataJun33</item>
+        <item>kataJun34</item>
+        <item>kataJun35</item>
+        <item>kataJun36</item>
     </string-array>
-    <integer-array name="kataJunImg">
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder1</item>
-        <item>@drawable/kana_placeholder2</item>
-        <item>@drawable/kana_placeholder3</item>
-        <item>@drawable/kana_placeholder3</item>
-    </integer-array>
+    <!--<array name="kataJunImg">
+        <item>@drawable/kata_jun1</item>
+        <item>@drawable/kata_jun2</item>
+        <item>@drawable/kata_jun3</item>
+        <item>@drawable/kata_jun4</item>
+        <item>@drawable/kata_jun5</item>
+        <item>@drawable/kata_jun6</item>
+        <item>@drawable/kata_jun7</item>
+        <item>@drawable/kata_jun8</item>
+        <item>@drawable/kata_jun9</item>
+        <item>@drawable/kata_jun10</item>
+        <item>@drawable/kata_jun11</item>
+        <item>@drawable/kata_jun12</item>
+        <item>@drawable/kata_jun13</item>
+        <item>@drawable/kata_jun14</item>
+        <item>@drawable/kata_jun15</item>
+        <item>@drawable/kata_jun16</item>
+        <item>@drawable/kata_jun17</item>
+        <item>@drawable/kata_jun18</item>
+        <item>@drawable/kata_jun19</item>
+        <item>@drawable/kata_jun20</item>
+        <item>@drawable/kata_jun21</item>
+        <item>@drawable/kata_jun22</item>
+        <item>@drawable/kata_jun23</item>
+        <item>@drawable/kata_jun24</item>
+        <item>@drawable/kata_jun25</item>
+        <item>@drawable/kata_jun26</item>
+        <item>@drawable/kata_jun27</item>
+        <item>@drawable/kata_jun28</item>
+        <item>@drawable/kata_jun29</item>
+        <item>@drawable/kata_jun30</item>
+        <item>@drawable/kata_jun31</item>
+        <item>@drawable/kata_jun32</item>
+        <item>@drawable/kata_jun33</item>
+        <item>@drawable/kata_jun34</item>
+        <item>@drawable/kata_jun35</item>
+        <item>@drawable/kata_jun36</item>
+    </array>-->
+    <!--ARRAYS DE TEXTO E IMAGENS PARA A LISTAGEM DE KANJIS-->  <!--.......................................................................-->
+    <!--Capitulo1-kanjis -->        <!--...........................Capitulo 1............................................-->
+    <string-array name="dia" >
+        <item name="traducao">Dia,Sol</item>
+        <item name="on'yomi">ニチ, ジツ</item>
+        <item name="kun'yomi">ひ, -び,-か</item>
+        <item name="tracos">4</item>
+        <item name="exemplo">あしたは日よう日です</item>
+        <item name="traducaoExemplo">Amanhã é domingo.</item>
+        <item></item>
+    </string-array>
 
-    <string-array name="kanjiList">
-        <item>kanji</item>
-        <item>kanji</item>
-        <item>nichi</item>
-        <item>getsu</item>
-        <item>kanji</item>
-        <item>kanji</item>
-        <item>kanji</item>
-        <item>kanji</item>
-        <item>kanji</item>
-        <item>kanji</item>
-        <item>kanji</item>
-        <item>kanji</item>
-        <item>kanji</item>
-        <item>kanji</item>
-        <item>kanji</item>
-        <item>kanji</item>
-        <item>kanji</item>
-        <item>kanji</item>
-        <item>kanji</item>
-        <item>kanji</item>
+    <string-array name="lua">
+        <item name="traducao">Lua,Mês</item>
+        <item name="on'yomi">ゲツ、ガツ </item>
+        <item name="kun'yomi">つき</item>
+        <item name="tracos">4</item>
+        <item name="exemplo">わたしのたんじょうびはらい月です</item>
+        <item name="traducaoExemplo">Meu aniversário é no próximo mês.</item>
     </string-array>
-    <integer-array name="kanjiTopList">
-        <item>@drawable/kanji_top_placeholder1</item>
-        <item>@drawable/kanji_top_placeholder2</item>
-        <item>@drawable/kanji_top_placeholder1</item>
-        <item>@drawable/kanji_top_placeholder2</item>
-        <item>@drawable/kanji_top_placeholder1</item>
-        <item>@drawable/kanji_top_placeholder2</item>
-        <item>@drawable/kanji_top_placeholder1</item>
-        <item>@drawable/kanji_top_placeholder2</item>
-        <item>@drawable/kanji_top_placeholder1</item>
-        <item>@drawable/kanji_top_placeholder2</item>
+
+    <string-array name="arvore">
+        <item name="traducao">Árvore </item>
+        <item name="on'yomi"> モク，ボク</item>
+        <item name="kun'yomi">き</item>
+        <item name="tracos">4</item>
+        <item name="exemplo">あの木はきれいです</item>
+        <item name="traducaoExemplo">Aquela árvore é bonita.</item>
+    </string-array>
+
+    <string-array name="montanha">
+        <item name="traducao">Montanha</item>
+        <item name="on'yomi">サン</item>
+        <item name="kun'yomi">やま</item>
+        <item name="tracos">3</item>
+        <item name="exemplo">この山はたかいです</item>
+        <item name="traducaoExemplo">Essa montanha é alta.</item>
+    </string-array>
+
+    <string-array name="rio">
+        <item name="traducao">Rio</item>
+        <item name="on'yomi"> セン</item>
+        <item name="kun'yomi">かわ、-がわ</item>
+        <item name="tracos">3</item>
+        <item name="exemplo">この川のみずはつめたいです</item>
+        <item name="traducaoExemplo">A água desse rio é gelada.</item>
+    </string-array>
+
+    <string-array name="campo">
+        <item name="traducao">Campo de arroz</item>
+        <item name="on'yomi">デン</item>
+        <item name="kun'yomi">た, -だ</item>
+        <item name="tracos">5</item>
+        <item name="exemplo">田中さんはいい人です</item>
+        <item name="traducaoExemplo">O sr. Tanaka é uma boa pessoa.</item>
+    </string-array>
+
+    <string-array name="pessoa">
+        <item name="traducao">Pessoa</item>
+        <item name="on'yomi">ジン、ニン </item>
+        <item name="kun'yomi">ひと</item>
+        <item name="tracos">2</item>
+        <item name="exemplo">あの人は山田さんです</item>
+        <item name="traducaoExemplo">Aquela pessoa é o sr. Yamada.</item>
+    </string-array>
+
+    <string-array name="boca">
+        <item name="traducao">Boca</item>
+        <item name="on'yomi">コウ</item>
+        <item name="kun'yomi">くち、-ぐち</item>
+        <item name="tracos">3</item>
+        <item name="exemplo">口をあけてください</item>
+        <item name="traducaoExemplo">Abra a boca, por favor.</item>
+    </string-array>
+
+    <string-array name="carro">
+        <item name="traducao">Carro</item>
+        <item name="on'yomi">シャ</item>
+        <item name="kun'yomi">くるま</item>
+        <item name="tracos">7</item>
+        <item name="exemplo">あの車はしろいです</item>
+        <item name="traducaoExemplo">Aquele carro é branco.</item>
+    </string-array>
+
+    <string-array name="portao">
+        <item name="traducao">Portao</item>
+        <item name="on'yomi">モン</item>
+        <item name="kun'yomi">かど</item>
+        <item name="tracos">8</item>
+        <item name="exemplo">門をしめてください</item>
+        <item name="traducaoExemplo">Feche o portão, por favor.</item>
+    </string-array>
+
+    <!--Array de referencias para os Kanji do Capitulo1-->
+    <array name="KanjiCapitulo1">
+        <item>@array/dia</item>
+        <item>@array/lua</item>
+        <item>@array/arvore</item>
+        <item>@array/montanha</item>
+        <item>@array/rio</item>
+        <item>@array/campo</item>
+        <item>@array/pessoa</item>
+        <item>@array/boca</item>
+        <item>@array/carro</item>
+        <item>@array/portao</item>
+    </array>
+    <array name="KanjiCapitulo1Imgs">
+        <item>@drawable/kanji_dia</item>
+        <item>@drawable/kanji_lua</item>
+        <item>@drawable/kanji_arvore</item>
+        <item>@drawable/kanji_montanha</item>
+        <item>@drawable/kanji_rio</item>
+        <item>@drawable/kanji_campo</item>
+        <item>@drawable/kanji_pessoa</item>
+        <item>@drawable/kanji_boca</item>
+        <item>@drawable/kanji_carro</item>
+        <item>@drawable/kanji_portao</item>
+    </array>
+    <!--Capitulo2-kanjis -->        <!--...........................Capitulo 2............................................-->
+    <string-array name="fogo">
+        <item name="traducao">Fogo</item>
+        <item name="on'yomi">カ</item>
+        <item name="kun'yomi">ひ</item>
+        <item name="tracos">4</item>
+        <item name="exemplo">火であそんではいけません</item>
+        <item name="traducaoExemplo">Não brinque com fogo.</item>
+    </string-array>
+
+    <string-array name="agua">
+        <item name="traducao">Água</item>
+        <item name="on'yomi">スイ</item>
+        <item name="kun'yomi">みず</item>
+        <item name="tracos">4</item>
+        <item name="exemplo">わたしは水をのむことがすきじゃありません</item>
+        <item name="traducaoExemplo">Eu não gosto de beber água.</item>
+    </string-array>
+
+    <string-array name="ouro">
+        <item name="traducao">Ouro,Dinheiro,Prata</item>
+        <item name="on'yomi">キン</item>
+        <item name="kun'yomi">かね、-がね</item>
+        <item name="tracos">8</item>
+        <item name="exemplo">私はお金がありません</item>
+        <item name="traducaoExemplo">Eu não tenho dinheiro.</item>
+    </string-array>
+
+    <string-array name="solo">
+        <item name="traducao">Solo,Terra</item>
+        <item name="on'yomi">ド</item>
+        <item name="kun'yomi">つち</item>
+        <item name="tracos">3</item>
+        <item name="exemplo">土よう日にパーティーがあります</item>
+        <item name="traducaoExemplo">Sábado tem uma festa.</item>
+    </string-array>
+
+    <string-array name="crianca">
+        <item name="traducao">Criança</item>
+        <item name="on'yomi">シ</item>
+        <item name="kun'yomi">こ</item>
+        <item name="tracos">3</item>
+        <item name="exemplo">子どもはあそぶことがすきです </item>
+        <item name="traducaoExemplo">Crianças gostam de brincar.</item>
+    </string-array>
+
+    <string-array name="mulher">
+        <item name="traducao">Mulher,Fêmea</item>
+        <item name="on'yomi">ジョ</item>
+        <item name="kun'yomi">おんな</item>
+        <item name="tracos">3</item>
+        <item name="exemplo">あの女の人はきれいです </item>
+        <item name="traducaoExemplo">Aquela mulher é bonita.</item>
+    </string-array>
+
+    <string-array name="estudo">
+        <item name="traducao">Estudo</item>
+        <item name="on'yomi">ガク、ガッ-</item>
+        <item name="kun'yomi">まな-ぶ</item>
+        <item name="tracos">8</item>
+        <item name="exemplo">すう学はむずかしいです</item>
+        <item name="traducaoExemplo">Matemática é difícil.</item>
+    </string-array>
+
+    <string-array name="viver">
+        <item name="traducao">Viver,Nascer</item>
+        <item name="on'yomi">セイ</item>
+        <item name="kun'yomi">い-きる、う-まれる</item>
+        <item name="tracos">5</item>
+        <item name="exemplo">私は学生です</item>
+        <item name="traducaoExemplo">Eu sou estudante.</item>
+    </string-array>
+
+    <string-array name="anterior">
+        <item name="traducao">Anterior,A frente</item>
+        <item name="on'yomi">セン</item>
+        <item name="kun'yomi">さき</item>
+        <item name="tracos">6</item>
+        <item name="exemplo">先月ロックコンサートへいきました</item>
+        <item name="traducaoExemplo"> Fui  a um show de rock no mês passado.</item>
+    </string-array>
+
+    <string-array name="eu">
+        <item name="traducao">Eu,Particular</item>
+        <item name="on'yomi">シ</item>
+        <item name="kun'yomi">わたし、わたくし</item>
+        <item name="tracos">7</item>
+        <item name="exemplo">私は私りつの学こうでべんきょうします</item>
+        <item name="traducaoExemplo"> Eu estudo em um colégio particular.</item>
+    </string-array>
+    <!--Array de referencias para os Kanji do Capitulo2-->
+    <array name="KanjiCapitulo2">
+        <item>@array/fogo</item>
+        <item>@array/agua</item>
+        <item>@array/ouro</item>
+        <item>@array/solo</item>
+        <item>@array/crianca</item>
+        <item>@array/mulher</item>
+        <item>@array/estudo</item>
+        <item>@array/viver</item>
+        <item>@array/anterior</item>
+        <item>@array/eu</item>
+    </array>
+    <array name="KanjiCapitulo2Imgs">
+         <item>@drawable/kanji_fogo</item>
+         <item>@drawable/kanji_agua</item>
+         <item>@drawable/kanji_ouro</item>
+         <item>@drawable/kanji_solo</item>
+         <item>@drawable/kanji_crianca</item>
+         <item>@drawable/kanji_mulher</item>
+         <item>@drawable/kanji_estudo</item>
+         <item>@drawable/kanji_viver</item>
+         <item>@drawable/kanji_anterior</item>
+         <item>@drawable/kanji_eu</item>
+     </array>
+
+     <!--Capitulo3-kanjis -->        <!--...........................Capitulo 3............................................-->
+    <string-array name="um">
+        <item name="traducao">Um</item>
+        <item name="on'yomi">イチ</item>
+        <item name="kun'yomi">ひと-つ</item>
+        <item name="tracos">1</item>
+        <item name="exemplo">一月はさむいです</item>
+        <item name="traducaoExemplo"> Está frio em Janeiro.</item>
+    </string-array>
+
+    <string-array name="dois">
+        <item name="traducao">Dois</item>
+        <item name="on'yomi">ニ</item>
+        <item name="kun'yomi">ふた-つ</item>
+        <item name="tracos">2</item>
+        <item name="exemplo">カーニバルは二月です</item>
+        <item name="traducaoExemplo"> O carnaval é em Fevereiro.</item>
+    </string-array>
+
+    <string-array name="tres">
+        <item name="traducao">Três</item>
+        <item name="on'yomi">サン</item>
+        <item name="kun'yomi">みっ-つ</item>
+        <item name="tracos">3</item>
+        <item name="exemplo">あの女の子は三さいです</item>
+        <item name="traducaoExemplo"> Aquela menina tem 3 anos.</item>
+    </string-array>
+
+    <string-array name="quatro">
+        <item name="traducao">Quatro</item>
+        <item name="on'yomi">シ</item>
+        <item name="kun'yomi">よっ-つ、よん、よ</item>
+        <item name="tracos">5</item>
+        <item name="exemplo">いま四じです</item>
+        <item name="traducaoExemplo"> São  4 horas.</item>
+    </string-array>
+
+    <string-array name="cinco">
+        <item name="traducao">Cinco</item>
+        <item name="on'yomi">ゴ</item>
+        <item name="kun'yomi">いつ-つ</item>
+        <item name="tracos">4</item>
+        <item name="exemplo">五ふんをまってください</item>
+        <item name="traducaoExemplo"> Aguarde 5 minutos , por favor.</item>
+    </string-array>
+
+    <string-array name="seis">
+        <item name="traducao">Seis</item>
+        <item name="on'yomi">ロク、ロッ-</item>
+        <item name="kun'yomi">むっ-つ</item>
+        <item name="tracos">4</item>
+        <item name="exemplo">六月にテストをうけます</item>
+        <item name="traducaoExemplo"> Faço provas em Junho.</item>
+    </string-array>
+
+    <string-array name="sete">
+        <item name="traducao">Sete</item>
+        <item name="on'yomi">シチ</item>
+        <item name="kun'yomi">なな-つ</item>
+        <item name="tracos">2</item>
+        <item name="exemplo">七つのたいざいはいいアニメです</item>
+        <item name="traducaoExemplo">Nanatsu no Taizai é um bom anime.</item>
+    </string-array>
+
+    <string-array name="oito">
+        <item name="traducao">Oito</item>
+        <item name="on'yomi">ハチ、ハッ-</item>
+        <item name="kun'yomi">やっ-つ</item>
+        <item name="tracos">2</item>
+        <item name="exemplo">きゅうかは八月におわります</item>
+        <item name="traducaoExemplo">As férias terminam em Agosto.</item>
+    </string-array>
+
+    <string-array name="nove">
+        <item name="traducao">Nove</item>
+        <item name="on'yomi">キュウ、ク</item>
+        <item name="kun'yomi">ここの</item>
+        <item name="tracos">2</item>
+        <item name="exemplo">私のたんじょうびは九月九日です</item>
+        <item name="traducaoExemplo">Meu aniversário é em 9 de Setembro.</item>
+    </string-array>
+
+    <string-array name="dez">
+        <item name="traducao">Dez</item>
+        <item name="on'yomi">ジュウ、ジュッ-、ジッ-</item>
+        <item name="kun'yomi">とお</item>
+        <item name="tracos">2</item>
+        <item name="exemplo">十年まえ日本へいきました</item>
+        <item name="traducaoExemplo">Fui ao Japão há  10 anos.</item>
+    </string-array>
+
+    <string-array name="cem">
+        <item name="traducao">Cem</item>
+        <item name="on'yomi">ヒャク、-ビャク、-ピャク</item>
+        <item name="kun'yomi">もも</item>
+        <item name="tracos">6</item>
+        <item name="exemplo">これは百円です</item>
+        <item name="traducaoExemplo">Isto custa 100 ienes.</item>
+    </string-array>
+
+    <string-array name="mil">
+        <item name="traducao">Mil</item>
+        <item name="on'yomi">セン、-ゼン</item>
+        <item name="kun'yomi">ち</item>
+        <item name="tracos">3</item>
+        <item name="exemplo">こ年は二千十七年です</item>
+        <item name="traducaoExemplo">Estamos em 2017.</item>
+    </string-array>
+
+    <string-array name="dezmil">
+        <item name="traducao">Dez Mil,Todos</item>
+        <item name="on'yomi">マン、バン</item>
+        <item name="kun'yomi">よろず</item>
+        <item name="tracos">3</item>
+        <item name="exemplo">一万円があります</item>
+        <item name="traducaoExemplo">Tenho 10 mil ienes.</item>
+    </string-array>
+
+    <string-array name="circulo">
+        <item name="traducao">Círculo,Iene</item>
+        <item name="on'yomi">エン</item>
+        <item name="kun'yomi">まる</item>
+        <item name="tracos">4</item>
+        <item name="exemplo">円は日本のお金です</item>
+        <item name="traducaoExemplo">Iene é a moeda do Japão.</item>
+    </string-array>
+
+    <string-array name="ano">
+        <item name="traducao">Ano,Idade </item>
+        <item name="on'yomi">ネン</item>
+        <item name="kun'yomi">とし</item>
+        <item name="tracos">6</item>
+        <item name="exemplo">らい年りょこうをします</item>
+        <item name="traducaoExemplo">Vou viajar ano que vem.</item>
+    </string-array>
+    <!--Array de referencias para os Kanji do Capitulo3-->
+    <array name="KanjiCapitulo3">
+        <item>@array/um</item>
+        <item>@array/dois</item>
+        <item>@array/tres</item>
+        <item>@array/quatro</item>
+        <item>@array/cinco</item>
+        <item>@array/seis</item>
+        <item>@array/sete</item>
+        <item>@array/oito</item>
+        <item>@array/nove</item>
+        <item>@array/dez</item>
+        <item>@array/cem</item>
+        <item>@array/mil</item>
+        <item>@array/dezmil</item>
+        <item>@array/circulo</item>
+        <item>@array/ano</item>
+    </array>
+    <array name="KanjiCapitulo3Imgs">
+        <item>@drawable/kanji_um</item>
+        <item>@drawable/kanji_dois</item>
+        <item>@drawable/kanji_tres</item>
+        <item>@drawable/kanji_quatro</item>
+        <item>@drawable/kanji_cinco</item>
+        <item>@drawable/kanji_seis</item>
+        <item>@drawable/kanji_sete</item>
+        <item>@drawable/kanji_oito</item>
+        <item>@drawable/kanji_nove</item>
+        <item>@drawable/kanji_dez</item>
+        <item>@drawable/kanji_cem</item>
+        <item>@drawable/kanji_mil</item>
+        <item>@drawable/kanji_dezmil</item>
+        <item>@drawable/kanji_iene</item>
+        <item>@drawable/kanji_ano</item>
+    </array>
+    <!--Capitulo4-kanjis -->  <!--........................Capitulo 4...............................................-->
+    <string-array name="acima">
+        <item name="traducao">Acima,Em cima,Superior </item>
+        <item name="on'yomi">ジョウ</item>
+        <item name="kun'yomi">うえ、あ-がる、のぼ-る</item>
+        <item name="tracos">3</item>
+        <item name="exemplo">テーブルの上に本があります</item>
+        <item name="traducaoExemplo">Em cima da mesa tem um livro.</item>
+    </string-array>
+
+    <string-array name="abaixo">
+        <item name="traducao">Abaixo,De baixo,Inferior </item>
+        <item name="on'yomi">カ、ゲ</item>
+        <item name="kun'yomi">した、さ-がる、くだ-る</item>
+        <item name="tracos">3</item>
+        <item name="exemplo">ベッドの下にくつがあります</item>
+        <item name="traducaoExemplo">Em baixo da cama tem um sapato.</item>
+    </string-array>
+
+    <string-array name="dentro">
+        <item name="traducao">Dentro,Meio </item>
+        <item name="on'yomi">チュウ、-ジュウ</item>
+        <item name="kun'yomi">なか</item>
+        <item name="tracos">4</item>
+        <item name="exemplo">かばんの中にノートがあります</item>
+        <item name="traducaoExemplo">Dentro da bolsa tem um caderno.</item>
+    </string-array>
+
+    <string-array name="grande">
+        <item name="traducao">Grande </item>
+        <item name="on'yomi">ダイ,　タイ</item>
+        <item name="kun'yomi">おお-きい</item>
+        <item name="tracos">3</item>
+        <item name="exemplo">あのいぬは大きいです</item>
+        <item name="traducaoExemplo">Aquele cachorro é grande.</item>
+    </string-array>
+
+    <string-array name="pequeno">
+        <item name="traducao">Pequeno </item>
+        <item name="on'yomi">ショウ</item>
+        <item name="kun'yomi">ちい-さい、こ、お</item>
+        <item name="tracos">3</item>
+        <item name="exemplo">かの女のくつは小さいです</item>
+        <item name="traducaoExemplo">Os sapatos dela são pequenos.</item>
+    </string-array>
+
+    <string-array name="livro">
+        <item name="traducao">Livro,Raiz,Origem,Contador para objetos longos </item>
+        <item name="on'yomi">ホン</item>
+        <item name="kun'yomi">もと</item>
+        <item name="tracos">5</item>
+        <item name="exemplo">本をよむことが大すきです</item>
+        <item name="traducaoExemplo">Eu gosto de ler livros.</item>
+    </string-array>
+
+    <string-array name="metade">
+        <item name="traducao">Metade </item>
+        <item name="on'yomi">ハン</item>
+        <item name="kun'yomi">なか-ば</item>
+        <item name="tracos">5</item>
+        <item name="exemplo">いま二じ半です</item>
+        <item name="traducaoExemplo">São 2:30.</item>
+    </string-array>
+
+    <string-array name="minuto">
+        <item name="traducao">Minuto,Dividir,Parte </item>
+        <item name="on'yomi">ブン、ブ、フン、-プン</item>
+        <item name="kun'yomi">わ-ける、わ-かれる、わ-かる</item>
+        <item name="tracos">4</item>
+        <item name="exemplo">まい日五十分をあるきます</item>
+        <item name="traducaoExemplo">Eu ando por 50 minutos todos os dias.</item>
+    </string-array>
+
+    <string-array name="forca">
+        <item name="traducao">Força,Poder,Habilidade </item>
+        <item name="on'yomi">リョク、リキ</item>
+        <item name="kun'yomi">ちがら</item>
+        <item name="tracos">2</item>
+        <item name="exemplo">私はまほう力があります</item>
+        <item name="traducaoExemplo">Eu tenho poderes mágicos.</item>
+    </string-array>
+
+    <string-array name="oque">
+        <item name="traducao">O que</item>
+        <item name="on'yomi">カ</item>
+        <item name="kun'yomi">なん、なに</item>
+        <item name="tracos">7</item>
+        <item name="exemplo">いま何じですか</item>
+        <item name="traducaoExemplo">Que horas são?</item>
+    </string-array>
+    <!--Array de referencias para os Kanji do Capitulo4-->
+    <array name="KanjiCapitulo4">
+        <item>@array/acima</item>
+        <item>@array/abaixo</item>
+        <item>@array/dentro</item>
+        <item>@array/grande</item>
+        <item>@array/pequeno</item>
+        <item>@array/livro</item>
+        <item>@array/metade</item>
+        <item>@array/minuto</item>
+        <item>@array/forca</item>
+        <item>@array/oque</item>
+    </array>
+    <array name="KanjiCapitulo4Imgs">
+         <item>@drawable/kanji_acima</item>
+         <item>@drawable/kanji_abaixo</item>
+         <item>@drawable/kanji_dentro</item>
+         <item>@drawable/kanji_grande</item>
+         <item>@drawable/kanji_pequeno</item>
+         <item>@drawable/kanji_livro</item>
+         <item>@drawable/kanji_metade</item>
+         <item>@drawable/kanji_minuto</item>
+         <item>@drawable/kanji_forca</item>
+         <item>@drawable/kanji_oque</item>
+     </array>
+
+     <!--Capitulo5 - kanjis-->       <!--........................Capitulo 5...............................................-->
+    <string-array name="brilho">
+        <item name="traducao">Brilho,Luz </item>
+        <item name="on'yomi">メイ</item>
+        <item name="kun'yomi">あか-るい、あ-ける</item>
+        <item name="tracos">8</item>
+        <item name="exemplo">私は明るいいろが好きです</item>
+        <item name="traducaoExemplo">Eu gosto de cores brilhantes.</item>
+    </string-array>
+
+    <string-array name="descansar">
+        <item name="traducao">Descansar,Folga </item>
+        <item name="on'yomi">キュウ</item>
+        <item name="kun'yomi">やす-む</item>
+        <item name="tracos">6</item>
+        <item name="exemplo">土よう日は私の休みの日です</item>
+        <item name="traducaoExemplo">Sábado é meu dia de folga.</item>
+    </string-array>
+
+    <string-array name="corpo">
+        <item name="traducao">Corpo </item>
+        <item name="on'yomi">タイ</item>
+        <item name="kun'yomi">からだ</item>
+        <item name="tracos">7</item>
+        <item name="exemplo">私の体がいたいです</item>
+        <item name="traducaoExemplo">Meu corpo está dolorido.</item>
+    </string-array>
+
+    <string-array name="gostar">
+        <item name="traducao">Gostar,Amar,Favorito </item>
+        <item name="on'yomi">コウ</item>
+        <item name="kun'yomi">す-きな、す-く</item>
+        <item name="tracos">6</item>
+        <item name="exemplo">私はアニメが好きです</item>
+        <item name="traducaoExemplo">Eu gosto de animes.</item>
+    </string-array>
+
+    <string-array name="homem">
+        <item name="traducao">Homem,Masculino </item>
+        <item name="on'yomi">ダン、ナン</item>
+        <item name="kun'yomi">おとこ</item>
+        <item name="tracos">7</item>
+        <item name="exemplo">あの男の人はだれですか</item>
+        <item name="traducaoExemplo">Quem é aquele homem?</item>
+    </string-array>
+
+    <string-array name="bosque">
+        <item name="traducao">Bosque </item>
+        <item name="on'yomi">リン</item>
+        <item name="kun'yomi">はやし</item>
+        <item name="tracos">8</item>
+        <item name="exemplo">私のいえのちかくに林があります</item>
+        <item name="traducaoExemplo">Perto da minha casa tem um bosque.</item>
+    </string-array>
+
+    <string-array name="floresta">
+        <item name="traducao">Floresta </item>
+        <item name="on'yomi">シン</item>
+        <item name="kun'yomi">もり</item>
+        <item name="tracos">12</item>
+        <item name="exemplo">ウィルは森の中でまよってしました</item>
+        <item name="traducaoExemplo">Will se perdeu na floresta.</item>
+    </string-array>
+
+    <string-array name="entre">
+        <item name="traducao">Entre,Intervalo</item>
+        <item name="on'yomi">カン</item>
+        <item name="kun'yomi">あいだ、ま</item>
+        <item name="tracos">12</item>
+        <item name="exemplo">ともだちと一じ間をはなしました</item>
+        <item name="traducaoExemplo">Conversei com um amigo por 1 hora.</item>
+    </string-array>
+
+    <string-array name="cultivado">
+        <item name="traducao">Campo cultivado</item>
+        <item name="on'yomi"></item>
+        <item name="kun'yomi">はたけ、-ばたけ、はた</item>
+        <item name="tracos">9</item>
+        <item name="exemplo">あのはな畑はきれいです</item>
+        <item name="traducaoExemplo">Aquele campo de flores é bonito.</item>
+    </string-array>
+
+    <string-array name="rocha">
+        <item name="traducao">Rocha</item>
+        <item name="on'yomi">ガン</item>
+        <item name="kun'yomi">いわ</item>
+        <item name="tracos">8</item>
+        <item name="exemplo">その岩は大きいです</item>
+        <item name="traducaoExemplo">Essa rocha é grande.</item>
+    </string-array>
+
+    <!--Array de referencias para os Kanji do Capitulo5-->
+    <array name="KanjiCapitulo5">
+        <item>@array/brilho</item>
+        <item>@array/descansar</item>
+        <item>@array/corpo</item>
+        <item>@array/gostar</item>
+        <item>@array/homem</item>
+        <item>@array/bosque</item>
+        <item>@array/floresta</item>
+        <item>@array/entre</item>
+        <item>@array/cultivado</item>
+        <item>@array/rocha</item>
+    </array>
+    <array name="KanjiCapitulo5Imgs">
+        <item>@drawable/kanji_brilho</item>
+        <item>@drawable/kanji_descansar</item>
+        <item>@drawable/kanji_corpo</item>
+        <item>@drawable/kanji_gostar</item>
+        <item>@drawable/kanji_homem</item>
+        <item>@drawable/kanji_bosque</item>
+        <item>@drawable/kanji_floresta</item>
+        <item>@drawable/kanji_entre</item>
+        <item>@drawable/kanji_campocultivado</item>
+        <item>@drawable/kanji_rocha</item>
+    </array>
+
+    <!--Arrays de texto e imagens para as opções da KanjiActivity--><!--..................................................................-->
+    <integer-array name="kanjiTopList1">
         <item>@drawable/kanji_top_placeholder1</item>
         <item>@drawable/kanji_top_placeholder2</item>
         <item>@drawable/kanji_top_placeholder1</item>
@@ -315,5 +1111,20 @@
         <item>@drawable/kanji_top_placeholder1</item>
         <item>@drawable/kanji_top_placeholder2</item>
 </integer-array>
+
+<!-- Textos para os Menus da MainActivity --><!--.........................................................................................-->
+    <array name="vocabularioMenu">
+        <item>Quiz</item>
+        <item>Lista de vocabulário</item>
+    </array>
+    <array name="kanaMenu">
+        <item>Quiz</item>
+        <item>Aprender</item>
+    </array>
+    <array name="kanjiMenu">
+        <item>Quiz de leitura</item>
+        <item>Aprender</item>
+        <item>Forme o Kanji</item>
+    </array>
 
 </resources>

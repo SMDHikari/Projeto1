@@ -7,8 +7,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Gustavo on 27/10/2017.
@@ -16,16 +18,18 @@ import java.util.ArrayList;
 
 public class AdaptadorRecycler extends RecyclerView.Adapter<AdaptadorRecycler.ViewHolder> implements RecyclerView.OnItemTouchListener {
     private ArrayList<ItemData> mDataset;
+    private boolean listaVertical;
 
 
-    public AdaptadorRecycler(ArrayList<ItemData> mDataset){
+    public AdaptadorRecycler(ArrayList<ItemData> mDataset,boolean listaVertical){
         this.mDataset=mDataset;
+        this.listaVertical=listaVertical;
     }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemLayoutView;
-        if(KanaItemData.class.isInstance(mDataset.get(1))){
+        if(listaVertical==true){
             itemLayoutView = LayoutInflater.from(parent.getContext()).inflate(R.layout.kana_list_item, null);
         }
         else{
@@ -37,10 +41,10 @@ public class AdaptadorRecycler extends RecyclerView.Adapter<AdaptadorRecycler.Vi
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        if(KanaItemData.class.isInstance(mDataset.get(position))){
+        if(listaVertical==true) {
             holder.mTextView.setText(mDataset.get(position).getTitle());
         }
-        holder.imgViewIcon.setImageBitmap(mDataset.get(position).getImageUrl());
+        holder.imgViewIcon.setImageDrawable(mDataset.get(position).getImage());
     }
 
     @Override
@@ -62,6 +66,8 @@ public class AdaptadorRecycler extends RecyclerView.Adapter<AdaptadorRecycler.Vi
     public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
 
     }
+
+
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         public TextView mTextView;
