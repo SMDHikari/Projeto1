@@ -1,476 +1,2184 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="placeholder"></array>
-
-    <!--Arrays de texto e imagens para as opções da KanaActivity--><!--.....................................................................-->
-    <string-array name="hiraBasico">
-        <item>hiraBasico1</item>
-        <item>hiraBasico2</item>
-        <item>hiraBasico3</item>
-        <item>hiraBasico4</item>
-        <item>hiraBasico5</item>
-        <item>hiraBasico6</item>
-        <item>hiraBasico7</item>
-        <item>hiraBasico8</item>
-        <item>hiraBasico9</item>
-        <item>hiraBasico10</item>
-        <item>hiraBasico11</item>
-        <item>hiraBasico12</item>
-        <item>hiraBasico13</item>
-        <item>hiraBasico14</item>
-        <item>hiraBasico15</item>
-        <item>hiraBasico16</item>
-        <item>hiraBasico17</item>
-        <item>hiraBasico18</item>
-        <item>hiraBasico19</item>
-        <item>hiraBasico20</item>
-        <item>hiraBasico21</item>
-        <item>hiraBasico22</item>
-        <item>hiraBasico23</item>
-        <item>hiraBasico24</item>
-        <item>hiraBasico25</item>
-        <item>hiraBasico26</item>
-        <item>hiraBasico27</item>
-        <item>hiraBasico28</item>
-        <item>hiraBasico29</item>
-        <item>hiraBasico30</item>
-        <item>hiraBasico31</item>
-        <item>hiraBasico32</item>
-        <item>hiraBasico33</item>
-        <item>hiraBasico34</item>
-        <item>hiraBasico35</item>
-        <item>hiraBasico36</item>
-        <item>hiraBasico37</item>
-        <item>hiraBasico38</item>
-        <item>hiraBasico39</item>
-        <item>hiraBasico40</item>
-        <item>hiraBasico41</item>
-        <item>hiraBasico42</item>
-        <item>hiraBasico43</item>
-        <item>hiraBasico44</item>
-        <item>hiraBasico45</item>
-        <item>hiraBasico46</item>
+    <string-array name="hiraTodos">
+        <item>hirabas1</item>
+        <item>hirabas2</item>
+        <item>hirabas3</item>
+        <item>hirabas4</item>
+        <item>hirabas5</item>
+        <item>hirabas6</item>
+        <item>hirabas7</item>
+        <item>hirabas8</item>
+        <item>hirabas9</item>
+        <item>hirabas10</item>
+        <item>hirabas11</item>
+        <item>hirabas12</item>
+        <item>hirabas13</item>
+        <item>hirabas14</item>
+        <item>hirabas15</item>
+        <item>hirabas16</item>
+        <item>hirabas17</item>
+        <item>hirabas18</item>
+        <item>hirabas19</item>
+        <item>hirabas20</item>
+        <item>hirabas21</item>
+        <item>hirabas22</item>
+        <item>hirabas23</item>
+        <item>hirabas24</item>
+        <item>hirabas25</item>
+        <item>hirabas26</item>
+        <item>hirabas27</item>
+        <item>hirabas28</item>
+        <item>hirabas29</item>
+        <item>hirabas30</item>
+        <item>hirabas31</item>
+        <item>hirabas32</item>
+        <item>hirabas33</item>
+        <item>hirabas34</item>
+        <item>hirabas35</item>
+        <item>hirabas36</item>
+        <item>hirabas37</item>
+        <item>hirabas38</item>
+        <item>hirabas39</item>
+        <item>hirabas40</item>
+        <item>hirabas41</item>
+        <item>hirabas42</item>
+        <item>hirabas43</item>
+        <item>hirabas44</item>
+        <item>hirabas45</item>
+        <item>hirabas46</item>
+        <item>hiravar1</item>
+        <item>hiravar2</item>
+        <item>hiravar3</item>
+        <item>hiravar4</item>
+        <item>hiravar5</item>
+        <item>hiravar6</item>
+        <item>hiravar7</item>
+        <item>hiravar8</item>
+        <item>hiravar9</item>
+        <item>hiravar10</item>
+        <item>hiravar11</item>
+        <item>hiravar12</item>
+        <item>hiravar13</item>
+        <item>hiravar14</item>
+        <item>hiravar15</item>
+        <item>hiravar16</item>
+        <item>hiravar17</item>
+        <item>hiravar18</item>
+        <item>hiravar19</item>
+        <item>hiravar20</item>
+        <item>hiravar21</item>
+        <item>hiravar22</item>
+        <item>hiravar23</item>
+        <item>hiravar24</item>
+        <item>hiravar25</item>
+        <item>hirajun1</item>
+    <item>hirajun2</item>
+    <item>hirajun3</item>
+    <item>hirajun4</item>
+    <item>hirajun5</item>
+    <item>hirajun6</item>
+    <item>hirajun7</item>
+    <item>hirajun8</item>
+    <item>hirajun9</item>
+    <item>hirajun10</item>
+    <item>hirajun11</item>
+    <item>hirajun12</item>
+    <item>hirajun13</item>
+    <item>hirajun14</item>
+    <item>hirajun15</item>
+    <item>hirajun16</item>
+    <item>hirajun17</item>
+    <item>hirajun18</item>
+    <item>hirajun19</item>
+    <item>hirajun20</item>
+    <item>hirajun21</item>
+    <item>hirajun22</item>
+    <item>hirajun23</item>
+    <item>hirajun24</item>
+    <item>hirajun25</item>
+    <item>hirajun26</item>
+    <item>hirajun27</item>
+    <item>hirajun28</item>
+    <item>hirajun29</item>
+    <item>hirajun30</item>
+    <item>hirajun31</item>
+    <item>hirajun32</item>
+    <item>hirajun33</item>
+    <item>hirajun34</item>
+    <item>hirajun35</item>
+    <item>hirajun36</item>
     </string-array>
-    <array name="hiraBasicoImg">
-        <item>@drawable/hira_bas1</item>
-        <item>@drawable/hira_bas2</item>
-        <item>@drawable/hira_bas3</item>
-        <item>@drawable/hira_bas4</item>
-        <item>@drawable/hira_bas5</item>
-        <item>@drawable/hira_bas6</item>
-        <item>@drawable/hira_bas7</item>
-        <item>@drawable/hira_bas8</item>
-        <item>@drawable/hira_bas9</item>
-        <item>@drawable/hira_bas10</item>
-        <item>@drawable/hira_bas11</item>
-        <item>@drawable/hira_bas12</item>
-        <item>@drawable/hira_bas13</item>
-        <item>@drawable/hira_bas14</item>
-        <item>@drawable/hira_bas15</item>
-        <item>@drawable/hira_bas16</item>
-        <item>@drawable/hira_bas17</item>
-        <item>@drawable/hira_bas18</item>
-        <item>@drawable/hira_bas19</item>
-        <item>@drawable/hira_bas20</item>
-        <item>@drawable/hira_bas21</item>
-        <item>@drawable/hira_bas22</item>
-        <item>@drawable/hira_bas23</item>
-        <item>@drawable/hira_bas24</item>
-        <item>@drawable/hira_bas25</item>
-        <item>@drawable/hira_bas26</item>
-        <item>@drawable/hira_bas27</item>
-        <item>@drawable/hira_bas28</item>
-        <item>@drawable/hira_bas29</item>
-        <item>@drawable/hira_bas30</item>
-        <item>@drawable/hira_bas31</item>
-        <item>@drawable/hira_bas32</item>
-        <item>@drawable/hira_bas33</item>
-        <item>@drawable/hira_bas34</item>
-        <item>@drawable/hira_bas35</item>
-        <item>@drawable/hira_bas36</item>
-        <item>@drawable/hira_bas37</item>
-        <item>@drawable/hira_bas38</item>
-        <item>@drawable/hira_bas39</item>
-        <item>@drawable/hira_bas40</item>
-        <item>@drawable/hira_bas41</item>
-        <item>@drawable/hira_bas42</item>
-        <item>@drawable/hira_bas43</item>
-        <item>@drawable/hira_bas44</item>
-        <item>@drawable/hira_bas45</item>
-        <item>@drawable/hira_bas46</item>
-    </array>
-
-    <string-array name="hiraVar">
-        <item>hiraVar1</item>
-        <item>hiraVar2</item>
-        <item>hiraVar3</item>
-        <item>hiraVar4</item>
-        <item>hiraVar5</item>
-        <item>hiraVar6</item>
-        <item>hiraVar7</item>
-        <item>hiraVar8</item>
-        <item>hiraVar9</item>
-        <item>hiraVar10</item>
-        <item>hiraVar11</item>
-        <item>hiraVar12</item>
-        <item>hiraVar13</item>
-        <item>hiraVar14</item>
-        <item>hiraVar15</item>
-        <item>hiraVar16</item>
-        <item>hiraVar17</item>
-        <item>hiraVar18</item>
-        <item>hiraVar19</item>
-        <item>hiraVar20</item>
-        <item>hiraVar21</item>
-        <item>hiraVar22</item>
-        <item>hiraVar23</item>
-        <item>hiraVar24</item>
-        <item>hiraVar25</item>
+    <string-array name="kataTodos">
+        <item>katabas1</item>
+        <item>katabas2</item>
+        <item>katabas3</item>
+        <item>katabas4</item>
+        <item>katabas5</item>
+        <item>katabas6</item>
+        <item>katabas7</item>
+        <item>katabas8</item>
+        <item>katabas9</item>
+        <item>katabas10</item>
+        <item>katabas11</item>
+        <item>katabas12</item>
+        <item>katabas13</item>
+        <item>katabas14</item>
+        <item>katabas15</item>
+        <item>katabas16</item>
+        <item>katabas17</item>
+        <item>katabas18</item>
+        <item>katabas19</item>
+        <item>katabas20</item>
+        <item>katabas21</item>
+        <item>katabas22</item>
+        <item>katabas23</item>
+        <item>katabas24</item>
+        <item>katabas25</item>
+        <item>katabas26</item>
+        <item>katabas27</item>
+        <item>katabas28</item>
+        <item>katabas29</item>
+        <item>katabas30</item>
+        <item>katabas31</item>
+        <item>katabas32</item>
+        <item>katabas33</item>
+        <item>katabas34</item>
+        <item>katabas35</item>
+        <item>katabas36</item>
+        <item>katabas37</item>
+        <item>katabas38</item>
+        <item>katabas39</item>
+        <item>katabas40</item>
+        <item>katabas41</item>
+        <item>katabas42</item>
+        <item>katabas43</item>
+        <item>katabas44</item>
+        <item>katabas45</item>
+        <item>katabas46</item>
+        <item>katavar1</item>
+        <item>katavar2</item>
+        <item>katavar3</item>
+        <item>katavar4</item>
+        <item>katavar5</item>
+        <item>katavar6</item>
+        <item>katavar7</item>
+        <item>katavar8</item>
+        <item>katavar9</item>
+        <item>katavar10</item>
+        <item>katavar11</item>
+        <item>katavar12</item>
+        <item>katavar13</item>
+        <item>katavar14</item>
+        <item>katavar15</item>
+        <item>katavar16</item>
+        <item>katavar17</item>
+        <item>katavar18</item>
+        <item>katavar19</item>
+        <item>katavar20</item>
+        <item>katavar21</item>
+        <item>katavar22</item>
+        <item>katavar23</item>
+        <item>katavar24</item>
+        <item>katavar25</item>
+        <item>katajun1</item>
+        <item>katajun2</item>
+        <item>katajun3</item>
+        <item>katajun4</item>
+        <item>katajun5</item>
+        <item>katajun6</item>
+        <item>katajun7</item>
+        <item>katajun8</item>
+        <item>katajun9</item>
+        <item>katajun10</item>
+        <item>katajun11</item>
+        <item>katajun12</item>
+        <item>katajun13</item>
+        <item>katajun14</item>
+        <item>katajun15</item>
+        <item>katajun16</item>
+        <item>katajun17</item>
+        <item>katajun18</item>
+        <item>katajun19</item>
+        <item>katajun20</item>
+        <item>katajun21</item>
+        <item>katajun22</item>
+        <item>katajun23</item>
+        <item>katajun24</item>
+        <item>katajun25</item>
+        <item>katajun26</item>
+        <item>katajun27</item>
+        <item>katajun28</item>
+        <item>katajun29</item>
+        <item>katajun30</item>
+        <item>katajun31</item>
+        <item>katajun32</item>
+        <item>katajun33</item>
+        <item>katajun34</item>
+        <item>katajun35</item>
+        <item>katajun36</item>
     </string-array>
-    <array name="hiraVarImg">
-        <item>@drawable/hira_var1</item>
-        <item>@drawable/hira_var2</item>
-        <item>@drawable/hira_var3</item>
-        <item>@drawable/hira_var4</item>
-        <item>@drawable/hira_var5</item>
-        <item>@drawable/hira_var6</item>
-        <item>@drawable/hira_var7</item>
-        <item>@drawable/hira_var8</item>
-        <item>@drawable/hira_var9</item>
-        <item>@drawable/hira_var10</item>
-        <item>@drawable/hira_var11</item>
-        <item>@drawable/hira_var12</item>
-        <item>@drawable/hira_var13</item>
-        <item>@drawable/hira_var14</item>
-        <item>@drawable/hira_var15</item>
-        <item>@drawable/hira_var16</item>
-        <item>@drawable/hira_var17</item>
-        <item>@drawable/hira_var18</item>
-        <item>@drawable/hira_var19</item>
-        <item>@drawable/hira_var20</item>
-        <item>@drawable/hira_var21</item>
-        <item>@drawable/hira_var22</item>
-        <item>@drawable/hira_var23</item>
-        <item>@drawable/hira_var24</item>
-        <item>@drawable/hira_var25</item>
-    </array>
 
+    <!--Arrays de texto e imagens para as opções da KanaListActivity--><!--.....................................................................-->
 
-    <string-array name="hiraJun">
-        <item>hiraJun1</item>
-        <item>hiraJun2</item>
-        <item>hiraJun3</item>
-        <item>hiraJun4</item>
-        <item>hiraJun5</item>
-        <item>hiraJun6</item>
-        <item>hiraJun7</item>
-        <item>hiraJun8</item>
-        <item>hiraJun9</item>
-        <item>hiraJun10</item>
-        <item>hiraJun11</item>
-        <item>hiraJun12</item>
-        <item>hiraJun13</item>
-        <item>hiraJun14</item>
-        <item>hiraJun15</item>
-        <item>hiraJun16</item>
-        <item>hiraJun17</item>
-        <item>hiraJun18</item>
-        <item>hiraJun19</item>
-        <item>hiraJun20</item>
-        <item>hiraJun21</item>
-        <item>hiraJun22</item>
-        <item>hiraJun23</item>
-        <item>hiraJun24</item>
-        <item>hiraJun25</item>
-        <item>hiraJun26</item>
-        <item>hiraJun27</item>
-        <item>hiraJun28</item>
-        <item>hiraJun29</item>
-        <item>hiraJun30</item>
-        <item>hiraJun31</item>
-        <item>hiraJun32</item>
-        <item>hiraJun33</item>
-        <item>hiraJun34</item>
-        <item>hiraJun35</item>
-        <item>hiraJun36</item>
+    Básicos
+
+    <string-array name="hirabas1">
+        <item>a</item>
+        <item>3</item>
+        <item>hira_bas1</item>
+        <item name="sequenciaHira1">hirabas1_t1,hirabas1_t2,hirabas1_t3</item>
+        <item>Não confundir com お(o) </item>
+        <item>basico</item>
     </string-array>
-    <array name="hiraJunImg">
-        <item>@drawable/hira_jun1</item>
-        <item>@drawable/hira_jun2</item>
-        <item>@drawable/hira_jun3</item>
-        <item>@drawable/hira_jun4</item>
-        <item>@drawable/hira_jun5</item>
-        <item>@drawable/hira_jun6</item>
-        <item>@drawable/hira_jun7</item>
-        <item>@drawable/hira_jun8</item>
-        <item>@drawable/hira_jun9</item>
-        <item>@drawable/hira_jun10</item>
-        <item>@drawable/hira_jun11</item>
-        <item>@drawable/hira_jun12</item>
-        <item>@drawable/hira_jun13</item>
-        <item>@drawable/hira_jun14</item>
-        <item>@drawable/hira_jun15</item>
-        <item>@drawable/hira_jun16</item>
-        <item>@drawable/hira_jun17</item>
-        <item>@drawable/hira_jun18</item>
-        <item>@drawable/hira_jun19</item>
-        <item>@drawable/hira_jun20</item>
-        <item>@drawable/hira_jun21</item>
-        <item>@drawable/hira_jun22</item>
-        <item>@drawable/hira_jun23</item>
-        <item>@drawable/hira_jun24</item>
-        <item>@drawable/hira_jun25</item>
-        <item>@drawable/hira_jun26</item>
-        <item>@drawable/hira_jun27</item>
-        <item>@drawable/hira_jun28</item>
-        <item>@drawable/hira_jun29</item>
-        <item>@drawable/hira_jun30</item>
-        <item>@drawable/hira_jun31</item>
-        <item>@drawable/hira_jun32</item>
-        <item>@drawable/hira_jun33</item>
-        <item>@drawable/hira_jun4</item>
-        <item>@drawable/hira_jun35</item>
-        <item>@drawable/hira_jun36</item>
-    </array>
 
-    <string-array name="kataBasico">
-        <item>kataBasico1</item>
-        <item>kataBasico2</item>
-        <item>kataBasico3</item>
-        <item>kataBasico4</item>
-        <item>kataBasico5</item>
-        <item>kataBasico6</item>
-        <item>kataBasico7</item>
-        <item>kataBasico8</item>
-        <item>kataBasico9</item>
-        <item>kataBasico10</item>
-        <item>kataBasico11</item>
-        <item>kataBasico12</item>
-        <item>kataBasico13</item>
-        <item>kataBasico14</item>
-        <item>kataBasico15</item>
-        <item>kataBasico16</item>
-        <item>kataBasico17</item>
-        <item>kataBasico18</item>
-        <item>kataBasico19</item>
-        <item>kataBasico20</item>
-        <item>kataBasico21</item>
-        <item>kataBasico22</item>
-        <item>kataBasico23</item>
-        <item>kataBasico24</item>
-        <item>kataBasico25</item>
-        <item>kataBasico26</item>
-        <item>kataBasico27</item>
-        <item>kataBasico28</item>
-        <item>kataBasico29</item>
-        <item>kataBasico30</item>
-        <item>kataBasico31</item>
-        <item>kataBasico32</item>
-        <item>kataBasico33</item>
-        <item>kataBasico34</item>
-        <item>kataBasico35</item>
-        <item>kataBasico36</item>
-        <item>kataBasico37</item>
-        <item>kataBasico38</item>
-        <item>kataBasico39</item>
-        <item>kataBasico40</item>
-        <item>kataBasico41</item>
-        <item>kataBasico42</item>
-        <item>kataBasico43</item>
-        <item>kataBasico44</item>
-        <item>kataBasico45</item>
-        <item>kataBasico46</item>
+    <string-array name="hirabas2">
+        <item>i</item>
+        <item>2</item>
+        <item>hira_bas2</item>
+        <item name="sequenciaHira2">hirabas2_t1,hirabas2_t2</item>
+        <item></item>
+        <item>basico</item>
     </string-array>
-    <!--<array name="kataBasicoImg">
-        <item>@drawable/kata_bas1</item>
-        <item>@drawable/kata_bas2</item>
-        <item>@drawable/kata_bas3</item>
-        <item>@drawable/kata_bas4</item>
-        <item>@drawable/kata_bas5</item>
-        <item>@drawable/kata_bas6</item>
-        <item>@drawable/kata_bas7</item>
-        <item>@drawable/kata_bas8</item>
-        <item>@drawable/kata_bas9</item>
-        <item>@drawable/kata_bas10</item>
-        <item>@drawable/kata_bas11</item>
-        <item>@drawable/kata_bas12</item>
-        <item>@drawable/kata_bas13</item>
-        <item>@drawable/kata_bas14</item>
-        <item>@drawable/kata_bas15</item>
-        <item>@drawable/kata_bas16</item>
-        <item>@drawable/kata_bas17</item>
-        <item>@drawable/kata_bas18</item>
-        <item>@drawable/kata_bas19</item>
-        <item>@drawable/kata_bas20</item>
-        <item>@drawable/kata_bas21</item>
-        <item>@drawable/kata_bas22</item>
-        <item>@drawable/kata_bas23</item>
-        <item>@drawable/kata_bas24</item>
-        <item>@drawable/kata_bas25</item>
-        <item>@drawable/kata_bas26</item>
-        <item>@drawable/kata_bas27</item>
-        <item>@drawable/kata_bas28</item>
-        <item>@drawable/kata_bas29</item>
-        <item>@drawable/kata_bas30</item>
-        <item>@drawable/kata_bas31</item>
-        <item>@drawable/kata_bas32</item>
-        <item>@drawable/kata_bas33</item>
-        <item>@drawable/kata_bas34</item>
-        <item>@drawable/kata_bas35</item>
-        <item>@drawable/kata_bas36</item>
-        <item>@drawable/kata_bas37</item>
-        <item>@drawable/kata_bas38</item>
-        <item>@drawable/kata_bas39</item>
-        <item>@drawable/kata_bas40</item>
-        <item>@drawable/kata_bas41</item>
-        <item>@drawable/kata_bas42</item>
-        <item>@drawable/kata_bas43</item>
-        <item>@drawable/kata_bas44</item>
-        <item>@drawable/kata_bas45</item>
-        <item>@drawable/kata_bas46</item>
-    </array>-->
 
-    <string-array name="kataVar">
-        <item>kataVar1</item>
-        <item>kataVar2</item>
-        <item>kataVar3</item>
-        <item>kataVar4</item>
-        <item>kataVar5</item>
-        <item>kataVar6</item>
-        <item>kataVar7</item>
-        <item>kataVar8</item>
-        <item>kataVar9</item>
-        <item>kataVar10</item>
-        <item>kataVar11</item>
-        <item>kataVar12</item>
-        <item>kataVar13</item>
-        <item>kataVar14</item>
-        <item>kataVar15</item>
-        <item>kataVar16</item>
-        <item>kataVar17</item>
-        <item>kataVar18</item>
-        <item>kataVar19</item>
-        <item>kataVar20</item>
-        <item>kataVar21</item>
-        <item>kataVar22</item>
-        <item>kataVar23</item>
-        <item>kataVar24</item>
-        <item>kataVar25</item>
+    <string-array name="hirabas3">
+        <item>u</item>
+        <item>3</item>
+        <item>hira_bas3</item>
+        <item name="sequenciaHira3">hirabas3_t1,hirabas3_t2</item>
+        <item></item>
+        <item>basico</item>
     </string-array>
-    <!--<array name="kataVarImg">
-        <item>@drawable/kata_var1</item>
-        <item>@drawable/kata_var2</item>
-        <item>@drawable/kata_var3</item>
-        <item>@drawable/kata_var4</item>
-        <item>@drawable/kata_var5</item>
-        <item>@drawable/kata_var6</item>
-        <item>@drawable/kata_var7</item>
-        <item>@drawable/kata_var8</item>
-        <item>@drawable/kata_var9</item>
-        <item>@drawable/kata_var10</item>
-        <item>@drawable/kata_var11</item>
-        <item>@drawable/kata_var12</item>
-        <item>@drawable/kata_var13</item>
-        <item>@drawable/kata_var14</item>
-        <item>@drawable/kata_var15</item>
-        <item>@drawable/kata_var16</item>
-        <item>@drawable/kata_var17</item>
-        <item>@drawable/kata_var18</item>
-        <item>@drawable/kata_var19</item>
-        <item>@drawable/kata_var20</item>
-        <item>@drawable/kata_var21</item>
-        <item>@drawable/kata_var22</item>
-        <item>@drawable/kata_var23</item>
-        <item>@drawable/kata_var24</item>
-        <item>@drawable/kata_var25</item>
-    </array>-->
 
-    <string-array name="kataJun">
-        <item>kataJun1</item>
-        <item>kataJun2</item>
-        <item>kataJun3</item>
-        <item>kataJun4</item>
-        <item>kataJun5</item>
-        <item>kataJun6</item>
-        <item>kataJun7</item>
-        <item>kataJun8</item>
-        <item>kataJun9</item>
-        <item>kataJun10</item>
-        <item>kataJun11</item>
-        <item>kataJun12</item>
-        <item>kataJun13</item>
-        <item>kataJun14</item>
-        <item>kataJun15</item>
-        <item>kataJun16</item>
-        <item>kataJun17</item>
-        <item>kataJun18</item>
-        <item>kataJun19</item>
-        <item>kataJun20</item>
-        <item>kataJun21</item>
-        <item>kataJun22</item>
-        <item>kataJun23</item>
-        <item>kataJun24</item>
-        <item>kataJun25</item>
-        <item>kataJun26</item>
-        <item>kataJun27</item>
-        <item>kataJun28</item>
-        <item>kataJun29</item>
-        <item>kataJun30</item>
-        <item>kataJun31</item>
-        <item>kataJun32</item>
-        <item>kataJun33</item>
-        <item>kataJun34</item>
-        <item>kataJun35</item>
-        <item>kataJun36</item>
+    <string-array name="hirabas4">
+        <item>e</item>
+        <item>2</item>
+        <item>hira_bas4</item>
+        <item name="sequenciaHira4">hirabas4_t1,hirabas4_t2</item>
+        <item></item>
+        <item>basico</item>
     </string-array>
-    <!--<array name="kataJunImg">
-        <item>@drawable/kata_jun1</item>
-        <item>@drawable/kata_jun2</item>
-        <item>@drawable/kata_jun3</item>
-        <item>@drawable/kata_jun4</item>
-        <item>@drawable/kata_jun5</item>
-        <item>@drawable/kata_jun6</item>
-        <item>@drawable/kata_jun7</item>
-        <item>@drawable/kata_jun8</item>
-        <item>@drawable/kata_jun9</item>
-        <item>@drawable/kata_jun10</item>
-        <item>@drawable/kata_jun11</item>
-        <item>@drawable/kata_jun12</item>
-        <item>@drawable/kata_jun13</item>
-        <item>@drawable/kata_jun14</item>
-        <item>@drawable/kata_jun15</item>
-        <item>@drawable/kata_jun16</item>
-        <item>@drawable/kata_jun17</item>
-        <item>@drawable/kata_jun18</item>
-        <item>@drawable/kata_jun19</item>
-        <item>@drawable/kata_jun20</item>
-        <item>@drawable/kata_jun21</item>
-        <item>@drawable/kata_jun22</item>
-        <item>@drawable/kata_jun23</item>
-        <item>@drawable/kata_jun24</item>
-        <item>@drawable/kata_jun25</item>
-        <item>@drawable/kata_jun26</item>
-        <item>@drawable/kata_jun27</item>
-        <item>@drawable/kata_jun28</item>
-        <item>@drawable/kata_jun29</item>
-        <item>@drawable/kata_jun30</item>
-        <item>@drawable/kata_jun31</item>
-        <item>@drawable/kata_jun32</item>
-        <item>@drawable/kata_jun33</item>
-        <item>@drawable/kata_jun34</item>
-        <item>@drawable/kata_jun35</item>
-        <item>@drawable/kata_jun36</item>
-    </array>-->
+
+    <string-array name="hirabas5">
+        <item>o</item>
+        <item>3</item>
+        <item>hira_bas5</item>
+        <item name="sequenciaHira5">hirabas5_t1,hirabas5_t2,hirabas5_t3</item>
+        <item>Não confundir com あ(a)</item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas6">
+        <item>ka</item>
+        <item>3</item>
+        <item>hira_bas6</item>
+        <item name="sequenciaHira6">hirabas6_t1,hirabas6_t2,hirabas6_t3</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas7">
+        <item>ki</item>
+        <item>4</item>
+        <item>hira_bas7</item>
+        <item name="sequenciaHira7">hirabas7_t1,hirabas7_t2,hirabas7_t3,hirabas7_t4</item>
+        <item>Também pode ser escrito desta forma: き</item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas8">
+        <item>ku</item>
+        <item>1</item>
+        <item>hira_bas8</item>
+        <item name="sequenciaHira8">hirabas8_t1</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas9">
+        <item>ke</item>
+        <item>3</item>
+        <item>hira_bas9</item>
+        <item name="sequenciaHira9">hirabas9_t1,hirabas9_t2,hirabas9_t3</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas10">
+        <item>ko</item>
+        <item>2</item>
+        <item>hira_bas10</item>
+        <item name="sequenciaHira10">hirabas10_t1,hirabas10_t2</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas11">
+        <item>sa</item>
+        <item>3</item>
+        <item>hira_bas4</item>
+        <item name="sequenciaHira11">hirabas11_t1,hirabas11_t2,hirabas11_t3</item>
+        <item>Também pode ser escrito desta forma: さ</item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas12">
+        <item>shi</item>
+        <item>1</item>
+        <item>hira_bas12</item>
+        <item name="sequenciaHira12">hirabas12_t1</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas13">
+        <item>su</item>
+        <item>2</item>
+        <item>hira_bas13</item>
+        <item name="sequenciaHira13">hirabas13_t1,hirabas13_t2</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas14">
+        <item>se</item>
+        <item>3</item>
+        <item>hira_bas14</item>
+        <item name="sequenciaHira14">hirabas14_t1,hirabas14_t2,hirabas14_t3</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas15">
+        <item>so</item>
+        <item>1</item>
+        <item>hira_bas15</item>
+        <item name="sequenciaHira15">hirabas15_t1</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas16">
+        <item>ta</item>
+        <item>4</item>
+        <item>hira_bas16</item>
+        <item name="sequenciaHira16">hirabas16_t1,hirabas16_t2,hirabas16_t3,hirabas16_t4</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas17">
+        <item>chi</item>
+        <item>2</item>
+        <item>hira_bas17</item>
+        <item name="sequenciaHira17">hirabas17_t1,hirabas17_t2</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas18">
+        <item>tsu</item>
+        <item>1</item>
+        <item>hira_bas18</item>
+        <item name="sequenciaHira18">hirabas18_t1</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas19">
+        <item>te</item>
+        <item>1</item>
+        <item>hira_bas19</item>
+        <item name="sequenciaHira19">hirabas19_t1</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas20">
+        <item>to</item>
+        <item>2</item>
+        <item>hira_bas20</item>
+        <item name="sequenciaHira20">hirabas20_t1,hirabas20_t2</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas21">
+        <item>na</item>
+        <item>4</item>
+        <item>hira_bas21</item>
+        <item name="sequenciaHira21">hirabas21_t1,hirabas21_t2,hirabas21_t3,hirabas21_t4</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas22">
+        <item>ni</item>
+        <item>3</item>
+        <item>hira_bas22</item>
+        <item name="sequenciaHira22">hirabas22_t1,hirabas22_t2,hirabas22_t3</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas23">
+        <item>nu</item>
+        <item>2</item>
+        <item>hira_bas23</item>
+        <item name="sequenciaHira23">hirabas23_t1,hirabas23_t2</item>
+        <item>Não confundir com め(me)</item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas24">
+        <item>ne</item>
+        <item>2</item>
+        <item>hira_bas24</item>
+        <item name="sequenciaHira24">hirabas24_t1,hirabas24_t2</item>
+        <item>Não confundir com れ(re) e わ(wa)</item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas25">
+        <item>no</item>
+        <item>1</item>
+        <item>hira_bas25</item>
+        <item name="sequenciaHira25">hirabas25_t1</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas26">
+        <item>ha</item>
+        <item>3</item>
+        <item>hira_bas26</item>
+        <item name="sequenciaHira26">hirabas26_t1,hirabas26_t2,hirabas26_t3</item>
+        <item>Não confundir com ほ(ho)</item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas27">
+        <item>hi</item>
+        <item>1</item>
+        <item>hira_bas27</item>
+        <item name="sequenciaHira27">hirabas27_t1</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas28">
+        <item>fu</item>
+        <item>4</item>
+        <item>hira_bas28</item>
+        <item name="sequenciaHira28">hirabas28_t1,hirabas28_t2,hirabas28_t3,hirabas28_t4</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas29">
+        <item>he</item>
+        <item>1</item>
+        <item>hira_bas29</item>
+        <item name="sequenciaHira29">hirabas29_t1</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas30">
+        <item>ho</item>
+        <item>4</item>
+        <item>hira_bas30</item>
+        <item name="sequenciaHira30">hirabas30_t1,hirabas30_t2,hirabas30_t3,hirabas30_t4</item>
+        <item>Não confundir com は(ha)</item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas31">
+        <item>ma</item>
+        <item>3</item>
+        <item>hira_bas31</item>
+        <item name="sequenciaHira31">hirabas31_t1,hirabas31_t2,hirabas31_t3</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas32">
+        <item>mi</item>
+        <item>2</item>
+        <item>hira_bas32</item>
+        <item name="sequenciaHira32">hirabas32_t1,hirabas32_t2</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas33">
+        <item>mu</item>
+        <item>3</item>
+        <item>hira_bas33</item>
+        <item name="sequenciaHira33">hirabas33_t1,hirabas33_t2,hirabas33_t3</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas34">
+        <item>me</item>
+        <item>2</item>
+        <item>hira_bas34</item>
+        <item name="sequenciaHira34">hirabas34_t1,hirabas34_t2</item>
+        <item>Não confundir com ぬ(nu)</item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas35">
+        <item>mo</item>
+        <item>3</item>
+        <item>hira_bas35</item>
+        <item name="sequenciaHira35">hirabas35_t1,hirabas35_t2,hirabas35_t3</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas36">
+        <item>ya</item>
+        <item>3</item>
+        <item>hira_bas36</item>
+        <item name="sequenciaHira36">hirabas36_t1,hirabas36_t2,hirabas36_t3</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas37">
+        <item>yu</item>
+        <item>2</item>
+        <item>hira_bas37</item>
+        <item name="sequenciaHira37">hirabas37_t1,hirabas37_t2</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas38">
+        <item>yo</item>
+        <item>2</item>
+        <item>hira_bas38</item>
+        <item name="sequenciaHira38">hirabas38_t1,hirabas38_t2</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas39">
+        <item>ra</item>
+        <item>2</item>
+        <item>hira_bas39</item>
+        <item name="sequenciaHira39">hirabas39_t1,hirabas39_t2</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas40">
+        <item>ri</item>
+        <item>2</item>
+        <item>hira_bas40</item>
+        <item name="sequenciaHira40">hirabas40_t1,hirabas40_t2</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas41">
+        <item>ru</item>
+        <item>1</item>
+        <item>hira_bas41</item>
+        <item name="sequenciaHira41">hirabas41_t1</item>
+        <item>Não confundir com ろ(ro)</item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas42">
+        <item>re</item>
+        <item>2</item>
+        <item>hira_bas42</item>
+        <item name="sequenciaHira42">hirabas42_t1,hirabas42_t2</item>
+        <item>Não confundir com わ(wa) e ね(ne)</item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas43">
+        <item>ro</item>
+        <item>1</item>
+        <item>hira_bas43</item>
+        <item name="sequenciaHira43">hirabas43_t1</item>
+        <item>Não confundir com る(ru)</item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas44">
+        <item>wa</item>
+        <item>2</item>
+        <item>hira_bas44</item>
+        <item name="sequenciaHira44">hirabas44_t1,hirabas44_t2</item>
+        <item>Não confundir com ね(ne) e れ(re)</item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas45">
+        <item>wo</item>
+        <item>3</item>
+        <item>hira_bas45</item>
+        <item name="sequenciaHira45">hirabas45_t1,hirabas45_t2,hirabas45_t3</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirabas46">
+        <item>n</item>
+        <item>1</item>
+        <item>hira_bas46</item>
+        <item name="sequenciaHira46">hirabas46_t1</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    Variáveis
+
+    <string-array name="hiravar1">
+        <item>ga</item>
+        <item>5</item>
+        <item>hira_var1</item>
+        <item>hirabas6_t1,hirabas6_t2,hirabas6_t3,hiravar1_t4,hiravar1_t5</item>
+        <item></item>
+        <item>variavel</item>
+    </string-array>
+
+    <string-array name="hiravar2">
+        <item>gi</item>
+        <item>6</item>
+        <item>hira_var2</item>
+        <item>hirabas7_t1,hirabas7_t2,hirabas7_t3,hirabas7_t4,hiravar2_t5,hiravar2_t6)</item>
+        <item>Também pode ser escrito desta forma: ぎ</item>
+        <item>variavel</item>
+    </string-array>
+
+    <string-array name="hiravar3">
+        <item>gu</item>
+        <item>3</item>
+        <item>hira_var3</item>
+        <item>hirabas8_t1,hiravar3_t2,hiravar3_t3</item>
+        <item></item>
+        <item>variavel</item>
+    </string-array>
+
+    <string-array name="hiravar4">
+        <item>ge</item>
+        <item>5</item>
+        <item>hira_var4</item>
+        <item>hirabas9_t1,hirabas9_t2,hirabas9_t3,hiravar4_t4,hiravar4_t5</item>
+        <item></item>
+        <item>variavel</item>
+    </string-array>
+
+    <string-array name="hiravar5">
+        <item>go</item>
+        <item>4</item>
+        <item>hira_var5</item>
+        <item>hirabas10_t1,hirabas10_t2,hiravar5_t3,hiravar5_t4</item>
+        <item></item>
+        <item>variavel</item>
+    </string-array>
+
+    <string-array name="hiravar6">
+        <item>za</item>
+        <item>5</item>
+        <item>hira_var6</item>
+        <item>hirabas11_t1,hirabas11_t2,hirabas11_t3,hiravar6_t4,hiravar6_t5</item>
+        <item>Também pode ser escrito desta forma: ざ</item>
+        <item>variavel</item>
+    </string-array>
+
+    <string-array name="hiravar7">
+        <item>ji</item>
+        <item>3</item>
+        <item>hira_var7</item>
+        <item>hirabas12_t1,hiravar7_t2,hiravar7_t3</item>
+        <item></item>
+        <item>variavel</item>
+    </string-array>
+
+    <string-array name="hiravar8">
+        <item>zu</item>
+        <item>4</item>
+        <item>hira_var8</item>
+        <item>hirabas13_t1,hirabas13_t2,hiravar8_t3,hiravar8_t4</item>
+        <item></item>
+        <item>variavel</item>
+    </string-array>
+
+    <string-array name="hiravar9">
+        <item>ze</item>
+        <item>5</item>
+        <item>hira_var9</item>
+        <item>hirabas14_t1,hirabas14_t2,hirabas14_t3,hiravar9_t4,hiravar9_t5</item>
+        <item></item>
+        <item>variavel</item>
+    </string-array>
+
+    <string-array name="hiravar10">
+        <item>zo</item>
+        <item>3</item>
+        <item>hira_var10</item>
+        <item>hirabas15_t1,hiravar10_t2,hiravar10_t3</item>
+        <item></item>
+        <item>basvariavelico</item>
+    </string-array>
+
+    <string-array name="hiravar11">
+        <item>da</item>
+        <item>6</item>
+        <item>hira_var11</item>
+        <item>hirabas16_t1,hirabas16_t2,hirabas16_t3,hirabas16_t4,hiravar11_t5,hiravar11_t6</item>
+        <item></item>
+        <item>variavel</item>
+    </string-array>
+
+    <string-array name="hiravar12">
+        <item>ji</item>
+        <item>4</item>
+        <item>hira_var12</item>
+        <item>hirabas17_t1,hirabas17_t2,hiravar12_t4</item>
+        <item></item>
+        <item>variavel</item>
+    </string-array>
+
+    <string-array name="hiravar13">
+        <item>zu</item>
+        <item>3</item>
+        <item>hira_var13</item>
+        <item>hirabas18_t1,hiravar13_t2,hiravar13_t3</item>
+        <item></item>
+        <item>variavel</item>
+    </string-array>
+
+    <string-array name="hiravar14">
+        <item>de</item>
+        <item>3</item>
+        <item>hira_var14</item>
+        <item>hirabas19_t1,hiravar14_t2,hiravar14_t3</item>
+        <item></item>
+        <item>variavel</item>
+    </string-array>
+
+    <string-array name="hiravar15">
+        <item>do</item>
+        <item>4</item>
+        <item>hira_var15</item>
+        <item>hirabas20_t1,hirabas20_t2,hiravar15_t3,hiravar15_t4</item>
+        <item></item>
+        <item>variavel</item>
+    </string-array>
+
+    <string-array name="hiravar16">
+        <item>ba</item>
+        <item>5</item>
+        <item>hira_var16</item>
+        <item>hirabas26_t1,hirabas26_t2,hirabas26_t3,hiravar16_t4,hiravar16_t5</item>
+        <item>Não confundir com ぼ(bo)</item>
+        <item>variavel</item>
+    </string-array>
+
+    <string-array name="hiravar17">
+        <item>bi</item>
+        <item>3</item>
+        <item>hira_var17</item>
+        <item>hirabas27_t1,hiravar17_t2,hiravar17_t3</item>
+        <item></item>
+        <item>variavel</item>
+    </string-array>
+
+    <string-array name="hiravar18">
+        <item>bu</item>
+        <item>6</item>
+        <item>hira_var18</item>
+        <item>hirabas28_t1,hirabas28_t2,hirabas28_t3,hirabas28_t4,hiravar18_t5,hiravar18_t6</item>
+        <item></item>
+        <item>bavariavelsico</item>
+    </string-array>
+
+    <string-array name="hiravar19">
+        <item>be</item>
+        <item>3</item>
+        <item>hira_var19</item>
+        <item>hirabas29_t1,hiravar19_t2,hiravar19_t3</item>
+        <item></item>
+        <item>variavel</item>
+    </string-array>
+
+    <string-array name="hiravar20">
+        <item>bo</item>
+        <item>6</item>
+        <item>hira_var20</item>
+        <item>hirabas30_t1,hirabas30_t2,hirabas30_t3,hirabas30_t4,hiravar20_t5,hiravar20_t6</item>
+        <item>Não confundir com ば(ba)</item>
+        <item>variavel</item>
+    </string-array>
+
+    <string-array name="hiravar21">
+        <item>pa</item>
+        <item>4</item>
+        <item>hira_var21</item>
+        <item>hirabas26_t1,hirabas26_t2,hirabas26_t3,hiravar21_t4</item>
+        <item>Não confundir com ぽ(po)</item>
+        <item>variavel</item>
+    </string-array>
+
+    <string-array name="hiravar22">
+        <item>pi</item>
+        <item>2</item>
+        <item>hira_var22</item>
+        <item>hirabas27_t1,hiravar22_t2</item>
+        <item></item>
+        <item>variavel</item>
+    </string-array>
+
+    <string-array name="hiravar23">
+        <item>pu</item>
+        <item>5</item>
+        <item>hira_var23</item>
+        <item>hirabas28_t1,hirabas28_t2,hirabas28_t3,hirabas28_t4,hiravar23_t5</item>
+        <item></item>
+        <item>variavel</item>
+    </string-array>
+
+    <string-array name="hiravar24">
+        <item>pe</item>
+        <item>2</item>
+        <item>hira_var24</item>
+        <item>hirabas29_t1,hiravar24_t2</item>
+        <item></item>
+        <item>variavel</item>
+    </string-array>
+
+    <string-array name="hiravar25">
+        <item>po</item>
+        <item>5</item>
+        <item>hira_var25</item>
+        <item>hirabas30_t1,hirabas30_t2,hirabas30_t3,hirabas30_t4,hiravar25_t5</item>
+        <item>Não confundir com ぱ(pa)</item>
+        <item>variavel</item>
+    </string-array>
+
+    Junções
+
+    <string-array name="hirajun1">
+        <item>kya</item>
+        <item>7</item>
+        <item>hira_jun1</item>
+        <item>hirabas7_t1,hirabas7_t2,hirabas7_t3,hirabas7_t4,hirabas36_t1,hirabas36_t2,hirabas36_t3</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun2">
+        <item>kyu</item>
+        <item>6</item>
+        <item>hira_jun2</item>
+        <item>hirabas7_t1,hirabas7_t2,hirabas7_t3,hirabas7_t4,hirabas37_t1,hirabas37_t2</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun3">
+        <item>kyo</item>
+        <item>5</item>
+        <item>hira_jun3</item>
+        <item>hirabas7_t1,hirabas7_t2,hirabas7_t3,hirabas38_t1,hirabas38_t2</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun4">
+        <item>gya</item>
+        <item>9</item>
+        <item>hira_jun4</item>
+        <item>hirabas7_t1,hirabas7_t2,hirabas7_t3,hirabas7_t4),hiravar2_t5(bas7),hiravar2_t6(bas7),hirabas36_t1,hirabas36_t2,hirabas36_t3</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun5">
+        <item>gyu</item>
+        <item>8</item>
+        <item>hira_jun5</item>
+        <item>hirabas7_t1,hirabas7_t2,hirabas7_t3,hirabas7_t4),hiravar2_t5(bas7),hiravar2_t6(bas7),hirabas37_t1,hirabas37_t2</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun6">
+        <item>gyo</item>
+        <item>8</item>
+        <item>hira_jun6</item>
+        <item>hirabas7_t1,hirabas7_t2,hirabas7_t3,hirabas7_t4),hiravar2_t5(bas7),hiravar2_t6(bas7),hirabas38_t1,hirabas38_t2</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun7">
+        <item>sha</item>
+        <item>4</item>
+        <item>hira_jun7</item>
+        <item>hirabas12_t1,hirabas36_t1,hirabas36_t2,hirabas36_t3</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="hirajun8">
+        <item>shu</item>
+        <item>3</item>
+        <item>hira_jun8</item>
+        <item>hirabas12_t1,hirabas37_t1,hirabas37_t2</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun9">
+        <item>sho</item>
+        <item>3</item>
+        <item>hira_jun9</item>
+        <item>hirabas12_t1,hirabas38_t1,hirabas38_t2</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun10">
+        <item>ja</item>
+        <item>6</item>
+        <item>hira_jun10</item>
+        <item>hirabas12_t1,hiravar7_t2(bas12),hiravar7_t3(bas12),hirabas36_t1,hirabas36_t2,hirabas36_t3</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun11">
+        <item>ju</item>
+        <item>5</item>
+        <item>hira_jun11</item>
+        <item>hirabas12_t1,hiravar7_t2(bas12),hiravar7_t3(bas12),hirabas37_t1,hirabas37_t2</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun12">
+        <item>jo</item>
+        <item>5</item>
+        <item>hira_jun12</item>
+        <item>hirabas12_t1,hiravar7_t2(bas12),hiravar7_t3(bas12),hirabas38_t1,hirabas38_t2</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun13">
+        <item>cha</item>
+        <item>5</item>
+        <item>hira_jun13</item>
+        <item>hirabas17_t1,hirabas17_t2,hirabas36_t1,hirabas36_t2,hirabas36_t3</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun14">
+        <item>chu</item>
+        <item>4</item>
+        <item>hira_jun14</item>
+        <item>hirabas17_t1,hirabas17_t2,hirabas37_t1,hirabas37_t2</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun15">
+        <item>cho</item>
+        <item>4</item>
+        <item>hira_jun15</item>
+        <item>hirabas17_t1,hirabas17_t2,hirabas38_t1,hirabas38_t2</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun16">
+        <item>ja</item>
+        <item>6</item>
+        <item>hira_jun16</item>
+        <item>hirabas17_t1,hirabas17_t2,hiravar12_t4,hirabas36_t1,hirabas36_t2,hirabas36_t3</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun17">
+        <item>ju</item>
+        <item>5</item>
+        <item>hira_jun17</item>
+        <item>hirabas17_t1,hirabas17_t2,hiravar12_t4,hirabas37_t1,hirabas37_t2</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun18">
+        <item>jo</item>
+        <item>5</item>
+        <item>hira_jun18</item>
+        <item>hirabas17_t1,hirabas17_t2,hiravar12_t4,hirabas38_t1,hirabas38_t2</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun19">
+        <item>nya</item>
+        <item>6</item>
+        <item>hira_jun19</item>
+        <item>hirabas22_t1,hirabas22_t2,hirabas22_t3,hirabas36_t1,hirabas36_t2,hirabas36_t3</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun20">
+        <item>nyu</item>
+        <item>5</item>
+        <item>hira_jun20</item>
+        <item>hirabas22_t1,hirabas22_t2,hirabas22_t3,hirabas37_t1,hirabas37_t2</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun21">
+        <item>nyo</item>
+        <item>5</item>
+        <item>hira_jun21</item>
+        <item>hirabas22_t1,hirabas22_t2,hirabas22_t3,hirabas38_t1,hirabas38_t2</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun22">
+        <item>hya</item>
+        <item>4</item>
+        <item>hira_jun22</item>
+        <item>hirabas27_t1,hirabas36_t1,hirabas36_t2,hirabas36_t3</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun23">
+        <item>hyu</item>
+        <item>3</item>
+        <item>hira_jun23</item>
+        <item>hirabas27_t1,hirabas37_t1,hirabas37_t2</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun24">
+        <item>hyo</item>
+        <item>3</item>
+        <item>hira_jun24</item>
+        <item>hirabas27_t1,hirabas38_t1,hirabas38_t2</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun25">
+        <item>bya</item>
+        <item>6</item>
+        <item>hira_jun25</item>
+        <item>hirabas27_t1,hiravar17_t2,hiravar17_t3,hirabas36_t1,hirabas36_t2,hirabas36_t3</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun26">
+        <item>byu</item>
+        <item>5</item>
+        <item>hira_jun26</item>
+        <item>hirabas27_t1,hiravar17_t2,hiravar17_t3,hirabas37_t1,hirabas37_t2</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun27">
+        <item>byo</item>
+        <item>5</item>
+        <item>hira_jun27</item>
+        <item>hirabas27_t1,hiravar17_t2,hiravar17_t3,hirabas38_t1,hirabas38_t2</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun28">
+        <item>pya</item>
+        <item>5</item>
+        <item>hira_jun28</item>
+        <item>hirabas27_t1,hiravar22_t2,hirabas36_t1,hirabas36_t2,hirabas36_t3</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun29">
+        <item>pyu</item>
+        <item>4</item>
+        <item>hira_jun29</item>
+        <item>hirabas27_t1,hiravar22_t2,hirabas37_t1,hirabas37_t2</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun30">
+        <item>pyo</item>
+        <item>4</item>
+        <item>hira_jun30</item>
+        <item>hirabas27_t1,hiravar22_t2,hirabas38_t1,hirabas38_t2</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun31">
+        <item>mya</item>
+        <item>5</item>
+        <item>hira_jun31</item>
+        <item>hirabas32_t1,hirabas32_t2,hirabas36_t1,hirabas36_t2,hirabas36_t3</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun32">
+        <item>myu</item>
+        <item>4</item>
+        <item>hira_jun32</item>
+        <item>hirabas32_t1,hirabas32_t2,hirabas37_t1,hirabas37_t2</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun33">
+        <item>myo</item>
+        <item>4</item>
+        <item>hira_jun33</item>
+        <item>hirabas32_t1,hirabas32_t2,hirabas38_t1,hirabas38_t2</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun34">
+        <item>rya</item>
+        <item>5</item>
+        <item>hira_jun34</item>
+        <item>hirabas40_t1,hirabas40_t2,hirabas36_t1,hirabas36_t2,hirabas36_t3</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun35">
+        <item>ryu</item>
+        <item>4</item>
+        <item>hira_jun35</item>
+        <item>hirabas40_t1,hirabas40_t2,hirabas37_t1,hirabas37_t2</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    <string-array name="hirajun36">
+        <item>ryo</item>
+        <item>4</item>
+        <item>hira_jun36</item>
+        <item>hirabas40_t1,hirabas40_t2,hirabas38_t1,hirabas38_t2</item>
+        <item></item>
+        <item>juncao</item>
+    </string-array>
+
+    Katakana
+    Básicos
+
+    <string-array name="katabas1">
+        <item>a</item>
+        <item><item></item></item>
+        <item>kata_bas1</item>
+        <item name="sequenciaKata1">katabas1_t1,katabas1_t2</item>
+        <item>Não confundir com マ(ma) </item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas2">
+        <item>i</item>
+        <item>2</item>
+        <item>kata_bas2</item>
+        <item name="sequenciaKata2">katabas2_t1,katabas2_t2</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas3">
+        <item>u</item>
+        <item>3</item>
+        <item>kata_bas3</item>
+        <item name="sequenciaKata3">katabas3_t1,katabas3_t2,katabas3_t3</item>
+        <item>Não confundir com ワ(wa)</item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas4">
+        <item>e</item>
+        <item>3</item>
+        <item>kata_bas4</item>
+        <item name="sequenciaKata4">katabas4_t1,katabas4_t2,katabas4_t3</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas5">
+        <item>o</item>
+        <item>3</item>
+        <item>kata_bas5</item>
+        <item name="sequenciaKata5">katabas5_t1,katabas5_t2,katabas5_t3</item>
+        <item>Não confundir com あ(a)</item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas6">
+        <item>ka</item>
+        <item>2</item>
+        <item>kata_bas6</item>
+        <item name="sequenciaKata6">katabas6_t1,katabas6_t2</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas7">
+        <item>ki</item>
+        <item>3</item>
+        <item>kata_bas7</item>
+        <item name="sequenciaKata7">katabas7_t1,katabas7_t2,katabas7_t3</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas8">
+        <item>ku</item>
+        <item>2</item>
+        <item>kata_bas8</item>
+        <item name="sequenciaKata8">katabas8_t1,katabas8_t2</item>
+        <item>Não confundir com タ(ta) e ケ(ke)</item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas9">
+        <item>ke</item>
+        <item>3</item>
+        <item>kata_bas9</item>
+        <item name="sequenciaKata9">katabas9_t1,katabas9_t2,katabas9_t3</item>
+        <item>Não confundir com ク(ku)</item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas10">
+        <item>ko</item>
+        <item>2</item>
+        <item>kata_bas10</item>
+        <item name="sequenciaKata10">katabas10_t1,katabas10_t2</item>
+        <item>Não confundir com ユ(yu)</item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas11">
+        <item>sa</item>
+        <item>3</item>
+        <item>kata_bas4</item>
+        <item name="sequenciaKata11">katabas11_t1,katabas11_t2,katabas11_t3</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas12">
+        <item>shi</item>
+        <item>3</item>
+        <item>kata_bas12</item>
+        <item name="sequenciaKata12">katabas12_t1,katabas12_t2,katabas12_t3</item>
+        <item>Não confundir com ツ(tsu)</item>
+        <item>basico</item>
+    </string-array>
+
+
+    <string-array name="katabas13">
+        <item>su</item>
+        <item>2</item>
+        <item>kata_bas13</item>
+        <item name="sequenciaKata13">katabas13_t1,katabas13_t2</item>
+        <item>Não confunda com ヌ(nu)</item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas14">
+        <item>se</item>
+        <item>2</item>
+        <item>kata_bas14</item>
+        <item name="sequenciaKata14">katabas14_t1,katabas14_t2</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas15">
+        <item>so</item>
+        <item>2</item>
+        <item>kata_bas15</item>
+        <item name="sequenciaKata15">katabas15_t1,katabas15_t2</item>
+        <item>Não confundir com ン(n)</item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas16">
+        <item>ta</item>
+        <item>3</item>
+        <item>kata_bas16</item>
+        <item name="sequenciaKata16">katabas16_t1,katabas16_t2,katabas16_t3</item>
+        <item>Não confundir com ク(ku)</item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas17">
+        <item>chi</item>
+        <item>3</item>
+        <item>kata_bas17</item>
+        <item name="sequenciaKata17">katabas17_t1,katabas17_t2,katabas17_t3</item>
+        <item>Não confundir com o Kanji 千(sen)</item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas18">
+        <item>tsu</item>
+        <item>3</item>
+        <item>kata_bas18</item>
+        <item name="sequenciaKata18">katabas18_t1,katabas18_t2,katabas18_t3</item>
+        <item>Não confundir com シ(shi)</item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas19">
+        <item>te</item>
+        <item>3</item>
+        <item>kata_bas19</item>
+        <item name="sequenciaKata19">katabas19_t1,katabas19_t2,katabas19_t3</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas20">
+        <item>to</item>
+        <item>2</item>
+        <item>kata_bas20</item>
+        <item name="sequenciaKata20">katabas20_t1,katabas20_t2</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas21">
+        <item>na</item>
+        <item>2</item>
+        <item>kata_bas21</item>
+        <item name="sequenciaKata21">katabas21_t1,katabas21_t2</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas22">
+        <item>ni</item>
+        <item>2</item>
+        <item>kata_bas22</item>
+        <item name="sequenciaKata22">katabas22_t1,katabas22_t2</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas23">
+        <item>nu</item>
+        <item>2</item>
+        <item>kata_bas23</item>
+        <item name="sequenciaKata23">katabas23_t1,katabas23_t2</item>
+        <item>Não confundir com ス(su)</item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas24">
+        <item>ne</item>
+        <item>4</item>
+        <item>kata_bas24</item>
+        <item name="sequenciaKata24">katabas24_t1,katabas24_t2,katabas24_t3,katabas24_t4</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas25">
+        <item>no</item>
+        <item>1</item>
+        <item>kata_bas25</item>
+        <item name="sequenciaKata25">katabas25_t1</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas26">
+        <item>ha</item>
+        <item>2</item>
+        <item>kata_bas26</item>
+        <item name="sequenciaKata26">katabas26_t1,katabas26_t2</item>
+        <item>Não confundir com o Kanji 八(oito)</item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas27">
+        <item>hi</item>
+        <item>2</item>
+        <item>kata_bas27</item>
+        <item name="sequenciaKata27">katabas27_t1,katabas27_t2</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas28">
+        <item>fu</item>
+        <item>1</item>
+        <item>kata_bas28</item>
+        <item name="sequenciaKata28">katabas28_t1</item>
+        <item>Não confundir com ワ(wa)</item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas29">
+        <item>he</item>
+        <item>1</item>
+        <item>kata_bas29</item>
+        <item name="sequenciaKata29">katabas29_t1</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas30">
+        <item>ho</item>
+        <item>4</item>
+        <item>kata_bas30</item>
+        <item name="sequenciaKata30">katabas30_t1,katabas30_t2,katabas30_t3,katabas30_t4</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas31">
+        <item>ma</item>
+        <item>2</item>
+        <item>kata_bas31</item>
+        <item name="sequenciaKata31">katabas31_t1,katabas31_t2</item>
+        <item>Não confundir com ア(a)</item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas32">
+        <item>mi</item>
+        <item>3</item>
+        <item>kata_bas32</item>
+        <item name="sequenciaKata32">katabas32_t1,katabas32_t2,katabas32_t3</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas33">
+        <item>mu</item>
+        <item>2</item>
+        <item>kata_bas33</item>
+        <item name="sequenciaKata33">katabas33_t1,katabas33_t2</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas34">
+        <item>me</item>
+        <item>2</item>
+        <item>hira_bas34</item>
+        <item name="sequenciaKata34">katabas34_t1,katabas34_t2</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas35">
+        <item>mo</item>
+        <item>3</item>
+        <item>kata_bas35</item>
+        <item name="sequenciaKata35">katabas35_t1,katabas35_t2,katabas35_t3</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas36">
+        <item>ya</item>
+        <item>2</item>
+        <item>kata_bas36</item>
+        <item name="sequenciaKata36">katabas36_t1,katabas36_t2</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas37">
+        <item>yu</item>
+        <item>2</item>
+        <item>kata_bas37</item>
+        <item name="sequenciaKata37">katabas37_t1,katabas37_t2</item>
+        <item>Não confundir com コ(ko)</item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas38">
+        <item>yo</item>
+        <item>3</item>
+        <item>kata_bas38</item>
+        <item name="sequenciaKata38">katabas38_t1,katabas38_t2,katabas38_t3</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas39">
+        <item>ra</item>
+        <item>2</item>
+        <item>kata_bas39</item>
+        <item name="sequenciaKata39">katabas39_t1,katabas39_t2</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas40">
+        <item>ri</item>
+        <item>2</item>
+        <item>kata_bas40</item>
+        <item name="sequenciaKata40">katabas40_t1,katabas40_t2</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas41">
+        <item>ru</item>
+        <item>2</item>
+        <item>kata_bas41</item>
+        <item name="sequenciaKata41">katabas41_t1,katabas41_t2</item>
+        <item>Não confundir com ろ(ro)</item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas42">
+        <item>re</item>
+        <item>1</item>
+        <item>kata_bas42</item>
+        <item name="sequenciaKata42">katabas42_t1</item>
+        <item>Não confundir com わ(wa) e ね(ne)</item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas43">
+        <item>ro</item>
+        <item>3</item>
+        <item>kata_bas43</item>
+        <item name="sequenciaKata43">katabas43_t1,katabas43_t2,katabas43_t3</item>
+        <item>Não confundir com る(ru)</item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas44">
+        <item>wa</item>
+        <item>2</item>
+        <item>kata_bas44</item>
+        <item name="sequenciaKata44">katabas44_t1,katabas44_t2</item>
+        <item>Não confundir com ウ(u) e フ(fu)</item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas45">
+        <item>wo</item>
+        <item>3</item>
+        <item>kata_bas45</item>
+        <item name="sequenciaKata45">katabas45_t1,katabas45_t2,katabas45_t3</item>
+        <item></item>
+        <item>basico</item>
+    </string-array>
+
+    <string-array name="katabas46">
+        <item>n</item>
+        <item>2</item>
+        <item>kata_bas46</item>
+        <item name="sequenciaKata46">katabas46_t1,katabas46_t2</item>
+        <item>Não confundir com ソ(so)</item>
+        <item>basico</item>
+    </string-array>
+
+    Variáveis
+
+    <string-array name="katavar1">
+        <item>ga</item>
+        <item>4</item>
+        <item>kata_var1</item>
+        <item>katavar1_t1,katavar1_t2,katavar1_t3,katavar1_t4</item>
+        <item>Não confundir com o hiragana か(ka)</item>
+        <item>variavel</item>
+    </string-array>
+
+    <string-array name="katavar2">
+        <item>gi</item>
+        <item>5</item>
+        <item>kata_var2</item>
+        <item>katavar2_t1,katavar2_t2,katavar2_t3,katavar2_t4,katavar2_t5</item>
+        <item></item>
+        <item>variavel</item>
+    </string-array>
+
+    <string-array name="katavar3">
+        <item>gu</item>
+        <item>3</item>
+        <item>kata_var3</item>
+        <item>katavar3_t1,katavar3_t2,katavar3_t3</item>
+        <item>Não confundir com ダ(da) e ゲ(ge)</item>
+        <item>variavel</item>
+    </string-array>
+
+    <string-array name="katavar4">
+        <item>ge</item>
+        <item>5</item>
+        <item>kata_var4</item>
+        <item>katavar4_t1,katavar4_t2,katavar4_t3,katavar4_t4,katavar4_t5</item>
+        <item>Não confundir com グ(gu)</item>
+        <item>variavel</item>
+</string-array>
+
+<string-array name="katavar5">
+<item>go</item>
+<item>4</item>
+<item>kata_var5</item>
+<item>katavar5_t1,katavar5_t2,katavar5_t3,katavar5_t4</item>
+<item></item>
+<item>variavel</item>
+</string-array>
+
+<string-array name="katavar6">
+<item>za</item>
+    <item>5</item>
+<item>kata_var6</item>
+<item>katavar6_t1,katavar6_t2,katavar6_t3,katavar6_t4,katavar6_t5</item>
+<item>Também pode ser escrito desta forma: ざ</item>
+<item>variavel</item>
+</string-array>
+
+<string-array name="katavar7">
+<item>ji</item>
+    <item>5</item>
+<item>kata_var7</item>
+<item>katavar7_t1,katavar7_t2,katavar7_t3,katavar7_t4,katavar7_t5</item>
+<item>Não confunda com ヅ(zu)</item>
+<item>variavel</item>
+</string-array>
+
+<string-array name="katavar8">
+<item>zu</item>
+    <item>4</item>
+<item>kata_var8</item>
+<item>katavar8_t1,katavar8_t2,katavar8_t3,katavar8_t4</item>
+<item></item>
+<item>variavel</item>
+</string-array>
+
+<string-array name="katavar9">
+<item>ze</item>
+    <item>4</item>
+<item>kata_var9</item>
+<item>katavar9_t1,katavar9_t2,katavar9_t3,katavar9_t4</item>
+<item></item>
+<item>variavel</item>
+</string-array>
+
+<string-array name="katavar10">
+<item>zo</item>
+    <item>4</item>
+<item>kata_var10</item>
+<item>katavar10_t1,katavar10_t2,katavar10_t3,katavar10_t4</item>
+<item></item>
+<item>variavel</item>
+</string-array>
+
+<string-array name="katavar11">
+<item>da</item>
+    <item>5</item>
+<item>kata_var11</item>
+<item>katavar11_t1,katavar11_t2,katavar11_t3,katavar11_t4,katavar11_t5</item>
+<item>Não confundir com グ(gu)</item>
+<item>variavel</item>
+</string-array>
+
+
+<string-array name="katavar12">
+<item>ji</item>
+    <item>5</item>
+<item>kata_var12</item>
+<item>katavar12_t1,katavar12_t2,katavar12_t3,katavar12_t4,katavar12_t5</item>
+<item></item>
+<item>variavel</item>
+</string-array>
+
+<string-array name="katavar13">
+<item>zu</item>
+    <item>5</item>
+<item>kata_var13</item>
+    <item>katavar13_t1,katavar13_t2,katavar13_t3,katavar13_t4,katavar13_t5</item>
+<item>Não confundir com ジ(ji)</item>
+<item>variavel</item>
+</string-array>
+
+<string-array name="katavar14">
+<item>de</item>
+    <item>5</item>
+<item>kata_var14</item>
+    <item>katavar14_t1,katavar14_t2,katavar14_t3,katavar14_t4,katavar14_t5</item>
+<item></item>
+<item>variavel</item>
+</string-array>
+
+<string-array name="katavar15">
+<item>do</item>
+    <item>4</item>
+<item>kata_var15</item>
+    <item>katavar15_t1,katavar15_t2,katavar15_t3,katavar15_t4</item>
+<item></item>
+<item>variavel</item>
+</string-array>
+
+<string-array name="katavar16">
+<item>ba</item>
+    <item>4</item>
+<item>kata_var16</item>
+    <item>katavar16_t1,katavar16_t2,katavar16_t3,katavar16_t4</item>
+<item>Não confundir com ぼ(bo)</item>
+<item>variavel</item>
+</string-array>
+
+<string-array name="katavar17">
+<item>bi</item>
+    <item>4</item>
+<item>kata_var17</item>
+    <item>katavar17_t1,katavar17_t2,katavar17_t3,katavar17_t4</item>
+<item></item>
+<item>variavel</item>
+</string-array>
+
+<string-array name="katavar18">
+<item>bu</item>
+    <item>3</item>
+<item>kata_var18</item>
+    <item>katavar18_t1,katavar18_t2,katavar18_t3</item>
+<item></item>
+<item>bavariavelsico</item>
+</string-array>
+
+<string-array name="katavar19">
+<item>be</item>
+    <item>3</item>
+<item>kata_var19</item>
+    <item>katavar19_t1,katavar19_t2,katavar19_t3</item>
+<item></item>
+<item>variavel</item>
+</string-array>
+
+<string-array name="katavar20">
+<item>bo</item>
+    <item>6</item>
+<item>kata_var20</item>
+    <item>katavar20_t1,katavar20_t2,katavar20_t3,katavar20_t4,katavar20_t5,katavar20_t6</item>
+<item>Não confundir com ば(ba)</item>
+<item>variavel</item>
+</string-array>
+
+<string-array name="katavar21">
+<item>pa</item>
+    <item>3</item>
+<item>kata_var21</item>
+    <item>katavar21_t1,katavar21_t2,katavar21_t3</item>
+<item>Não confundir com ぽ(po)</item>
+<item>variavel</item>
+</string-array>
+
+<string-array name="katavar22">
+<item>pi</item>
+    <item>2</item>
+<item>kata_var22</item>
+    <item>katavar22_t1,katavar22_t2</item>
+<item></item>
+<item>variavel</item>
+</string-array>
+
+<string-array name="katavar23">
+<item>pu</item>
+    <item>2</item>
+<item>kata_var23</item>
+    <item>katavar23_t1,katavar23_t2</item>
+<item></item>
+<item>variavel</item>
+</string-array>
+
+<string-array name="katavar24">
+<item>pe</item>
+    <item>2</item>
+<item>kata_var24</item>
+    <item>katavar24_t1,katavar24_t2</item>
+<item></item>
+<item>variavel</item>
+</string-array>
+
+<string-array name="katavar25">
+<item>po</item>
+    <item>5</item>
+<item>kata_var25</item>
+    <item>katavar25_t1,katavar25_t2,katavar25_t3,katavar25_t4,katavar25_t5</item>
+<item>Não confundir com ぱ(pa)</item>
+<item>variavel</item>
+</string-array>
+
+    Junções
+
+<string-array name="katajun1">
+<item>kya</item>
+    <item>5</item>
+<item>kata_jun1</item>
+<item>katabas7_t1,katabas7_t2,katabas7_t3,katabas36_t1,katabas36_t2</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun2">
+<item>kyu</item>
+    <item>5</item>
+<item>kata_jun2</item>
+<item>katabas7_t1,katabas7_t2,katabas7_t3,katabas37_t1,katabas37_t2</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun3">
+<item>kyo</item>
+    <item>6</item>
+<item>kata_jun3</item>
+<item>katabas7_t1,katabas7_t2,katabas7_t3,katabas38_t1,katabas38_t2,katabas38_t3</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun4">
+<item>gya</item>
+    <item>7</item>
+<item>kata_jun4</item>
+<item>katavar2_t1,katavar2_t2,katavar2_t3,katavar2_t4,katavar2_t5,katabas36_t1,katabas36_t2</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun5">
+<item>gyu</item>
+    <item>7</item>
+<item>kata_jun5</item>
+<item>katavar2_t1,katavar2_t2,katavar2_t3,katavar2_t4,katavar2_t5,katabas37_t1,katabas37_t2</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun6">
+<item>gyo</item>
+    <item>8</item>
+<item>kata_jun6</item>
+<item>katavar2_t1,katavar2_t2,katavar2_t3,katavar2_t4,katavar2_t5,katabas38_t1,katabas38_t2,katabas38_t3</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun7">
+<item>sha</item>
+    <item>5</item>
+<item>kata_jun7</item>
+<item>katabas12_t1,katabas12_t2,katabas12_t3,katabas36_t1,katabas36_t2</item>
+<item></item>
+<item>basico</item>
+</string-array>
+
+<string-array name="katajun8">
+<item>shu</item>
+    <item>5</item>
+<item>kata_jun8</item>
+<item>katabas12_t1,katabas12_t2,katabas12_t3,katabas37_t1,katabas37_t2</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun9">
+<item>sho</item>
+    <item>6</item>
+<item>kata_jun9</item>
+<item>katabas12_t1,katabas12_t2,katabas12_t3,katabas38_t1,katabas38_t2,katabas38_t3</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun10">
+<item>ja</item>
+    <item>7</item>
+<item>kata_jun10</item>
+<item>katavar7_t1,katavar7_t2,katavar7_t3,katavar7_t4,katavar7_t5,katabas36_t1,katabas36_t2</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun11">
+<item>ju</item>
+    <item>7</item>
+<item>kata_jun11</item>
+<item>katavar7_t1,katavar7_t2,katavar7_t3,katavar7_t4,katavar7_t5,katabas37_t1,katabas37_t2</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun12">
+<item>jo</item>
+    <item>8</item>
+<item>kata_jun12</item>
+<item>katavar7_t1,katavar7_t2,katavar7_t3,katavar7_t4,katavar7_t5,katabas38_t1,katabas38_t2,katabas38_t3</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun13">
+<item>cha</item>
+    <item>5</item>
+<item>kata_jun13</item>
+<item>katabas17_t1,katabas17_t2,katabas17_t3,katabas36_t1,katabas36_t2</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun14">
+<item>chu</item>
+    <item>5</item>
+<item>kata_jun14</item>
+<item>katabas17_t1,katabas17_t2,katabas17_t3,katabas37_t1,katabas37_t2</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun15">
+<item>cho</item>
+    <item>6</item>
+<item>kata_jun15</item>
+<item>katabas17_t1,katabas17_t2,katabas17_t3,katabas38_t1,katabas38_t2,katabas38_t3</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun16">
+<item>ja</item>
+    <item>7</item>
+<item>kata_jun16</item>
+<item>katavar12_t1,katavar12_t2,katavar12_t3,katavar12_t4,katavar12_t5,katabas36_t1,katabas36_t2</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun17">
+<item>ju</item>
+    <item>7</item>
+<item>kata_jun17</item>
+<item>katavar12_t1,katavar12_t2,katavar12_t3,katavar12_t4,katavar12_t5,katabas37_t1,katabas37_t2</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun18">
+<item>jo</item>
+    <item>8</item>
+<item>kata_jun18</item>
+<item>katavar12_t1,katavar12_t2,katavar12_t3,katavar12_t4,katavar12_t5,katabas38_t1,katabas38_t2,katabas38_t3</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun19">
+<item>nya</item>
+    <item>4</item>
+<item>kata_jun19</item>
+<item>katabas22_t1,katabas22_t2,katabas36_t1,katabas36_t2</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun20">
+<item>nyu</item>
+    <item>4</item>
+<item>kata_jun20</item>
+<item>katabas22_t1,katabas22_t2,katabas37_t1,katabas37_t2</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun21">
+<item>nyo</item>
+    <item>5</item>
+<item>kata_jun21</item>
+<item>katabas22_t1,katabas22_t2,katabas38_t1,katabas38_t2,katabas38_t3</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun22">
+<item>hya</item>
+    <item>4</item>
+<item>kata_jun22</item>
+<item>katabas27_t1,katabas27_t2,katabas36_t1,katabas36_t2</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun23">
+<item>hyu</item>
+    <item>4</item>
+<item>kata_jun23</item>
+<item>katabas27_t1,katabas27_t2,katabas37_t1,katabas37_t2</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun24">
+<item>hyo</item>
+    <item>5</item>
+<item>kata_jun24</item>
+<item>katabas27_t1,katabas27_t2,katabas38_t1,katabas38_t2,katabas38_t3</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun25">
+<item>bya</item>
+    <item>6</item>
+<item>kata_jun25</item>
+<item>katavar17_t1,katavar17_t2,katavar17_t3,katavar17_t4,katabas36_t1,katabas36_t2</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun26">
+<item>byu</item>
+    <item>6</item>
+<item>kata_jun26</item>
+<item>katavar17_t1,katavar17_t2,katavar17_t3,katavar17_t4,katabas37_t1,katabas37_t2</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun27">
+<item>byo</item>
+    <item>7</item>
+<item>kata_jun27</item>
+<item>katavar17_t1,katavar17_t2,katavar17_t3,katavar17_t4,katabas38_t1,katabas38_t2,katabas38_t3</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun28">
+<item>pya</item>
+    <item>4</item>
+<item>kata_jun28</item>
+<item>katavar22_t1,katavar22_t2,katabas36_t1,katabas36_t2</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun29">
+<item>pyu</item>
+    <item>4</item>
+<item>kata_jun29</item>
+<item>katavar22_t1,katavar22_t2,katabas37_t1,katabas37_t2</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun30">
+<item>pyo</item>
+    <item>5</item>
+<item>kata_jun30</item>
+<item>katavar22_t1,katavar22_t2,katabas38_t1,katabas38_t2,katabas38_t3</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun31">
+<item>mya</item>
+    <item>5</item>
+<item>kata_jun31</item>
+<item>katabas32_t1,katabas32_t2,katabas32_t3,katabas36_t1,katabas36_t2</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun32">
+<item>myu</item>
+    <item>5</item>
+<item>kata_jun32</item>
+<item>katabas32_t1,katabas32_t2,katabas32_t3,katabas37_t1,katabas37_t2</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun33">
+<item>myo</item>
+    <item>6</item>
+<item>kata_jun33</item>
+<item>katabas32_t1,katabas32_t2,katabas32_t3,katabas38_t1,katabas38_t2,katabas38_t3</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun34">
+<item>rya</item>
+    <item>4</item>
+<item>kata_jun34</item>
+<item>katabas40_t1,katabas40_t2,katabas36_t1,katabas36_t2</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun35">
+<item>ryu</item>
+    <item>4</item>
+<item>kata_jun35</item>
+<item>katabas40_t1,katabas40_t2,katabas37_t1,katabas37_t2</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+<string-array name="katajun36">
+<item>ryo</item>
+    <item>5</item>
+<item>kata_jun36</item>
+<item>katabas40_t1,katabas40_t2,katabas38_t1,katabas38_t2,katabas38_t3</item>
+<item></item>
+<item>juncao</item>
+</string-array>
+
+
+
+
+
     <!--ARRAYS DE TEXTO E IMAGENS PARA A LISTAGEM DE KANJIS-->  <!--.......................................................................-->
     <!--Capitulo1-kanjis -->        <!--...........................Capitulo 1............................................-->
     <string-array name="dia" >
         <item name="traducao">Dia,Sol</item>
-        <item name="on'yomi">ニチ, ジツ</item>
-        <item name="kun'yomi">ひ, -び,-か</item>
+        <item name="on'yomi">ニチ,ジツ</item>
+        <item name="kun'yomi">ひ,-び,-か</item>
         <item name="tracos">4</item>
         <item name="exemplo">あしたは日よう日です</item>
         <item name="traducaoExemplo">Amanhã é domingo.</item>
-        <item></item>
+        <item name="diaImg">kanji_dia</item>
+        <item name="sequenciaDiaImgs">kanji_dia_t1,kanji_dia_t2,kanji_dia_t3,kanji_dia_t4</item>
+        <item name="FormeKanjidia">forme_dia_1,forme_dia_2,forme_dia_3,forme_dia_4</item>
     </string-array>
 
     <string-array name="lua">
@@ -480,16 +2188,24 @@
         <item name="tracos">4</item>
         <item name="exemplo">わたしのたんじょうびはらい月です</item>
         <item name="traducaoExemplo">Meu aniversário é no próximo mês.</item>
+        <item name="luaImg">kanji_lua</item>
+        <item name="sequencialuaImgs">kanji_lua_t1,kanji_lua_t2,kanji_lua_t3,kanji_lua_t4</item>
+        <item name="FormeKanjilua">forme_lua_1,forme_lua_2,forme_lua_3,forme_lua_4</item>
     </string-array>
 
+
     <string-array name="arvore">
-        <item name="traducao">Árvore </item>
+        <item name="traducao">Árvore</item>
         <item name="on'yomi"> モク，ボク</item>
         <item name="kun'yomi">き</item>
         <item name="tracos">4</item>
         <item name="exemplo">あの木はきれいです</item>
         <item name="traducaoExemplo">Aquela árvore é bonita.</item>
+        <item name="arvoreImg">kanji_arvore</item>
+        <item name="sequenciaarvoreImgs">kanji_arvore_t1,kanji_arvore_t2,kanji_arvore_t3,kanji_arvore_t4</item>
+        <item name="FormeKanjiarvore">forme_arvore_1,forme_arvore_2,forme_arvore_3,forme_arvore_4</item>
     </string-array>
+
 
     <string-array name="montanha">
         <item name="traducao">Montanha</item>
@@ -498,7 +2214,11 @@
         <item name="tracos">3</item>
         <item name="exemplo">この山はたかいです</item>
         <item name="traducaoExemplo">Essa montanha é alta.</item>
+        <item name="montanhaImg">kanji_montanha</item>
+        <item name="sequenciamontanhaImgs">kanji_montanha_t1,kanji_montanha_t2,kanji_montanha_t3</item>
+        <item name="FormeKanjimontanha">forme_montanha_1,forme_montanha_2,forme_montanha_3</item>
     </string-array>
+
 
     <string-array name="rio">
         <item name="traducao">Rio</item>
@@ -507,7 +2227,11 @@
         <item name="tracos">3</item>
         <item name="exemplo">この川のみずはつめたいです</item>
         <item name="traducaoExemplo">A água desse rio é gelada.</item>
+        <item name="rioImg">kanji_rio</item>
+        <item name="sequenciarioImgs">kanji_rio_t1,kanji_rio_t2,kanji_rio_t3</item>
+        <item name="FormeKanjirio">forme_rio_1,forme_rio_2,forme_rio_3</item>
     </string-array>
+
 
     <string-array name="campo">
         <item name="traducao">Campo de arroz</item>
@@ -516,7 +2240,12 @@
         <item name="tracos">5</item>
         <item name="exemplo">田中さんはいい人です</item>
         <item name="traducaoExemplo">O sr. Tanaka é uma boa pessoa.</item>
+        <item name="campoImg">kanji_campo</item>
+        <item name="sequenciacampoImgs">kanji_campo_t1,kanji_campo_t2,kanji_campo_t3,kanji_campo_t4,kanji_campo_t5</item>
+        <item name="FormeKanjicampo">forme_campo_1,forme_campo_2,forme_campo_3,forme_campo_4,forme_campo_5</item>
+
     </string-array>
+
 
     <string-array name="pessoa">
         <item name="traducao">Pessoa</item>
@@ -525,7 +2254,11 @@
         <item name="tracos">2</item>
         <item name="exemplo">あの人は山田さんです</item>
         <item name="traducaoExemplo">Aquela pessoa é o sr. Yamada.</item>
+        <item name="pessoaImg">kanji_pessoa</item>
+        <item name="sequenciapessoaImgs">kanji_pessoa_t1,kanji_pessoa_t2</item>
+        <item name="FormeKanjipessoa">forme_pessoa_1,forme_pessoa_2</item>
     </string-array>
+
 
     <string-array name="boca">
         <item name="traducao">Boca</item>
@@ -534,6 +2267,9 @@
         <item name="tracos">3</item>
         <item name="exemplo">口をあけてください</item>
         <item name="traducaoExemplo">Abra a boca, por favor.</item>
+        <item name="bocaImg">kanji_boca</item>
+        <item name="sequenciabocaImgs">kanji_boca_t1,kanji_boca_t2,kanji_boca_t3</item>
+        <item name="FormeKanjiboca">forme_boca_1,forme_boca_2,forme_boca_3</item>
     </string-array>
 
     <string-array name="carro">
@@ -543,7 +2279,11 @@
         <item name="tracos">7</item>
         <item name="exemplo">あの車はしろいです</item>
         <item name="traducaoExemplo">Aquele carro é branco.</item>
+        <item name="carroImg">kanji_carro</item>
+        <item name="sequenciacarroImgs">kanji_carro_t1,kanji_carro_t2,kanji_carro_t3,kanji_carro_t4,kanji_carro_t5,kanji_carro_t6,kanji_carro_t7</item>
+        <item name="FormeKanjicarro">forme_carro_1,forme_carro_2,forme_carro_3,forme_carro_4,forme_carro_5,forme_carro_6,forme_carro_7</item>
     </string-array>
+
 
     <string-array name="portao">
         <item name="traducao">Portao</item>
@@ -552,33 +2292,24 @@
         <item name="tracos">8</item>
         <item name="exemplo">門をしめてください</item>
         <item name="traducaoExemplo">Feche o portão, por favor.</item>
+        <item name="portaoImg">kanji_portao</item>
+        <item name="sequenciaportaoImgs">kanji_portao_t1,kanji_portao_t2,kanji_portao_t3,kanji_portao_t4,kanji_portao_t5,kanji_portao_t6,kanji_portao_t7,kanji_portao_t8</item>
+        <item name="FormeKanjiportao">forme_portao_1,forme_portao_2,forme_portao_3,forme_portao_4,forme_portao_5,forme_portao_6,forme_portao_7,forme_portao_8</item>
     </string-array>
 
     <!--Array de referencias para os Kanji do Capitulo1-->
-    <array name="KanjiCapitulo1">
-        <item>@array/dia</item>
-        <item>@array/lua</item>
-        <item>@array/arvore</item>
-        <item>@array/montanha</item>
-        <item>@array/rio</item>
-        <item>@array/campo</item>
-        <item>@array/pessoa</item>
-        <item>@array/boca</item>
-        <item>@array/carro</item>
-        <item>@array/portao</item>
-    </array>
-    <array name="KanjiCapitulo1Imgs">
-        <item>@drawable/kanji_dia</item>
-        <item>@drawable/kanji_lua</item>
-        <item>@drawable/kanji_arvore</item>
-        <item>@drawable/kanji_montanha</item>
-        <item>@drawable/kanji_rio</item>
-        <item>@drawable/kanji_campo</item>
-        <item>@drawable/kanji_pessoa</item>
-        <item>@drawable/kanji_boca</item>
-        <item>@drawable/kanji_carro</item>
-        <item>@drawable/kanji_portao</item>
-    </array>
+    <string-array name="KanjiCapitulo1">
+        <item>dia</item>
+        <item>lua</item>
+        <item>arvore</item>
+        <item>montanha</item>
+        <item>rio</item>
+        <item>campo</item>
+        <item>pessoa</item>
+        <item>boca</item>
+        <item>carro</item>
+        <item>portao</item>
+    </string-array>
     <!--Capitulo2-kanjis -->        <!--...........................Capitulo 2............................................-->
     <string-array name="fogo">
         <item name="traducao">Fogo</item>
@@ -587,6 +2318,9 @@
         <item name="tracos">4</item>
         <item name="exemplo">火であそんではいけません</item>
         <item name="traducaoExemplo">Não brinque com fogo.</item>
+        <item name="fogoImg">kanji_fogo</item>
+        <item name="sequenciafogoImgs">kanji_fogo_t1,kanji_fogo_t2,kanji_fogo_t3,kanji_fogo_t4</item>
+        <item name="FormeKanjifogo">forme_fogo_1,forme_fogo_2,forme_fogo_3,forme_fogo_4</item>
     </string-array>
 
     <string-array name="agua">
@@ -596,6 +2330,9 @@
         <item name="tracos">4</item>
         <item name="exemplo">わたしは水をのむことがすきじゃありません</item>
         <item name="traducaoExemplo">Eu não gosto de beber água.</item>
+        <item name="aguaImg">kanji_agua</item>
+        <item name="sequenciaaguaImgs">kanji_agua_t1,kanji_agua_t2,kanji_agua_t3,kanji_agua_t4</item>
+        <item name="FormeKanjiagua">forme_agua_1,forme_agua_2,forme_agua_3,forme_agua_4</item>
     </string-array>
 
     <string-array name="ouro">
@@ -605,6 +2342,9 @@
         <item name="tracos">8</item>
         <item name="exemplo">私はお金がありません</item>
         <item name="traducaoExemplo">Eu não tenho dinheiro.</item>
+        <item name="ouroImg">kanji_ouro</item>
+        <item name="sequenciaouroImgs">kanji_ouro_t1,kanji_ouro_t2,kanji_ouro_t3,kanji_ouro_t4,kanji_ouro_t5,kanji_ouro_t6,kanji_ouro_t7,kanji_ouro_t8</item>
+        <item name="FormeKanjiouro">forme_ouro_1,forme_ouro_2,forme_ouro_3,forme_ouro_4,forme_ouro_5,forme_ouro_6,forme_ouro_7,forme_ouro_8</item>
     </string-array>
 
     <string-array name="solo">
@@ -614,6 +2354,9 @@
         <item name="tracos">3</item>
         <item name="exemplo">土よう日にパーティーがあります</item>
         <item name="traducaoExemplo">Sábado tem uma festa.</item>
+        <item name="soloImg">kanji_solo</item>
+        <item name="sequenciasoloImgs">kanji_solo_t1,kanji_solo_t2,kanji_solo_t3</item>
+        <item name="FormeKanjisolo">forme_solo_1,forme_solo_2,forme_solo_3</item>
     </string-array>
 
     <string-array name="crianca">
@@ -623,6 +2366,9 @@
         <item name="tracos">3</item>
         <item name="exemplo">子どもはあそぶことがすきです </item>
         <item name="traducaoExemplo">Crianças gostam de brincar.</item>
+        <item name="criancaImg">kanji_crianca</item>
+        <item name="sequenciacriancaImgs">kanji_crianca_t1,kanji_crianca_t2,kanji_crianca_t3</item>
+        <item name="FormeKanjicrianca">forme_crianca_1,forme_crianca_2,forme_crianca_3</item>
     </string-array>
 
     <string-array name="mulher">
@@ -632,6 +2378,9 @@
         <item name="tracos">3</item>
         <item name="exemplo">あの女の人はきれいです </item>
         <item name="traducaoExemplo">Aquela mulher é bonita.</item>
+        <item name="mulherImg">kanji_mulher</item>
+        <item name="sequenciamulherImgs">kanji_mulher_t1,kanji_mulher_t2,kanji_mulher_t3</item>
+        <item name="FormeKanjimulher">forme_mulher_1,forme_mulher_2,forme_mulher_3</item>
     </string-array>
 
     <string-array name="estudo">
@@ -641,6 +2390,9 @@
         <item name="tracos">8</item>
         <item name="exemplo">すう学はむずかしいです</item>
         <item name="traducaoExemplo">Matemática é difícil.</item>
+        <item name="estudoImg">kanji_estudo</item>
+        <item name="sequenciaestudoImgs">kanji_estudo_t1,kanji_estudo_t2,kanji_estudo_t3,kanji_estudo_t4,kanji_estudo_t5,kanji_estudo_t6,kanji_estudo_t7,kanji_estudo_t8</item>
+        <item name="FormeKanjiestudo">forme_estudo_1,forme_estudo_2,forme_estudo_3,forme_estudo_4,forme_estudo_5,forme_estudo_6,forme_estudo_7,forme_estudo_8</item>
     </string-array>
 
     <string-array name="viver">
@@ -650,6 +2402,9 @@
         <item name="tracos">5</item>
         <item name="exemplo">私は学生です</item>
         <item name="traducaoExemplo">Eu sou estudante.</item>
+        <item name="viverImg">kanji_viver</item>
+        <item name="sequenciaviverImgs">kanji_viver_t1,kanji_viver_t2,kanji_viver_t3,kanji_viver_t4,kanji_viver_t5</item>
+        <item name="FormeKanjiviver">forme_viver_1,forme_viver_2,forme_viver_3,forme_viver_4,forme_viver_5</item>
     </string-array>
 
     <string-array name="anterior">
@@ -659,6 +2414,9 @@
         <item name="tracos">6</item>
         <item name="exemplo">先月ロックコンサートへいきました</item>
         <item name="traducaoExemplo"> Fui  a um show de rock no mês passado.</item>
+        <item name="anteriorImg">kanji_anterior</item>
+        <item name="sequenciaanteriorImgs">kanji_anterior_t1,kanji_anterior_t2,kanji_anterior_t3,kanji_anterior_t4,kanji_anterior_t5,kanji_anterior_t6</item>
+        <item name="FormeKanjianterior">forme_anterior_1,forme_anterior_2,forme_anterior_3,forme_anterior_4,forme_anterior_5,forme_anterior_6</item>
     </string-array>
 
     <string-array name="eu">
@@ -668,32 +2426,24 @@
         <item name="tracos">7</item>
         <item name="exemplo">私は私りつの学こうでべんきょうします</item>
         <item name="traducaoExemplo"> Eu estudo em um colégio particular.</item>
+        <item name="euImg">kanji_eu</item>
+        <item name="sequenciaeuImgs">kanji_eu_t1,kanji_eu_t2,kanji_eu_t3,kanji_eu_t4,kanji_eu_t5,kanji_eu_t6,kanji_eu_t7</item>
+        <item name="FormeKanjieu">forme_eu_1,forme_eu_2,forme_eu_3,forme_eu_4,forme_eu_5,forme_eu_6,forme_eu_7</item>
     </string-array>
     <!--Array de referencias para os Kanji do Capitulo2-->
     <array name="KanjiCapitulo2">
-        <item>@array/fogo</item>
-        <item>@array/agua</item>
-        <item>@array/ouro</item>
-        <item>@array/solo</item>
-        <item>@array/crianca</item>
-        <item>@array/mulher</item>
-        <item>@array/estudo</item>
-        <item>@array/viver</item>
-        <item>@array/anterior</item>
-        <item>@array/eu</item>
+        <item>fogo</item>
+        <item>agua</item>
+        <item>ouro</item>
+        <item>solo</item>
+        <item>crianca</item>
+        <item>mulher</item>
+        <item>estudo</item>
+        <item>viver</item>
+        <item>anterior</item>
+        <item>eu</item>
     </array>
-    <array name="KanjiCapitulo2Imgs">
-         <item>@drawable/kanji_fogo</item>
-         <item>@drawable/kanji_agua</item>
-         <item>@drawable/kanji_ouro</item>
-         <item>@drawable/kanji_solo</item>
-         <item>@drawable/kanji_crianca</item>
-         <item>@drawable/kanji_mulher</item>
-         <item>@drawable/kanji_estudo</item>
-         <item>@drawable/kanji_viver</item>
-         <item>@drawable/kanji_anterior</item>
-         <item>@drawable/kanji_eu</item>
-     </array>
+
 
      <!--Capitulo3-kanjis -->        <!--...........................Capitulo 3............................................-->
     <string-array name="um">
@@ -703,6 +2453,9 @@
         <item name="tracos">1</item>
         <item name="exemplo">一月はさむいです</item>
         <item name="traducaoExemplo"> Está frio em Janeiro.</item>
+        <item name="umImg">kanji_um</item>
+        <item name="sequenciaumImgs">kanji_um_t1</item>
+        <item name="FormeKanjium">forme_um_1</item>
     </string-array>
 
     <string-array name="dois">
@@ -712,6 +2465,9 @@
         <item name="tracos">2</item>
         <item name="exemplo">カーニバルは二月です</item>
         <item name="traducaoExemplo"> O carnaval é em Fevereiro.</item>
+        <item name="doisImg">kanji_dois</item>
+        <item name="sequenciadoisImgs">kanji_dois_t1,kanji_dois_t2</item>
+        <item name="FormeKanjidois">forme_dois_1,forme_dois_2</item>
     </string-array>
 
     <string-array name="tres">
@@ -721,6 +2477,9 @@
         <item name="tracos">3</item>
         <item name="exemplo">あの女の子は三さいです</item>
         <item name="traducaoExemplo"> Aquela menina tem 3 anos.</item>
+        <item name="tresImg">kanji_tres</item>
+        <item name="sequenciatresImgs">kanji_tres_t1,kanji_tres_t2,kanji_tres_t3</item>
+        <item name="FormeKanjitres">forme_tres_1,forme_tres_2,forme_tres_3</item>
     </string-array>
 
     <string-array name="quatro">
@@ -730,6 +2489,9 @@
         <item name="tracos">5</item>
         <item name="exemplo">いま四じです</item>
         <item name="traducaoExemplo"> São  4 horas.</item>
+        <item name="quatroImg">kanji_quatro</item>
+        <item name="sequenciaquatroImgs">kanji_quatro_t1,kanji_quatro_t2,kanji_quatro_t3,kanji_quatro_t4,kanji_quatro_t5</item>
+        <item name="FormeKanjiquatro">forme_quatro_1,forme_quatro_2,forme_quatro_3,forme_quatro_4,forme_quatro_5</item>
     </string-array>
 
     <string-array name="cinco">
@@ -739,6 +2501,9 @@
         <item name="tracos">4</item>
         <item name="exemplo">五ふんをまってください</item>
         <item name="traducaoExemplo"> Aguarde 5 minutos , por favor.</item>
+        <item name="cincoImg">kanji_cinco</item>
+        <item name="sequenciacincoImgs">kanji_cinco_t1,kanji_cinco_t2,kanji_cinco_t3,kanji_cinco_t4</item>
+        <item name="FormeKanjicinco">forme_cinco_1,forme_cinco_2,forme_cinco_3,forme_cinco_4</item>
     </string-array>
 
     <string-array name="seis">
@@ -748,6 +2513,9 @@
         <item name="tracos">4</item>
         <item name="exemplo">六月にテストをうけます</item>
         <item name="traducaoExemplo"> Faço provas em Junho.</item>
+        <item name="seisImg">kanji_seis</item>
+        <item name="sequenciaseisImgs">kanji_seis_t1,kanji_seis_t2,kanji_seis_t3,kanji_seis_t4</item>
+        <item name="FormeKanjiseis">forme_seis_1,forme_seis_2,forme_seis_3,forme_seis_4</item>
     </string-array>
 
     <string-array name="sete">
@@ -757,6 +2525,9 @@
         <item name="tracos">2</item>
         <item name="exemplo">七つのたいざいはいいアニメです</item>
         <item name="traducaoExemplo">Nanatsu no Taizai é um bom anime.</item>
+        <item name="seteImg">kanji_sete</item>
+        <item name="sequenciaseteImgs">kanji_sete_t1,kanji_sete_t2</item>
+        <item name="FormeKanjisete">forme_sete_1,forme_sete_2</item>
     </string-array>
 
     <string-array name="oito">
@@ -766,6 +2537,9 @@
         <item name="tracos">2</item>
         <item name="exemplo">きゅうかは八月におわります</item>
         <item name="traducaoExemplo">As férias terminam em Agosto.</item>
+        <item name="oitoImg">kanji_oito</item>
+        <item name="sequenciaoitoImgs">kanji_oito_t1,kanji_oito_t2</item>
+        <item name="FormeKanjioito">forme_oito_1,forme_oito_2</item>
     </string-array>
 
     <string-array name="nove">
@@ -775,6 +2549,9 @@
         <item name="tracos">2</item>
         <item name="exemplo">私のたんじょうびは九月九日です</item>
         <item name="traducaoExemplo">Meu aniversário é em 9 de Setembro.</item>
+        <item name="noveImg">kanji_nove</item>
+        <item name="sequencianoveImgs">kanji_nove_t1,kanji_nove_t2</item>
+        <item name="FormeKanjinove">forme_nove_1,forme_nove_2</item>
     </string-array>
 
     <string-array name="dez">
@@ -784,6 +2561,9 @@
         <item name="tracos">2</item>
         <item name="exemplo">十年まえ日本へいきました</item>
         <item name="traducaoExemplo">Fui ao Japão há  10 anos.</item>
+        <item name="dezImg">kanji_dez</item>
+        <item name="sequenciadezImgs">kanji_dez_t1,kanji_dez_t2</item>
+        <item name="FormeKanjidez">forme_dez_1,forme_dez_2</item>
     </string-array>
 
     <string-array name="cem">
@@ -793,6 +2573,9 @@
         <item name="tracos">6</item>
         <item name="exemplo">これは百円です</item>
         <item name="traducaoExemplo">Isto custa 100 ienes.</item>
+        <item name="cemImg">kanji_cem</item>
+        <item name="sequenciacemImgs">kanji_cem_t1,kanji_cem_t2,kanji_cem_t3,kanji_cem_t4,kanji_cem_t5,kanji_cem_t6</item>
+        <item name="FormeKanjicem">forme_cem_1,forme_cem_2,forme_cem_3,forme_cem_4,forme_cem_5,forme_cem_6</item>
     </string-array>
 
     <string-array name="mil">
@@ -802,6 +2585,9 @@
         <item name="tracos">3</item>
         <item name="exemplo">こ年は二千十七年です</item>
         <item name="traducaoExemplo">Estamos em 2017.</item>
+        <item name="milImg">kanji_mil</item>
+        <item name="sequenciamilImgs">kanji_mil_t1,kanji_mil_t2,kanji_mil_t3</item>
+        <item name="FormeKanjimil">forme_mil_1,forme_mil_2,forme_mil_3</item>
     </string-array>
 
     <string-array name="dezmil">
@@ -811,6 +2597,9 @@
         <item name="tracos">3</item>
         <item name="exemplo">一万円があります</item>
         <item name="traducaoExemplo">Tenho 10 mil ienes.</item>
+        <item name="dezmilImg">kanji_dezmil</item>
+        <item name="sequenciadezmilImgs">kanji_dezmil_t1,kanji_dezmil_t2,kanji_dezmil_t3</item>
+        <item name="FormeKanjidezmil">forme_dezmil_1,forme_dezmil_2,forme_dezmil_3</item>
     </string-array>
 
     <string-array name="circulo">
@@ -820,6 +2609,9 @@
         <item name="tracos">4</item>
         <item name="exemplo">円は日本のお金です</item>
         <item name="traducaoExemplo">Iene é a moeda do Japão.</item>
+        <item name="ieneImg">kanji_iene</item>
+        <item name="sequenciaieneImgs">kanji_iene_t1,kanji_iene_t2,kanji_iene_t3,kanji_iene_t4</item>
+        <item name="FormeKanjicirculo">forme_circulo_1,forme_circulo_2,forme_circulo_3,forme_circulo_4</item>
     </string-array>
 
     <string-array name="ano">
@@ -829,41 +2621,27 @@
         <item name="tracos">6</item>
         <item name="exemplo">らい年りょこうをします</item>
         <item name="traducaoExemplo">Vou viajar ano que vem.</item>
+        <item name="anoImg">kanji_ano</item>
+        <item name="sequenciaanoImgs">kanji_ano_t1,kanji_ano_t2,kanji_ano_t3,kanji_ano_t4,kanji_ano_t5,kanji_ano_t6</item>
+        <item name="FormeKanjiano">forme_ano_1,forme_ano_2,forme_ano_3,forme_ano_4,forme_ano_5,forme_ano_6</item>
     </string-array>
     <!--Array de referencias para os Kanji do Capitulo3-->
     <array name="KanjiCapitulo3">
-        <item>@array/um</item>
-        <item>@array/dois</item>
-        <item>@array/tres</item>
-        <item>@array/quatro</item>
-        <item>@array/cinco</item>
-        <item>@array/seis</item>
-        <item>@array/sete</item>
-        <item>@array/oito</item>
-        <item>@array/nove</item>
-        <item>@array/dez</item>
-        <item>@array/cem</item>
-        <item>@array/mil</item>
-        <item>@array/dezmil</item>
-        <item>@array/circulo</item>
-        <item>@array/ano</item>
-    </array>
-    <array name="KanjiCapitulo3Imgs">
-        <item>@drawable/kanji_um</item>
-        <item>@drawable/kanji_dois</item>
-        <item>@drawable/kanji_tres</item>
-        <item>@drawable/kanji_quatro</item>
-        <item>@drawable/kanji_cinco</item>
-        <item>@drawable/kanji_seis</item>
-        <item>@drawable/kanji_sete</item>
-        <item>@drawable/kanji_oito</item>
-        <item>@drawable/kanji_nove</item>
-        <item>@drawable/kanji_dez</item>
-        <item>@drawable/kanji_cem</item>
-        <item>@drawable/kanji_mil</item>
-        <item>@drawable/kanji_dezmil</item>
-        <item>@drawable/kanji_iene</item>
-        <item>@drawable/kanji_ano</item>
+        <item>um</item>
+        <item>dois</item>
+        <item>tres</item>
+        <item>quatro</item>
+        <item>cinco</item>
+        <item>seis</item>
+        <item>sete</item>
+        <item>oito</item>
+        <item>nove</item>
+        <item>dez</item>
+        <item>cem</item>
+        <item>mil</item>
+        <item>dezmil</item>
+        <item>circulo</item>
+        <item>ano</item>
     </array>
     <!--Capitulo4-kanjis -->  <!--........................Capitulo 4...............................................-->
     <string-array name="acima">
@@ -873,6 +2651,9 @@
         <item name="tracos">3</item>
         <item name="exemplo">テーブルの上に本があります</item>
         <item name="traducaoExemplo">Em cima da mesa tem um livro.</item>
+        <item name="acimaImg">kanji_acima</item>
+        <item name="sequenciaacimaImgs">kanji_acima_t1,kanji_acima_t2,kanji_acima_t3</item>
+        <item name="FormeKanjiacima">forme_acima_1,forme_acima_2,forme_acima_3</item>
     </string-array>
 
     <string-array name="abaixo">
@@ -882,6 +2663,9 @@
         <item name="tracos">3</item>
         <item name="exemplo">ベッドの下にくつがあります</item>
         <item name="traducaoExemplo">Em baixo da cama tem um sapato.</item>
+        <item name="abaixoImg">kanji_abaixo</item>
+        <item name="sequenciaabaixoImgs">kanji_abaixo_t1,kanji_abaixo_t2,kanji_abaixo_t3</item>
+        <item name="FormeKanjiabaixo">forme_abaixo_1,forme_abaixo_2,forme_abaixo_3</item>
     </string-array>
 
     <string-array name="dentro">
@@ -891,6 +2675,9 @@
         <item name="tracos">4</item>
         <item name="exemplo">かばんの中にノートがあります</item>
         <item name="traducaoExemplo">Dentro da bolsa tem um caderno.</item>
+        <item name="dentroImg">kanji_dentro</item>
+        <item name="sequenciadentroImgs">kanji_dentro_t1,kanji_dentro_t2,kanji_dentro_t3,kanji_dentro_t4</item>
+        <item name="FormeKanjidentro">forme_dentro_1,forme_dentro_2,forme_dentro_3,forme_dentro_4</item>
     </string-array>
 
     <string-array name="grande">
@@ -900,6 +2687,9 @@
         <item name="tracos">3</item>
         <item name="exemplo">あのいぬは大きいです</item>
         <item name="traducaoExemplo">Aquele cachorro é grande.</item>
+        <item name="grandeImg">kanji_grande</item>
+        <item name="sequenciagrandeImgs">kanji_grande_t1,kanji_grande_t2,kanji_grande_t3</item>
+        <item name="FormeKanjigrande">forme_grande_1,forme_grande_2,forme_grande_3</item>
     </string-array>
 
     <string-array name="pequeno">
@@ -909,6 +2699,9 @@
         <item name="tracos">3</item>
         <item name="exemplo">かの女のくつは小さいです</item>
         <item name="traducaoExemplo">Os sapatos dela são pequenos.</item>
+        <item name="pequenoImg">kanji_pequeno</item>
+        <item name="sequenciapequenoImgs">kanji_pequeno_t1,kanji_pequeno_t2,kanji_pequeno_t3</item>
+        <item name="FormeKanjipequeno">forme_pequeno_1,forme_pequeno_2,forme_pequeno_3</item>
     </string-array>
 
     <string-array name="livro">
@@ -918,6 +2711,9 @@
         <item name="tracos">5</item>
         <item name="exemplo">本をよむことが大すきです</item>
         <item name="traducaoExemplo">Eu gosto de ler livros.</item>
+        <item name="livroImg">kanji_livro</item>
+        <item name="sequencialivroImgs">kanji_livro_t1,kanji_livro_t2,kanji_livro_t3,kanji_livro_t4,kanji_livro_t5</item>
+        <item name="FormeKanjilivro">forme_livro_1,forme_livro_2,forme_livro_3,forme_livro_4,forme_livro_5</item>
     </string-array>
 
     <string-array name="metade">
@@ -927,6 +2723,9 @@
         <item name="tracos">5</item>
         <item name="exemplo">いま二じ半です</item>
         <item name="traducaoExemplo">São 2:30.</item>
+        <item name="metadeImg">kanji_metade</item>
+        <item name="sequenciametadeImgs">kanji_metade_t1,kanji_metade_t2,kanji_metade_t3,kanji_metade_t4,kanji_metade_t5</item>
+        <item name="FormeKanjimetade">forme_metade_1,forme_metade_2,forme_metade_3,forme_metade_4,forme_metade_5</item>
     </string-array>
 
     <string-array name="minuto">
@@ -936,6 +2735,9 @@
         <item name="tracos">4</item>
         <item name="exemplo">まい日五十分をあるきます</item>
         <item name="traducaoExemplo">Eu ando por 50 minutos todos os dias.</item>
+        <item name="minutoImg">kanji_minuto</item>
+        <item name="sequenciaminutoImgs">kanji_minuto_t1,kanji_minuto_t2,kanji_minuto_t3,kanji_minuto_t4</item>
+        <item name="FormeKanjiminuto">forme_minuto_1,forme_minuto_2,forme_minuto_3,forme_minuto_4</item>
     </string-array>
 
     <string-array name="forca">
@@ -945,6 +2747,9 @@
         <item name="tracos">2</item>
         <item name="exemplo">私はまほう力があります</item>
         <item name="traducaoExemplo">Eu tenho poderes mágicos.</item>
+        <item name="forcaImg">kanji_forca</item>
+        <item name="sequenciaforcaImgs">kanji_forca_t1,kanji_forca_t2</item>
+        <item name="FormeKanjiforca">forme_forca_1,forme_forca_2</item>
     </string-array>
 
     <string-array name="oque">
@@ -954,32 +2759,23 @@
         <item name="tracos">7</item>
         <item name="exemplo">いま何じですか</item>
         <item name="traducaoExemplo">Que horas são?</item>
+        <item name="oqueImg">kanji_oque</item>
+        <item name="sequenciaoqueImgs">kanji_oque_t1,kanji_oque_t2,kanji_oque_t3,kanji_oque_t4,kanji_oque_t5,kanji_oque_t6,kanji_oque_t7</item>
+        <item name="FormeKanjioque">forme_oque_1,forme_oque_2,forme_oque_3,forme_oque_4,forme_oque_5,forme_oque_6,forme_oque_7</item>
     </string-array>
     <!--Array de referencias para os Kanji do Capitulo4-->
     <array name="KanjiCapitulo4">
-        <item>@array/acima</item>
-        <item>@array/abaixo</item>
-        <item>@array/dentro</item>
-        <item>@array/grande</item>
-        <item>@array/pequeno</item>
-        <item>@array/livro</item>
-        <item>@array/metade</item>
-        <item>@array/minuto</item>
-        <item>@array/forca</item>
-        <item>@array/oque</item>
+        <item>acima</item>
+        <item>abaixo</item>
+        <item>dentro</item>
+        <item>grande</item>
+        <item>pequeno</item>
+        <item>livro</item>
+        <item>metade</item>
+        <item>minuto</item>
+        <item>forca</item>
+        <item>oque</item>
     </array>
-    <array name="KanjiCapitulo4Imgs">
-         <item>@drawable/kanji_acima</item>
-         <item>@drawable/kanji_abaixo</item>
-         <item>@drawable/kanji_dentro</item>
-         <item>@drawable/kanji_grande</item>
-         <item>@drawable/kanji_pequeno</item>
-         <item>@drawable/kanji_livro</item>
-         <item>@drawable/kanji_metade</item>
-         <item>@drawable/kanji_minuto</item>
-         <item>@drawable/kanji_forca</item>
-         <item>@drawable/kanji_oque</item>
-     </array>
 
      <!--Capitulo5 - kanjis-->       <!--........................Capitulo 5...............................................-->
     <string-array name="brilho">
@@ -989,6 +2785,9 @@
         <item name="tracos">8</item>
         <item name="exemplo">私は明るいいろが好きです</item>
         <item name="traducaoExemplo">Eu gosto de cores brilhantes.</item>
+        <item name="brilhoImg">kanji_brilho</item>
+        <item name="sequenciabrilhoImgs">kanji_brilho_t1,kanji_brilho_t2,kanji_brilho_t3,kanji_brilho_t4,kanji_brilho_t5,kanji_brilho_t6,kanji_brilho_t7,kanji_brilho_t8</item>
+        <item name="FormeKanjibrilho">forme_brilho_1,forme_brilho_2,forme_brilho_3,forme_brilho_4,forme_brilho_5,forme_brilho_6,forme_brilho_7,forme_brilho_8</item>
     </string-array>
 
     <string-array name="descansar">
@@ -998,6 +2797,9 @@
         <item name="tracos">6</item>
         <item name="exemplo">土よう日は私の休みの日です</item>
         <item name="traducaoExemplo">Sábado é meu dia de folga.</item>
+        <item name="descansarImg">kanji_descansar</item>
+        <item name="sequenciadescansarImgs">kanji_descansar_t1,kanji_descansar_t2,kanji_descansar_t3,kanji_descansar_t4,kanji_descansar_t5,kanji_descansar_t6</item>
+        <item name="FormeKanjidescansar">forme_descansar_1,forme_descansar_2,forme_descansar_3,forme_descansar_4,forme_descansar_5,forme_descansar_6</item>
     </string-array>
 
     <string-array name="corpo">
@@ -1007,6 +2809,9 @@
         <item name="tracos">7</item>
         <item name="exemplo">私の体がいたいです</item>
         <item name="traducaoExemplo">Meu corpo está dolorido.</item>
+        <item name="corpoImg">kanji_corpo</item>
+        <item name="sequenciacorpoImgs">kanji_corpo_t1,kanji_corpo_t2,kanji_corpo_t3,kanji_corpo_t4,kanji_corpo_t5,kanji_corpo_t6,kanji_corpo_t7</item>
+        <item name="FormeKanjicorpo">forme_corpo_1,forme_corpo_2,forme_corpo_3,forme_corpo_4,forme_corpo_5,forme_corpo_6,forme_corpo_7</item>
     </string-array>
 
     <string-array name="gostar">
@@ -1016,6 +2821,9 @@
         <item name="tracos">6</item>
         <item name="exemplo">私はアニメが好きです</item>
         <item name="traducaoExemplo">Eu gosto de animes.</item>
+        <item name="gostarImg">kanji_gostar</item>
+        <item name="sequenciagostarImgs">kanji_gostar_t1,kanji_gostar_t2,kanji_gostar_t3,kanji_gostar_t4,kanji_gostar_t5,kanji_gostar_t6</item>
+        <item name="FormeKanjigostar">forme_gostar_1,forme_gostar_2,forme_gostar_3,forme_gostar_4,forme_gostar_5,forme_gostar_6</item>
     </string-array>
 
     <string-array name="homem">
@@ -1025,6 +2833,9 @@
         <item name="tracos">7</item>
         <item name="exemplo">あの男の人はだれですか</item>
         <item name="traducaoExemplo">Quem é aquele homem?</item>
+        <item name="homemImg">kanji_homem</item>
+        <item name="sequenciahomemImgs">kanji_homem_t1,kanji_homem_t2,kanji_homem_t3,kanji_homem_t4,kanji_homem_t5,kanji_homem_t6,kanji_homem_t7</item>
+        <item name="FormeKanjihomem">forme_homem_1,forme_homem_2,forme_homem_3,forme_homem_4,forme_homem_5,forme_homem_6,forme_homem_7</item>
     </string-array>
 
     <string-array name="bosque">
@@ -1034,6 +2845,9 @@
         <item name="tracos">8</item>
         <item name="exemplo">私のいえのちかくに林があります</item>
         <item name="traducaoExemplo">Perto da minha casa tem um bosque.</item>
+        <item name="bosqueImg">kanji_bosque</item>
+        <item name="sequenciabosqueImgs">kanji_bosque_t1,kanji_bosque_t2,kanji_bosque_t3,kanji_bosque_t4,kanji_bosque_t5,kanji_bosque_t6,kanji_bosque_t7,kanji_bosque_t8</item>
+        <item name="FormeKanjibosque">forme_bosque_1,forme_bosque_2,forme_bosque_3,forme_bosque_4,forme_bosque_5,forme_bosque_6,forme_bosque_7,forme_bosque_8</item>
     </string-array>
 
     <string-array name="floresta">
@@ -1043,6 +2857,9 @@
         <item name="tracos">12</item>
         <item name="exemplo">ウィルは森の中でまよってしました</item>
         <item name="traducaoExemplo">Will se perdeu na floresta.</item>
+        <item name="florestaImg">kanji_floresta</item>
+        <item name="sequenciaflorestaImgs">kanji_floresta_t1,kanji_floresta_t2,kanji_floresta_t3,kanji_floresta_t4,kanji_floresta_t5,kanji_floresta_t6,kanji_floresta_t7,kanji_floresta_t8,kanji_floresta_t9,kanji_floresta_t10,kanji_floresta_t11,kanji_floresta_t12</item>
+        <item name="FormeKanjifloresta">forme_floresta_1,forme_floresta_2,forme_floresta_3,forme_floresta_4,forme_floresta_5,forme_floresta_6,forme_floresta_7,forme_floresta_8,forme_floresta_9,forme_floresta_10,forme_floresta_11,forme_floresta_12</item>
     </string-array>
 
     <string-array name="entre">
@@ -1052,15 +2869,21 @@
         <item name="tracos">12</item>
         <item name="exemplo">ともだちと一じ間をはなしました</item>
         <item name="traducaoExemplo">Conversei com um amigo por 1 hora.</item>
+        <item name="entreImg">kanji_entre</item>
+        <item name="sequenciaentreImgs">kanji_entre_t1,kanji_entre_t2,kanji_entre_t3,kanji_entre_t4,kanji_entre_t5,kanji_entre_t6,kanji_entre_t7,kanji_entre_t8,kanji_entre_t9,kanji_entre_t10,kanji_entre_t11,kanji_entre_t12</item>
+        <item name="FormeKanjientre">forme_entre_1,forme_entre_2,forme_entre_3,forme_entre_4,forme_entre_5,forme_entre_6,forme_entre_7,forme_entre_8,forme_entre_9,forme_entre_10,forme_entre_11,forme_entre_12</item>
     </string-array>
 
-    <string-array name="cultivado">
+    <string-array name="campocultivado">
         <item name="traducao">Campo cultivado</item>
         <item name="on'yomi"></item>
         <item name="kun'yomi">はたけ、-ばたけ、はた</item>
         <item name="tracos">9</item>
         <item name="exemplo">あのはな畑はきれいです</item>
         <item name="traducaoExemplo">Aquele campo de flores é bonito.</item>
+        <item name="cultivadoImg">kanji_campocultivado</item>
+        <item name="sequenciacultivadoImgs">kanji_campocultivado_t1,kanji_campocultivado_t2,kanji_campocultivado_t3,kanji_campocultivado_t4,kanji_campocultivado_t5,kanji_campocultivado_t6,kanji_campocultivado_t7,kanji_campocultivado_t8,kanji_campocultivado_t9</item>
+        <item name="FormeKanjirocha">forme_rocha_1,forme_rocha_2,forme_rocha_3,forme_rocha_4,forme_rocha_5,forme_rocha_6,forme_rocha_7,forme_rocha_8</item>
     </string-array>
 
     <string-array name="rocha">
@@ -1070,61 +2893,54 @@
         <item name="tracos">8</item>
         <item name="exemplo">その岩は大きいです</item>
         <item name="traducaoExemplo">Essa rocha é grande.</item>
+        <item name="rochaImg">kanji_rocha</item>
+        <item name="sequenciarochaImgs">kanji_rocha_t1,kanji_rocha_t2,kanji_rocha_t3,kanji_rocha_t4,kanji_rocha_t5,kanji_rocha_t6,kanji_rocha_t7,kanji_rocha_t8</item>
+        <item name="FormeKanjirocha">kanji_rocha_t1,kanji_rocha_t2,kanji_rocha_t3,kanji_rocha_t4,kanji_rocha_t5,kanji_rocha_t6,kanji_rocha_t7,kanji_rocha_t8</item>
     </string-array>
 
     <!--Array de referencias para os Kanji do Capitulo5-->
     <array name="KanjiCapitulo5">
-        <item>@array/brilho</item>
-        <item>@array/descansar</item>
-        <item>@array/corpo</item>
-        <item>@array/gostar</item>
-        <item>@array/homem</item>
-        <item>@array/bosque</item>
-        <item>@array/floresta</item>
-        <item>@array/entre</item>
-        <item>@array/cultivado</item>
-        <item>@array/rocha</item>
-    </array>
-    <array name="KanjiCapitulo5Imgs">
-        <item>@drawable/kanji_brilho</item>
-        <item>@drawable/kanji_descansar</item>
-        <item>@drawable/kanji_corpo</item>
-        <item>@drawable/kanji_gostar</item>
-        <item>@drawable/kanji_homem</item>
-        <item>@drawable/kanji_bosque</item>
-        <item>@drawable/kanji_floresta</item>
-        <item>@drawable/kanji_entre</item>
-        <item>@drawable/kanji_campocultivado</item>
-        <item>@drawable/kanji_rocha</item>
+        <item>brilho</item>
+        <item>descansar</item>
+        <item>corpo</item>
+        <item>gostar</item>
+        <item>homem</item>
+        <item>bosque</item>
+        <item>floresta</item>
+        <item>entre</item>
+        <item>campocultivado</item>
+        <item>rocha</item>
     </array>
 
     <!--Arrays de texto e imagens para as opções da KanjiActivity--><!--..................................................................-->
-    <integer-array name="kanjiTopList1">
-        <item>@drawable/kanji_top_placeholder1</item>
-        <item>@drawable/kanji_top_placeholder2</item>
-        <item>@drawable/kanji_top_placeholder1</item>
-        <item>@drawable/kanji_top_placeholder2</item>
-        <item>@drawable/kanji_top_placeholder1</item>
-        <item>@drawable/kanji_top_placeholder2</item>
-        <item>@drawable/kanji_top_placeholder1</item>
-        <item>@drawable/kanji_top_placeholder2</item>
-        <item>@drawable/kanji_top_placeholder1</item>
-        <item>@drawable/kanji_top_placeholder2</item>
-</integer-array>
+
 
 <!-- Textos para os Menus da MainActivity --><!--.........................................................................................-->
     <array name="vocabularioMenu">
-        <item>Quiz</item>
         <item>Lista de vocabulário</item>
+        <item>Quiz</item>
+    </array>
+    <array name="vocabularioMenuImgs">
+        <item>@drawable/icone_lista</item>
+        <item>@drawable/icone_quiz</item>
     </array>
     <array name="kanaMenu">
+        <item>Lista de Kanas</item>
         <item>Quiz</item>
-        <item>Aprender</item>
+    </array>
+    <array name="kanaMenuImgs">
+        <item>@drawable/icone_lista</item>
+        <item>@drawable/icone_quiz</item>
     </array>
     <array name="kanjiMenu">
+        <item>Lista de Kanjis</item>
         <item>Quiz de leitura</item>
-        <item>Aprender</item>
         <item>Forme o Kanji</item>
+    </array>
+    <array name="kanjiMenuImgs">
+        <item>@drawable/icone_lista</item>
+        <item>@drawable/icone_quiz</item>
+        <item>@drawable/icone_puzzle</item>
     </array>
 
 </resources>

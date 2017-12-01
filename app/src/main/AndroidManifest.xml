@@ -4,6 +4,7 @@
 
     <application
         android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -14,11 +15,6 @@
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".KanjiActivity"
@@ -29,18 +25,21 @@
         <activity
             android:name=".KanaActivity"
             android:configChanges="orientation"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName=".KanaListActivity"
             android:screenOrientation="portrait"
-            android:noHistory="true"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".KanaListActivity" />
+        </activity>
         <activity
-            android:name=".SobreActivity"
+            android:name=".KanaListActivity"
             android:configChanges="orientation"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".VocabularioActivity"
+            android:name=".VocabularioListActivity"
             android:configChanges="orientation"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
@@ -57,11 +56,32 @@
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".KanjiListActivity"
-            android:theme="@style/AppTheme.NoActionBar"
+        <activity
+            android:name=".KanjiListActivity"
             android:configChanges="orientation"
             android:parentActivityName=".MainActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".dialogActivity"
+            android:theme="@style/holo_light_dialog" />
+        <activity
+            android:name=".SobreActivity"
+            android:configChanges="orientation"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SplashScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

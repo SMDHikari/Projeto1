@@ -6,20 +6,28 @@
     <string name="title_activity_kana">Kana</string>
     <string name="title_activity_sobre">Sobre</string>
     <string name="title_activity_vocabulario">Vocabulário</string>
+    <string name="main_button_sobre">Sobre o NLE</string>
+    <string name="main_button_kana">Kana</string>
+    <string name="main_button_kanji">Kanji</string>
+    <string name="main_button_vocab">Vocabulário</string>
 
 
+    <string name="teste_db">teste</string>
+
+    <!--Array dos Spinners da atividade Kana-->
     <string-array name="kanaSpinner1">
         <item>Hiragana</item>
         <item>Katakana</item>
     </string-array>
 
     <string-array name="kanaSpinner2">
-        <item>Todos</item>
         <item>Básicos</item>
         <item>Variáveis</item>
         <item>Junções</item>
+        <item>Todos</item>
     </string-array>
 
+    <!--Array dos Spinners da atividade Kanji-->
     <string-array name="kanjiSpinner1">
         <item>Capitulo 1</item>
         <item>Capitulo 2</item>
@@ -33,10 +41,5 @@
         <item>Número de Traços</item>
     </string-array>
 
-
-    <string name="sobreNle">O Curso de Japonês da Uece foi criado em agosto de 1993, atendendo
-        à demanda de um público que manifestava interesse em aprender a língua e a cultura japonesa.
-        O curso está vinculado ao Núcleo de Línguas Estrangeiras, umu projeto de Extenção do Curso
-        de Letras da Universidade Estadu al do Ceará(UECE).</string>
 
 </resources>

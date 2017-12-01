@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorGrayBackground"
-    tools:context="hikari.com.projeto1.VocabularioActivity">
+    tools:context="hikari.com.projeto1.VocabularioListActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"

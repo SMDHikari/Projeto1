@@ -1,18 +1,23 @@
 package hikari.com.projeto1;
 
+import android.app.Activity;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.GestureDetector;
+import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ListAdapter;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -30,6 +35,11 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.sobreBtn)
     Button sobreBtn;
 
+    boolean botãoClicado=false;
+    Intent intent;
+    String posicaoClick;
+    int posicaoDialogOption;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,23 +54,42 @@ public class MainActivity extends AppCompatActivity {
     //utiliza a função @Bind e @OnClick da biblioteca Butterknife para uma melhor organização de códigos
     @OnClick({R.id.kanaBtn, R.id.kanjiBtn, R.id.vocabularioBtn, R.id.sobreBtn})
     public void onClicked(View v){
-    Intent intent;
-        switch (v.getId()){
-            case R.id.kanaBtn:
-                dialogOptions(this,"kanaBtn").show();;
+        Intent menuIntent;
+        Intent intent;
+        if(botãoClicado==false) {
+            switch (v.getId()) {
 
-                break;
-            case R.id.kanjiBtn:
-                dialogOptions(this,"kanjiBtn").show();;
-                break;
-            case R.id.vocabularioBtn:
-                dialogOptions(this,"vocabulario").show();
-                break;
-            case R.id.sobreBtn:
-                intent = new Intent(this, SobreActivity.class);
-                changeActivity(intent);
-                break;
+                case R.id.kanaBtn:
+                    menuIntent = new Intent(this, dialogActivity.class);
+                    menuIntent.putExtra("botaoClicado", 0);
+                    menuIntent.putExtra("titulo", "Kana");
+                    posicaoClick = "kanaBtn";
+                    startActivityForResult(menuIntent, 1);
+                    break;
+
+                case R.id.kanjiBtn:
+                    menuIntent = new Intent(this, dialogActivity.class);
+                    menuIntent.putExtra("botaoClicado", 1);
+                    menuIntent.putExtra("titulo", "Kanji");
+                    posicaoClick = "kanjiBtn";
+                    startActivityForResult(menuIntent, 1);
+                    break;
+
+                case R.id.vocabularioBtn:
+                    menuIntent = new Intent(this, dialogActivity.class);
+                    menuIntent.putExtra("botaoClicado", 2);
+                    menuIntent.putExtra("titulo", "Vocabulário");
+                    posicaoClick = "vocabularioBtn";
+                    startActivityForResult(menuIntent, 1);
+
+                    break;
+                case R.id.sobreBtn:
+                    menuIntent = new Intent(this, SobreActivity.class);
+                    changeActivity(menuIntent);
+                    break;
+            }
         }
+
     }
 
     //Metodo que lida com a mudança de atividades
@@ -69,91 +98,46 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //Metódo para criação de alert dialogs
-    AlertDialog dialogOptions(Context context,String string){
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        int teste = data.getIntExtra("posicaoClicado",1);
 
-        switch(string){
-            case "kanaBtn":
-                return new AlertDialog.Builder(context)
-                        .setTitle("Kana")
-                        .setCancelable(true)
-                        .setIcon(android.R.drawable.ic_dialog_info)
-                        .setItems(R.array.kanaMenu, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                Intent intent;
-                                switch(which){
-                                    case 0:
-                                        intent = new Intent(getApplicationContext(), QuizActivity.class);
-                                        intent.putExtra("quizType","Kana");
-                                        changeActivity(intent);
-                                        break;
-                                    case 1:
-                                        intent = new Intent(getApplicationContext(), KanaActivity.class);
-                                        intent.setFlags(intent .getFlags() | Intent.FLAG_ACTIVITY_NO_HISTORY);
-                                        changeActivity(intent);
-                                        break;
-                                }
-                            }
-                        })
-                        .create();
-            case "kanjiBtn":
-                return new AlertDialog.Builder(context)
-                        .setTitle("Quantas questões deseja?")
-                        .setCancelable(true)
-                        .setIcon(android.R.drawable.ic_dialog_info)
-                        .setItems(R.array.kanjiMenu, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                Intent intent;
-                                switch(which){
-                                    case 0:
-                                        intent = new Intent(getApplicationContext(), QuizActivity.class);
-                                        intent.putExtra("quizType","Kanji");
-                                        changeActivity(intent);
-                                        break;
-                                    case 1:
-                                        intent = new Intent(getApplicationContext(), KanjiListActivity.class);
-                                        changeActivity(intent);
-                                        break;
-                                    case 2:
-                                        intent = new Intent(getApplicationContext(), FormeKanjiActivity.class);
-                                        changeActivity(intent);
-                                        break;
+        if(requestCode == 1 && resultCode == Activity.RESULT_OK){
+            if(teste>0){
+                Toast.makeText(this,"Botão desativado",Toast.LENGTH_SHORT).show();
+                botãoClicado=false;
+            }
+            else {
+                posicaoDialogOption = data.getIntExtra("clicadoOption", 0);
+                intent = ((dialogtemData) data.getExtras().getParcelable("clicadoOption")).getIntent();
 
-                                }
-                            }
-                        })
-                        .create();
-            case "vocabulario":
-                return new AlertDialog.Builder(context)
-                        .setTitle("Vocabulário")
-                        .setCancelable(true)
-                        .setIcon(android.R.drawable.ic_dialog_info)
-                        .setItems(R.array.vocabularioMenu, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                Intent intent;
-                                switch(which){
-                                    case 0:
-                                        intent = new Intent(getApplicationContext(), QuizActivity.class);
-                                        intent.putExtra("quizType","Vocabulario");
-                                        changeActivity(intent);
-                                        break;
-                                    case 1:
-                                        intent = new Intent(getApplicationContext(), VocabularioActivity.class);
-                                        changeActivity(intent);
-                                        break;
-                                }
-                            }
-                        })
-                        .create();
+                 changeActivity(intent);
+            }
 
-            default:
-                return new AlertDialog.Builder(this).create();
+
         }
-    }
-}
 
+
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
+    }
+
+    @Override
+public void onResume() {
+    super.onResume();
+    botãoClicado=false;
+}
+}
 //SubClasse criada para lidar com o OnItemTouch de todos os RecyclerViews do aplicativo
 class RecyclerTouchListener implements RecyclerView.OnItemTouchListener{
 
@@ -197,4 +181,5 @@ class RecyclerTouchListener implements RecyclerView.OnItemTouchListener{
     public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
 
     }
+
 }

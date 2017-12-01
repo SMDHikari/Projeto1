@@ -1,10 +1,12 @@
 package hikari.com.projeto1;
 
+import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,12 +21,22 @@ import java.util.List;
 public class AdaptadorRecycler extends RecyclerView.Adapter<AdaptadorRecycler.ViewHolder> implements RecyclerView.OnItemTouchListener {
     private ArrayList<ItemData> mDataset;
     private boolean listaVertical;
+    static private int selectedPosition=-1;
+
+    static public void setSelectedPosition(int recebido){
+        selectedPosition=recebido;
+    }
+    public int getSelectedPosition(){
+        return selectedPosition;
+    }
 
 
     public AdaptadorRecycler(ArrayList<ItemData> mDataset,boolean listaVertical){
         this.mDataset=mDataset;
         this.listaVertical=listaVertical;
     }
+
+
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -45,7 +57,17 @@ public class AdaptadorRecycler extends RecyclerView.Adapter<AdaptadorRecycler.Vi
             holder.mTextView.setText(mDataset.get(position).getTitle());
         }
         holder.imgViewIcon.setImageDrawable(mDataset.get(position).getImage());
+        if(listaVertical==false){
+            if(selectedPosition==position)
+                holder.itemView.setBackgroundColor(Color.parseColor("#D3D3D3"));
+            else{
+                holder.itemView.setBackgroundColor(Color.alpha(100));
+            }
+        }
+
+
     }
+
 
     @Override
     public int getItemCount() {
@@ -74,8 +96,8 @@ public class AdaptadorRecycler extends RecyclerView.Adapter<AdaptadorRecycler.Vi
         public ImageView imgViewIcon;
         public ViewHolder(View itemView) {
             super(itemView);
-            mTextView=(TextView) itemView.findViewById(R.id.itemTextID);
-            imgViewIcon=(ImageView) itemView.findViewById(R.id.itemImageID);
+            mTextView= itemView.findViewById(R.id.itemTextID);
+            imgViewIcon= itemView.findViewById(R.id.itemImageID);
             itemView.setOnClickListener(this);
             imgViewIcon.setOnClickListener(this);
 

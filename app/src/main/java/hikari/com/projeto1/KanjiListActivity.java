@@ -3,28 +3,25 @@ package hikari.com.projeto1;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
-import android.content.res.TypedArray;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Canvas;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.support.v7.widget.helper.ItemTouchHelper;
-import android.view.MotionEvent;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LayoutAnimationController;
-import android.widget.AbsListView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.Arrays;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -33,17 +30,21 @@ import butterknife.OnItemSelected;
 public class KanjiListActivity extends AppCompatActivity implements Runnable{
     @BindView(R.id.kanjiCapSpn)
     Spinner kanjiCapSpn;
-    @BindView(R.id.kanjiOrdemSpn)
-    Spinner kanjiOrdemSpn;
     @BindView(R.id.recyclerKanjiId)
     RecyclerView recyclerView;
-    private RecyclerView.Adapter mAdapter;
+    @BindView(R.id.searchTextKanji)
+    EditText searchTextKanji;
+    private AdaptadorRecyclerViewSection mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
-    private ArrayList<KanjiItemData> arrayKanas;
-    int OptionSpn1=0,OptionSpn2=0;
+    private ArrayList<ItemData> arrayKanji;
+    ArrayList<ArrayList<ItemData>> arrayKanjisSectioner=new ArrayList<ArrayList<ItemData>>();
+    Boolean textChanged;
+    int OptionSpn1=0;
+    private SQLiteDatabase bancoDados;
+    Cursor cursor;
     Resources r;
-    int[] kanjiList;
-    int[] imgs;
+    //int[] kanjiList;
+    //int[] imgs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,12 +55,21 @@ public class KanjiListActivity extends AppCompatActivity implements Runnable{
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         ButterKnife.bind(this);
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
         r=getResources();
 
-        kanjiList=new int[]{R.array.KanjiCapitulo1,R.array.KanjiCapitulo2,R.array.KanjiCapitulo3,R.array.KanjiCapitulo4,R.array.KanjiCapitulo5};
+        try{
+            bancoDados = openOrCreateDatabase("app", Context.MODE_PRIVATE,null);
+
+        }catch(Exception e){
+
+            e.printStackTrace();
+        }
+
+        //kanjiList=new int[]{R.array.KanjiCapitulo1,R.array.KanjiCapitulo2,R.array.KanjiCapitulo3,R.array.KanjiCapitulo4,R.array.KanjiCapitulo5};
         //imgs kanji
-        imgs = new int[]{R.array.KanjiCapitulo1Imgs,R.array.KanjiCapitulo2Imgs,R.array.KanjiCapitulo3Imgs,R.array.KanjiCapitulo4Imgs,R.array.KanjiCapitulo5Imgs};
-        iniciarRecycler(imgs, kanjiList);
+        //imgs = new int[]{R.array.KanjiCapitulo1Imgs,R.array.KanjiCapitulo2Imgs,R.array.KanjiCapitulo3Imgs,R.array.KanjiCapitulo4Imgs,R.array.KanjiCapitulo5Imgs};
+        iniciarRecycler();
 
 
         /*Implementação do ClickListener (não existe naturalmente no RecyclerView)
@@ -69,11 +79,26 @@ public class KanjiListActivity extends AppCompatActivity implements Runnable{
                 recyclerView, new ClickListener() {
             @Override
             public void onClick(View view, final int position) {
-                //On Click baseado na posição
-                Intent intent = new Intent(getApplicationContext(), KanjiActivity.class);
-                intent.putExtra("kanjiClicado",position);
-                intent.putExtra("capPosition",OptionSpn1);
-                startActivity(intent);
+                //On Click recebe id do view clicado
+                    int teste = ((AdaptadorRecyclerViewSection)recyclerView.getAdapter()).getSectionCount();
+                    int contador =0;
+                    int idClicado=0;
+                    for(int x=0;x<teste;x++){
+                        for(int y=0;y<arrayKanjisSectioner.get(x).size();y++){
+                            contador++;
+                            if(contador==position-x){
+                                idClicado=arrayKanjisSectioner.get(x).get(y).getID();
+                                break;
+                            }
+                        }
+
+                    }
+
+                    Intent intent = new Intent(getApplicationContext(), KanjiActivity.class);
+                    //intent.putExtra("capPosition",OptionSpn1);
+                    intent.putExtra("kanjiClicado",idClicado);
+                    startActivity(intent);
+
             }
 
 
@@ -81,83 +106,85 @@ public class KanjiListActivity extends AppCompatActivity implements Runnable{
             public void onLongClick(View view, int position) {
             }
         }));
+
+        searchTextKanji.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if(!(searchTextKanji.getText().toString().equals(""))){
+                    textChanged=true;
+                    searchFromDB(searchTextKanji.getText().toString());
+                }else{
+                    textChanged=false;
+                    atualizarLista();
+                }
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        if (item.getItemId() == android.R.id.home) {
+            finish();
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
+            return true;
+        }
+        return false;
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
     }
 
     private void runLayoutAnimation(final RecyclerView recyclerView) {
         final Context context = recyclerView.getContext();
-        final LayoutAnimationController controller =
-                AnimationUtils.loadLayoutAnimation(context, R.anim.layout_animation_fall_down);
-
+        final LayoutAnimationController controller = AnimationUtils.loadLayoutAnimation(context, R.anim.layout_animation_fall_down);
         recyclerView.setLayoutAnimation(controller);
         recyclerView.getAdapter().notifyDataSetChanged();
         recyclerView.scheduleLayoutAnimation();
     }
 
-    public void iniciarRecycler(int[] imgs, int[]kanjiList){
+    public void iniciarRecycler(){
         mLayoutManager= new LinearLayoutManager(this);
         recyclerView.setLayoutManager(mLayoutManager);
-        atualizarLista(OptionSpn1,OptionSpn2);
+        atualizarLista();
         recyclerView.addItemDecoration(new SpacesItemDecoration(10));
         recyclerView.setHasFixedSize(true);
         recyclerView.setItemViewCacheSize(20);
         recyclerView.setDrawingCacheEnabled(true);
         recyclerView.setDrawingCacheQuality(View.DRAWING_CACHE_QUALITY_HIGH);
 
-        //Definindo Spinners e inicializando valores dos spinners
+        //Definindo Spinners e inicializando valores do spinner
         ArrayAdapter<CharSequence> adapterSpn1 = ArrayAdapter.createFromResource(   this,
                 R.array.kanjiSpinner1, R.layout.spinner_item_top);
-        ArrayAdapter<CharSequence> adapterSpn2 = ArrayAdapter.createFromResource(this,
-                R.array.kanjiSpinner2, R.layout.spinner_item_top);
         // Specificando layout do dropdown
         adapterSpn1.setDropDownViewResource(R.layout.spinner_item_dropdown);
-        adapterSpn2.setDropDownViewResource(R.layout.spinner_item_dropdown);
+
 
         // Aplicando o adaptador no spinner
         kanjiCapSpn.setAdapter(adapterSpn1);
-        kanjiOrdemSpn.setAdapter(adapterSpn2);
         runLayoutAnimation(recyclerView);
+
+
     }
 
-    public void atualizarLista(int escolhaSpinner1, int escolhaSpinner2){
-        //caso o ArrayKanas já exista, efetua-se uma limpeza dos dados e da memória antes de reinserir os valores neste.
-        if(arrayKanas!=null){
-            for(int i=0;i<arrayKanas.size();i++){
-                arrayKanas.get(i).clearMemory();
-            }
-        }
-        arrayKanas=null;
-        Runtime.getRuntime().gc();
 
-        arrayKanas=new ArrayList<KanjiItemData>();
-        //Usar typedarray para os strings também.
-        TypedArray kanjiTyped= getResources().obtainTypedArray(kanjiList[escolhaSpinner1]);
-        TypedArray imgsTyped = getResources().obtainTypedArray(imgs[escolhaSpinner1]);
-        for(int i=0;i<getResources().getStringArray(kanjiList[escolhaSpinner1]).length;i++){
-            String[] titulo =getResources().getStringArray(kanjiTyped.getResourceId(i,0))[0].split(",");
-            arrayKanas.add(new KanjiItemData(titulo[0],imgsTyped.getResources().getDrawable(imgsTyped.getResourceId(i,0)),Integer.parseInt(getResources().getStringArray(kanjiTyped.getResourceId(i,0))[3])));
-
-        }
-        //limpeza de memória do imgsTyped
-
-        if(OptionSpn2==1){
-            Collections.sort(arrayKanas);
-        }
-        mAdapter= new AdaptadorRecycler(cast(arrayKanas),true);
-        mAdapter.notifyDataSetChanged();
-        recyclerView.setAdapter(mAdapter);
-        runLayoutAnimation(recyclerView);
-        //limpa a variavel imgsTyped no fim da atualização da lista
-        imgsTyped.recycle();
-        kanjiTyped.recycle();
-        Runtime.getRuntime().gc();
-
-    }
 
     public static <KanjiItemData> ArrayList<ItemData> cast(ArrayList list) {
         return list;
     }
-
-
 
     @Override
     public Intent getSupportParentActivityIntent() {
@@ -174,19 +201,158 @@ public class KanjiListActivity extends AppCompatActivity implements Runnable{
         return null;
     }
 
-
-    @OnItemSelected({R.id.kanjiCapSpn,R.id.kanjiOrdemSpn})
-    public void onItemSelected( Spinner spinner, int position) {
-        switch(spinner.getId()){
-            case R.id.kanjiCapSpn:
-                OptionSpn1=position;
-                atualizarLista(OptionSpn1,OptionSpn2);
-                break;
-            case R.id.kanjiOrdemSpn:
-                OptionSpn2=position;
-                atualizarLista(OptionSpn1,OptionSpn2);
-                break;
+    public void atualizarLista(){
+        //caso o ArrayKanji já exista, efetua-se uma limpeza dos dados e da memória antes de reinserir os valores neste.
+        String[] StringDivisao=new String[0];
+        int[] tracosDivisao=new int[0];
+        int capitulo = OptionSpn1+1;
+        for(int contador=0;contador<arrayKanjisSectioner.size();contador++) {
+            arrayKanjisSectioner.get(contador).clear();
         }
+        arrayKanjisSectioner.clear();
+        int indiceColunaTrad,indiceColunaTracos,indiceColunaID,indiceColunaImg;
+                arrayKanji=null;
+        Runtime.getRuntime().gc();
+        //Usar typedarray para os strings também.
+        //TypedArray kanjiTyped= getResources().obtainTypedArray(kanjiList[escolhaSpinner1]);
+        //TypedArray imgsTyped = getResources().obtainTypedArray(getResources().obtainTypedArray(imgs[escolhaSpinner1]).getResourceId(0,0));
+
+            cursor = bancoDados.rawQuery("SELECT DISTINCT tracos FROM kanji where capitulo_kanji ="+capitulo, null);
+            cursor.moveToFirst();
+            int indiceContagemTracos=cursor.getColumnIndex("tracos");
+
+            cursor.moveToFirst();
+            tracosDivisao = new int[cursor.getCount()];
+            cursor.moveToFirst();
+
+            try{
+            while(cursor!=null)
+            {
+                tracosDivisao[cursor.getPosition()]=cursor.getInt(indiceContagemTracos);
+                cursor.moveToNext();
+            }
+            }catch(Exception e){
+                e.printStackTrace();
+
+            }
+
+            cursor.moveToFirst();
+            Arrays.sort(tracosDivisao);
+            for(int i=0;i<tracosDivisao.length;i++){
+
+                cursor=bancoDados.rawQuery("SELECT id_kanji,traducao, tracos,kanji_imagem FROM kanji WHERE tracos ="+tracosDivisao[i]+" AND capitulo_kanji ="+capitulo,null);
+
+
+                //int indiceCapitulo = cursor.getColumnIndex("capitulo_kanji");
+                indiceColunaTrad=cursor.getColumnIndex("traducao");
+                indiceColunaTracos=cursor.getColumnIndex("tracos");
+                indiceColunaID=cursor.getColumnIndex("id_kanji");
+                indiceColunaImg=cursor.getColumnIndex("kanji_imagem");
+                cursor.moveToFirst();
+
+                try{
+                    arrayKanji=new ArrayList<ItemData>();
+
+                  for(int x=0;x<cursor.getCount();x++){
+                      int imageId = getResources().getIdentifier(cursor.getString(indiceColunaImg), "drawable", this.getPackageName());
+                      String[] titulo =cursor.getString(indiceColunaTrad).split(",");
+                      arrayKanji.add(new KanItemData(titulo[0]
+                              ,getResources().getDrawable(imageId)
+                              ,cursor.getInt(indiceColunaTracos)
+                              ,cursor.getInt(indiceColunaID)
+                      ));
+                      cursor.moveToNext();
+                  }
+                }catch (Exception e){
+                 e.printStackTrace();
+
+
+
+                }
+                arrayKanjisSectioner.add(new ArrayList<ItemData>(arrayKanji));
+                arrayKanji=new ArrayList<ItemData>();
+                cursor.close();
+            }
+
+        StringDivisao= new String[tracosDivisao.length];
+        for(int i=0;i<tracosDivisao.length;i++){
+            StringDivisao[i]=String.valueOf(tracosDivisao[i])+" Traços:";
+        }
+        mAdapter= new AdaptadorRecyclerViewSection(arrayKanjisSectioner,StringDivisao);
+        mAdapter.notifyDataSetChanged();
+        recyclerView.setAdapter(mAdapter);
+        runLayoutAnimation(recyclerView);
+        //limpa a variavel imgsTyped no fim da atualização da lista
+        //imgsTyped.recycle();
+        //kanjiTyped.recycle();
+        Runtime.getRuntime().gc();
+
+    }
+
+    public void searchFromDB(String busca){
+        if(arrayKanji!=null){
+            for(int i=0;i<arrayKanji.size();i++){
+                arrayKanji.get(i).clearMemory();
+            }
+        }
+        if(arrayKanjisSectioner!=null){
+            for(int contador =0;contador<arrayKanjisSectioner.size();contador++){
+                arrayKanjisSectioner.get(contador).clear();
+            }
+        }
+        arrayKanjisSectioner.clear();
+        arrayKanji.clear();
+
+
+            //Inicializa o cursor para se fazer uma busca com o valor da caixa de texto
+            String buscaRecebida="SELECT id_kanji,traducao, tracos,kanji_imagem FROM kanji WHERE traducao LIKE \""+busca+"%\" order by traducao";
+            cursor=bancoDados.rawQuery(buscaRecebida,null);
+
+            cursor.moveToFirst();
+
+            int indiceColunaTrad=cursor.getColumnIndex("traducao");
+            int indiceColunaTracos=cursor.getColumnIndex("tracos");
+            int indiceColunaID=cursor.getColumnIndex("id_kanji");
+            int indiceColunaImg=cursor.getColumnIndex("kanji_imagem");
+            cursor.moveToFirst();
+
+        try{
+            arrayKanji=new ArrayList<ItemData>();
+
+            for(int x=0;x<cursor.getCount();x++){
+                int imageId = getResources().getIdentifier(cursor.getString(indiceColunaImg), "drawable", this.getPackageName());
+                String[] titulo =cursor.getString(indiceColunaTrad).split(",");
+                arrayKanji.add(new KanItemData(titulo[0]
+                        ,getResources().getDrawable(imageId)
+                        ,cursor.getInt(indiceColunaTracos)
+                        ,cursor.getInt(indiceColunaID)
+                ));
+                cursor.moveToNext();
+            }
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
+            arrayKanjisSectioner.add(new ArrayList<ItemData>(arrayKanji));
+            arrayKanji=new ArrayList<ItemData>();
+            cursor.close();
+
+            arrayKanjisSectioner.add(arrayKanji);
+            mAdapter= new AdaptadorRecyclerViewSection(arrayKanjisSectioner);
+            mAdapter.notifyDataSetChanged();
+            recyclerView.setAdapter(mAdapter);
+            runLayoutAnimation(recyclerView);
+            //limpa a variavel imgsTyped no fim da atualização da lista
+            //imgsTyped.recycle();
+            //kanjiTyped.recycle();
+            Runtime.getRuntime().gc();
+    }
+
+
+
+    @OnItemSelected(R.id.kanjiCapSpn)
+    public void onItemSelected( Spinner spinner, int thisPosition) {
+        OptionSpn1=thisPosition;
+        searchTextKanji.setText("");
     }
     //Metodo chamado ao sair da atividade(nativo da classe Activity)
     @Override
@@ -201,25 +367,19 @@ public class KanjiListActivity extends AppCompatActivity implements Runnable{
         recyclerView.setLayoutManager(null);
         recyclerView=null;
         kanjiCapSpn.setOnItemSelectedListener(null);
-        kanjiOrdemSpn.setOnItemSelectedListener(null);
-        kanjiOrdemSpn=null;
         kanjiCapSpn=null;
-        for(int i=0;i<arrayKanas.size();i++){
-            arrayKanas.get(i).clearMemory();
-        }
-        arrayKanas=null;
         Runtime.getRuntime().gc();
         Resources r;
     }
 
-    //  Metodo runnable, mantem um controle da variavel arrayKanas para controlar a memória enquanto a atividade está rodando.
+    //  Metodo runnable, mantem um controle da variavel arrayKanji para controlar a memória enquanto a atividade está rodando.
     @Override
     public void run(){
 
-        for(int i=0;i<arrayKanas.size();i++){
-            arrayKanas.get(i).clearMemory();
+       /* for(int i=0;i<arrayKanji.size();i++){
+            arrayKanji.get(i).clearMemory();
         }
-        Runtime.getRuntime().gc();
+        Runtime.getRuntime().gc();*/
     }
 
 }
