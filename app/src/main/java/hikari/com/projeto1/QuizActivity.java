@@ -17,15 +17,12 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class QuizActivity extends AppCompatActivity {
-    @BindView(R.id.questionQuizImg)
-    ImageView questionQuizImg;
-    @BindView(R.id.optionsLst)
-    ListView optionsLst;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz);
+        setContentView(R.layout.activity_quiz_kana);
         Intent intent = getIntent();
         String QuizType = intent.getStringExtra("quizType");
 

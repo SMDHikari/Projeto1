@@ -22,7 +22,7 @@ public class dialogActivity extends ListActivity {
     private String[] dialogTitles;
     private TypedArray imgs;
     boolean clicado = false;
-    private ArrayList<ItemData> items;
+    private ArrayList<dialogtemData> items;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,11 +33,11 @@ public class dialogActivity extends ListActivity {
         int botaoClicado = intent.getIntExtra("botaoClicado",0);
         String tituloClicado= intent.getStringExtra("titulo");
         populateDialogList(botaoClicado);
-        ArrayAdapter<ItemData> adapter = new AdaptadorDialog(this,items);
+        ArrayAdapter<dialogtemData> adapter = new AdaptadorDialog(this,items);
         this.setTitle(tituloClicado);
-        int divierId = this.getResources()
+        int dividerId = this.getResources()
                 .getIdentifier("android:id/titleDivider", null, null);
-        View divider = this.findViewById(divierId);
+        View divider = this.findViewById(dividerId);
         divider.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
         setListAdapter(adapter);
 
@@ -52,7 +52,7 @@ public class dialogActivity extends ListActivity {
                 returnIntent.putExtra("posicaoClicado",position);
                 returnIntent.putExtra("clicadoOption", c);
                 setResult(RESULT_OK, returnIntent);
-                imgs.recycle(); //recycle images;
+
                 finish();
             }
         });
@@ -61,7 +61,7 @@ public class dialogActivity extends ListActivity {
     }
 
     private void populateDialogList(int botaoClicado) {
-        items = new ArrayList<ItemData>();
+        items = new ArrayList<dialogtemData>();
         Intent[] dialogIntent= new Intent[0];
 
 
@@ -90,7 +90,7 @@ public class dialogActivity extends ListActivity {
                 break;
         }
         for(int i = 0; i < dialogTitles.length; i++){
-            items.add(new dialogtemData(dialogTitles[i],  imgs.getDrawable(i),dialogIntent[i]));
+            items.add(new dialogtemData(dialogTitles[i],  imgs.getResourceId(i,0),dialogIntent[i]));
         }
     }
 }

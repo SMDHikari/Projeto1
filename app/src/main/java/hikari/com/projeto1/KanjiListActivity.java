@@ -257,7 +257,7 @@ public class KanjiListActivity extends AppCompatActivity implements Runnable{
                       int imageId = getResources().getIdentifier(cursor.getString(indiceColunaImg), "drawable", this.getPackageName());
                       String[] titulo =cursor.getString(indiceColunaTrad).split(",");
                       arrayKanji.add(new KanItemData(titulo[0]
-                              ,getResources().getDrawable(imageId)
+                              ,imageId
                               ,cursor.getInt(indiceColunaTracos)
                               ,cursor.getInt(indiceColunaID)
                       ));
@@ -323,7 +323,7 @@ public class KanjiListActivity extends AppCompatActivity implements Runnable{
                 int imageId = getResources().getIdentifier(cursor.getString(indiceColunaImg), "drawable", this.getPackageName());
                 String[] titulo =cursor.getString(indiceColunaTrad).split(",");
                 arrayKanji.add(new KanItemData(titulo[0]
-                        ,getResources().getDrawable(imageId)
+                        ,imageId
                         ,cursor.getInt(indiceColunaTracos)
                         ,cursor.getInt(indiceColunaID)
                 ));

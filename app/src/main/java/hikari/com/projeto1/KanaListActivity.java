@@ -7,6 +7,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.AppCompatDelegate;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -47,7 +48,9 @@ public class KanaListActivity extends AppCompatActivity{
 
 
     //private int[][] kanaList;
-
+    static {
+        AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
+    }
     //private int[][] imgs;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,9 +100,10 @@ public class KanaListActivity extends AppCompatActivity{
                     }
                     Intent intent = new Intent(getApplicationContext(), KanaActivity.class);
                     //intent.putExtra("capPosition",OptionSpn1);
-                    intent.putExtra("kataOuHira",OptionSpn1);
+                    intent.putExtra("kanaSpn1",OptionSpn1);
                     intent.putExtra("kanaClicado",idClicado);
-                    //startActivity(intent);
+                    intent.putExtra("kanaSpn2",OptionSpn2);
+                    startActivity(intent);
                     Toast.makeText(getApplicationContext(),String.valueOf(idClicado),Toast.LENGTH_SHORT).show();
                 }
             }
@@ -231,7 +235,7 @@ public class KanaListActivity extends AppCompatActivity{
                     int imageId = getResources().getIdentifier(cursor.getString(indiceColunaImg), "drawable", this.getPackageName());
                     String titulo =cursor.getString(indiceColunaNome);
                     arrayKanas.add(new KanItemData(titulo
-                            ,getResources().getDrawable(imageId)
+                            ,imageId
                             ,cursor.getInt(indiceColunaTracos)
                             ,cursor.getInt(indiceColunaID)
                     ));
@@ -311,7 +315,7 @@ public class KanaListActivity extends AppCompatActivity{
                 int imageId = getResources().getIdentifier(cursor.getString(indiceColunaImg), "drawable", this.getPackageName());
                 String[] titulo =cursor.getString(indiceColunaTrad).split(",");
                 arrayKanas.add(new KanItemData(titulo[0]
-                        ,getResources().getDrawable(imageId)
+                        ,imageId
                         ,cursor.getInt(indiceColunaTracos)
                         ,cursor.getInt(indiceColunaID)
                 ));

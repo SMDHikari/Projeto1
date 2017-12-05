@@ -179,7 +179,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
 
 
-                    sleep(3000);
+                    sleep(2000);
 
 
                     // Advance to the next screen.

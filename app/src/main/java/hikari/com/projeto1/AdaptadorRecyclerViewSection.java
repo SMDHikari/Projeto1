@@ -84,7 +84,7 @@ public class AdaptadorRecyclerViewSection  extends SectionedRecyclerViewAdapter<
     @Override
     protected void onBindItemViewHolder(CountItemViewHolder holder, int section, int position) {
         holder.mTextView.setText(mDataset.get(section).get(position).getTitle());
-        holder.imgViewIcon.setImageDrawable(mDataset.get(section).get(position).getImage());
+        holder.imgViewIcon.setImageResource(mDataset.get(section).get(position).getImage());
     }
 
 

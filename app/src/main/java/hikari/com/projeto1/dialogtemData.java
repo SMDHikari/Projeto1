@@ -12,10 +12,10 @@ import android.support.annotation.NonNull;
 
 public class dialogtemData extends ItemData implements Parcelable {
     private String title;
-    private Drawable image;
+    private int image;
     private Intent intent;
 
-    public dialogtemData(String title, Drawable image,Intent intent){
+    public dialogtemData(String title, int image,Intent intent){
         this.title=title;
         this.image=image;
         this.intent=intent;
@@ -38,6 +38,10 @@ public class dialogtemData extends ItemData implements Parcelable {
         }
     };
 
+    @Override
+    public int getTracos(){
+        return 0;
+    }
     Intent getIntent(){
         return this.intent;
     }
@@ -47,7 +51,7 @@ public class dialogtemData extends ItemData implements Parcelable {
     }
 
     @Override
-    Drawable getImage() {
+    int getImage() {
         return this.image;
     }
 
@@ -64,7 +68,6 @@ public class dialogtemData extends ItemData implements Parcelable {
     @Override
     void clearMemory() {
         this.title=null;
-        this.image=null;
     }
 
     @Override

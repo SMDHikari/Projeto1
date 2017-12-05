@@ -743,7 +743,7 @@
         <item>ji</item>
         <item>4</item>
         <item>hira_var12</item>
-        <item>hirabas17_t1,hirabas17_t2,hiravar12_t4</item>
+        <item>hirabas17_t1,hirabas17_t2,hiravar12_t3,hiravar12_t4</item>
         <item></item>
         <item>variavel</item>
     </string-array>
@@ -927,7 +927,7 @@
         <item>hira_jun7</item>
         <item>hirabas12_t1,hirabas36_t1,hirabas36_t2,hirabas36_t3</item>
         <item></item>
-        <item>basico</item>
+        <item>juncao</item>
     </string-array>
 
     <string-array name="hirajun8">
@@ -1899,7 +1899,7 @@
 <item>kata_jun7</item>
 <item>katabas12_t1,katabas12_t2,katabas12_t3,katabas36_t1,katabas36_t2</item>
 <item></item>
-<item>basico</item>
+<item>juncao</item>
 </string-array>
 
 <string-array name="katajun8">

@@ -56,7 +56,7 @@ public class AdaptadorRecycler extends RecyclerView.Adapter<AdaptadorRecycler.Vi
         if(listaVertical==true) {
             holder.mTextView.setText(mDataset.get(position).getTitle());
         }
-        holder.imgViewIcon.setImageDrawable(mDataset.get(position).getImage());
+        holder.imgViewIcon.setImageResource(mDataset.get(position).getImage());
         if(listaVertical==false){
             if(selectedPosition==position)
                 holder.itemView.setBackgroundColor(Color.parseColor("#D3D3D3"));

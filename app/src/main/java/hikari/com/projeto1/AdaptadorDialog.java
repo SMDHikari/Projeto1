@@ -18,8 +18,8 @@ import java.util.List;
  * Created by Gustavo on 25/11/2017.
  */
 
-public class AdaptadorDialog extends ArrayAdapter<ItemData> {
-    private final ArrayList<ItemData> list;
+public class AdaptadorDialog extends ArrayAdapter<dialogtemData> {
+    private final ArrayList<dialogtemData> list;
     private final Activity context;
 
     static class ViewHolder {
@@ -27,7 +27,7 @@ public class AdaptadorDialog extends ArrayAdapter<ItemData> {
         protected ImageView flag;
     }
 
-    public AdaptadorDialog(Activity context, ArrayList<ItemData> list) {
+    public AdaptadorDialog(Activity context, ArrayList<dialogtemData> list) {
         super(context, R.layout.dialog_item, list);
         this.context = context;
 
@@ -54,7 +54,7 @@ public class AdaptadorDialog extends ArrayAdapter<ItemData> {
 
         ViewHolder holder = (ViewHolder) viewItem.getTag();
         holder.name.setText(list.get(position).getTitle());
-        holder.flag.setImageDrawable(list.get(position).getImage());
+        holder.flag.setImageResource(list.get(position).getImage());
         return viewItem;
     }
 }

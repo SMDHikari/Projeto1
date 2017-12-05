@@ -101,9 +101,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        int teste = data.getIntExtra("posicaoClicado",1);
+
 
         if(requestCode == 1 && resultCode == Activity.RESULT_OK){
+            int teste = data.getIntExtra("posicaoClicado",1);
             if(teste>0){
                 Toast.makeText(this,"Botão desativado",Toast.LENGTH_SHORT).show();
                 botãoClicado=false;

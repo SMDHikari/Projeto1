@@ -1,6 +1,7 @@
 package hikari.com.projeto1;
 
 import android.graphics.drawable.Drawable;
+import android.graphics.drawable.VectorDrawable;
 import android.support.annotation.NonNull;
 
 /**
@@ -9,13 +10,20 @@ import android.support.annotation.NonNull;
 
 public class KanItemData extends ItemData {
     private String title;
-    private Drawable image;
+    private int image;
+    private VectorDrawable imageV;
     private int tracos;
     private int idTabela;
 
-    public KanItemData(String title, Drawable image, int tracos, int idTabela){
+    public KanItemData(String title, int image, int tracos, int idTabela){
         this.title=title;
         this.image=image;
+        this.tracos=tracos;
+        this.idTabela=idTabela;
+    }
+    public KanItemData(String title, VectorDrawable imageV, int tracos, int idTabela){
+        this.title=title;
+        this.imageV=imageV;
         this.tracos=tracos;
         this.idTabela=idTabela;
     }
@@ -29,7 +37,7 @@ public class KanItemData extends ItemData {
         return title;
     }
 
-    public Drawable getImage() {
+    public int getImage() {
         return image;
     }
 
@@ -47,7 +55,6 @@ public class KanItemData extends ItemData {
 
     public void clearMemory(){
         this.title=null;
-        this.image=null;
     }
 
     @Override

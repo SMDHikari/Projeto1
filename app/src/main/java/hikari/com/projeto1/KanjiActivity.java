@@ -6,6 +6,7 @@ import android.content.res.TypedArray;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.drawable.Drawable;
+import android.graphics.drawable.VectorDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -36,7 +37,7 @@ public class KanjiActivity extends AppCompatActivity {
     private RecyclerView.LayoutManager mLayoutManager;
 
     @BindView(R.id.kanjiImgs)
-    GridView kanjiImgsGrid;
+    MyGridView kanjiImgsGrid;
     @BindView(R.id.kanjiImg)
     ImageView kanjiImg;
     @BindView(R.id.kanjiTraducao)
@@ -151,7 +152,7 @@ public class KanjiActivity extends AppCompatActivity {
         for(int x=0;x<cursor.getCount();x++){
             int idImagem = this.getResources().getIdentifier(cursor.getString(indiceColunaImg), "drawable", this.getPackageName());
             arrayKanji.add(new KanItemData(""
-                    ,getResources().getDrawable(idImagem)
+                    ,idImagem
                     ,cursor.getInt(indiceColunaTracos)
                     ,cursor.getInt(indiceColunaID)
             ));
@@ -239,7 +240,7 @@ public class KanjiActivity extends AppCompatActivity {
                 //Inicia Array com ids das Imagems da sequencia
                  idSequenciaImgs= new Drawable[sequenciaImgsString.length];
                 for(int x=0;x<sequenciaImgsString.length;x++){
-                    idSequenciaImgs[x]=getResources().getDrawable(getResources().getIdentifier(sequenciaImgsString[x], "drawable", this.getPackageName()));
+                    idSequenciaImgs[x]= getResources().getDrawable(getResources().getIdentifier(sequenciaImgsString[x], "drawable", this.getPackageName()));
                 }
                 //recebe numero de traços
                 tracos= cursor.getInt(indiceColunaTracos);
@@ -254,7 +255,8 @@ public class KanjiActivity extends AppCompatActivity {
 
         kanjiImgsGrid.setNumColumns(4);
         kanjiImgsGrid.setAdapter(new ImageAdapter(this,idSequenciaImgs));
-        kanjiImgsGrid.setHorizontalSpacing(10);
+        kanjiImgsGrid.setHorizontalSpacing(-250);
+        kanjiImgsGrid.setMinimumHeight(kanjiImgsGrid.getMeasuredHeight());
         kanjiImgsGrid.deferNotifyDataSetChanged();
         kanjiImg.setBackground(getResources().getDrawable(R.drawable.quadrado));
         kanjiImg.setImageResource(imageId);

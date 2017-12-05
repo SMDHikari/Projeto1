@@ -12,7 +12,9 @@ abstract class ItemData implements Serializable, Comparable<ItemData>{
 
     abstract String getTitle();
 
-    abstract Drawable getImage();
+    abstract int getTracos();
+
+    abstract int getImage();
 
     abstract int getID();
 
