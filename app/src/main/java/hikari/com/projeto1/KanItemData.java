@@ -14,6 +14,7 @@ public class KanItemData extends ItemData {
     private VectorDrawable imageV;
     private int tracos;
     private int idTabela;
+    private String bas_var_jun = "";
 
     public KanItemData(String title, int image, int tracos, int idTabela){
         this.title=title;
@@ -21,11 +22,19 @@ public class KanItemData extends ItemData {
         this.tracos=tracos;
         this.idTabela=idTabela;
     }
-    public KanItemData(String title, VectorDrawable imageV, int tracos, int idTabela){
+    public KanItemData(int image){
+        this.image = image;
+    }
+    public KanItemData(String title, int image, int tracos, int idTabela,String bas_var_jun){
         this.title=title;
-        this.imageV=imageV;
+        this.image=image;
         this.tracos=tracos;
         this.idTabela=idTabela;
+        this.bas_var_jun=bas_var_jun;
+    }
+
+    public String getBas_var_jun(){
+        return bas_var_jun;
     }
 
 

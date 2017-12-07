@@ -13,6 +13,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LayoutAnimationController;
 import android.widget.ArrayAdapter;
@@ -56,7 +57,7 @@ public class KanaListActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kana_list);
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        Toolbar myToolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
@@ -251,13 +252,13 @@ public class KanaListActivity extends AppCompatActivity{
 
         }
 
-
         if(escolhaSpinner2==3){
             divisorContagem= new String[StringDivisao.length];
             for(int i=0;i<StringDivisao.length;i++){
                 divisorContagem[i]="Traços "+StringDivisao[i]+":";
             }
-            mAdapter= new AdaptadorRecyclerViewSection(arrayKanaSectioner,divisorContagem);
+
+            mAdapter= new AdaptadorRecyclerViewSection(arrayKanaSectioner,divisorContagem,getApplicationContext());
         }
         else{
             mAdapter= new AdaptadorRecyclerViewSection(arrayKanaSectioner);
@@ -297,7 +298,7 @@ public class KanaListActivity extends AppCompatActivity{
 
 
         //Inicializa o cursor para se fazer uma busca com o valor da caixa de texto
-        String buscaRecebida="SELECT id_kana,nome, tracos,nome_imagem FROM "+ hiraOuKata +" WHERE nome LIKE \""+busca+"%\" order by nome";
+        String buscaRecebida="SELECT id_kana,nome, tracos,nome_imagem,basico_var_jun FROM "+ hiraOuKata +" WHERE nome LIKE \""+busca+"%\" order by nome";
         cursor=bancoDados.rawQuery(buscaRecebida,null);
 
         cursor.moveToFirst();
@@ -305,6 +306,7 @@ public class KanaListActivity extends AppCompatActivity{
         int indiceColunaTrad=cursor.getColumnIndex("nome");
         int indiceColunaTracos=cursor.getColumnIndex("tracos");
         int indiceColunaID=cursor.getColumnIndex("id_kana");
+        int indiceColunaBarVarJun=cursor.getColumnIndex("basico_var_jun");
         int indiceColunaImg=cursor.getColumnIndex("nome_imagem");
         cursor.moveToFirst();
 
@@ -318,6 +320,7 @@ public class KanaListActivity extends AppCompatActivity{
                         ,imageId
                         ,cursor.getInt(indiceColunaTracos)
                         ,cursor.getInt(indiceColunaID)
+                        ,cursor.getString(indiceColunaBarVarJun)
                 ));
                 cursor.moveToNext();
             }

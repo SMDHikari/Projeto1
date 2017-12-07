@@ -6,6 +6,30 @@
     android:layout_height="match_parent"
     android:background="@color/colorGrayBackground">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:textAlignment="gravity"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/title_activity_main_menu"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+    </android.support.v7.widget.Toolbar>
+
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
@@ -29,11 +53,11 @@
         android:text="Escolha a quantidade :"
         android:textColor="@color/colorGray"
         android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/capituloSpn"
         tools:layout_editor_absoluteX="63dp" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/capituloSpn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -43,7 +67,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <Spinner
-        android:id="@+id/spinner4"
+        android:id="@+id/spnQuantidade"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -53,7 +77,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <Button
-        android:id="@+id/quizBtn"
+        android:id="@+id/startQuizBtn"
         android:layout_width="176dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -64,10 +88,10 @@
         android:text="Iniciar Quiz"
         android:textAllCaps="false"
         android:textColor="@color/colorWhite"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner4" />
+        app:layout_constraintTop_toBottomOf="@+id/spnQuantidade" />
 </android.support.constraint.ConstraintLayout>

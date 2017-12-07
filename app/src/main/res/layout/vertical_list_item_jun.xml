@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/_3dp"
+    android:paddingBottom="@dimen/_3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <LinearLayout
+            android:id="@+id/linearVertList"
+            android:layout_width="95dp"
+            android:layout_height="70dp"
+            android:background="@drawable/quadrado_juncoes"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/itemTextID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/_18dp"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/dividerItem"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="@dimen/_3dp"
+        android:background="@color/colorGray" />
+</LinearLayout>

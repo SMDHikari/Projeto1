@@ -26,7 +26,7 @@ public class SplashScreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        Toolbar myToolbar = findViewById(R.id.my_toolbar);
         dbh = new SimpleDatabaseHelper(this);
         setSupportActionBar(myToolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
@@ -50,6 +50,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                     "    kanji_imagem VARCHAR," +
                     "    sequecia_tracosimg VARCHAR," +
                     "    sequencia_formekanji VARCHAR," +
+                    "    sequencia_correta_forme VARCHAR,"+
                     "    leitura_on VARCHAR," +
                     "    leitura_kun VARCHAR" +
                     ")");
@@ -148,7 +149,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                         int id = this.getResources().getIdentifier(kanjiList[i - 1][x], "array", this.getPackageName());
                         getString = getResources().getStringArray(id);
                         bancoDados.execSQL("INSERT INTO kanji(traducao,leitura_on,leitura_kun,tracos,capitulo_kanji," +
-                                "exemplo,traducao_exemplo,kanji_imagem,sequecia_tracosimg,sequencia_formekanji) " +
+                                "exemplo,traducao_exemplo,kanji_imagem,sequecia_tracosimg,sequencia_formekanji,sequencia_correta_forme) " +
                                 "VALUES (\"" + getString[0] +
                                 "\",\"" + getString[1] +
                                 "\",\"" + getString[2] +
@@ -159,6 +160,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                                 "\",\"" + getString[6] +
                                 "\",\"" + getString[7] +
                                 "\",\"" + getString[8] +
+                                "\",\"" + getString[9] +
                                 "\")");
                     }
                 }

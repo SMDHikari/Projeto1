@@ -50,7 +50,7 @@ public class KanjiListActivity extends AppCompatActivity implements Runnable{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kanji_list);
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        Toolbar myToolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
@@ -278,7 +278,7 @@ public class KanjiListActivity extends AppCompatActivity implements Runnable{
         for(int i=0;i<tracosDivisao.length;i++){
             StringDivisao[i]=String.valueOf(tracosDivisao[i])+" Traços:";
         }
-        mAdapter= new AdaptadorRecyclerViewSection(arrayKanjisSectioner,StringDivisao);
+        mAdapter= new AdaptadorRecyclerViewSection(arrayKanjisSectioner,StringDivisao,getApplicationContext());
         mAdapter.notifyDataSetChanged();
         recyclerView.setAdapter(mAdapter);
         runLayoutAnimation(recyclerView);

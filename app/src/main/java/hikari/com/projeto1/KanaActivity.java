@@ -12,12 +12,15 @@ import android.support.v7.app.AppCompatDelegate;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.TypedValue;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LayoutAnimationController;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,8 +34,7 @@ public class KanaActivity extends AppCompatActivity {
 
     @BindView(R.id.recyclerKanaId)
     RecyclerView recyclerView;
-    ArrayList<ItemData> arrayKana= new ArrayList<ItemData>();
-
+    ArrayList<KanItemData> arrayKana= new ArrayList<KanItemData>();
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
     @BindView(R.id.gridViewKana)
@@ -50,13 +52,16 @@ public class KanaActivity extends AppCompatActivity {
     Cursor cursor;
     int idKanaClicado;
     String BasVarJun ="",controleKataOuHira="";
+    static {
+        AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
+    }
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kana);
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        Toolbar myToolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
@@ -137,11 +142,12 @@ public class KanaActivity extends AppCompatActivity {
 
     public void atualizarLista(){
 
-        cursor=bancoDados.rawQuery("SELECT id_kana,nome, tracos,nome_imagem FROM "+ controleKataOuHira +" WHERE basico_var_jun =\""+BasVarJun+"\" order by id_kana ",null);
+        cursor=bancoDados.rawQuery("SELECT id_kana,nome, tracos,nome_imagem,basico_var_jun FROM "+ controleKataOuHira +" WHERE basico_var_jun =\""+BasVarJun+"\" order by id_kana ",null);
 
 
         int indiceColunaID=cursor.getColumnIndex("id_kana");
         int indiceColunaImg=cursor.getColumnIndex("nome_imagem");
+        int indiceColunaBarVarJun=cursor.getColumnIndex("basico_var_jun");
         int indiceColunaTracos=cursor.getColumnIndex("tracos");
         cursor.moveToFirst();
         for(int x=0;x<cursor.getCount();x++){
@@ -150,15 +156,15 @@ public class KanaActivity extends AppCompatActivity {
                     ,idImagem
                     ,cursor.getInt(indiceColunaTracos)
                     ,cursor.getInt(indiceColunaID)
+                    ,cursor.getString(indiceColunaBarVarJun)
             ));
             cursor.moveToNext();
         }
         //limpeza de memória do imgsTyped
         Collections.sort(arrayKana);
 
-
-
-        mAdapter= new AdaptadorRecycler(cast(arrayKana),false);
+        String basVarJun= arrayKana.get(0).getBas_var_jun();
+        mAdapter= new AdaptadorRecycler(cast(arrayKana),false, basVarJun);
         mAdapter.notifyDataSetChanged();
         recyclerView.setAdapter(mAdapter);
         runLayoutAnimation(recyclerView);
@@ -228,7 +234,12 @@ public class KanaActivity extends AppCompatActivity {
         kanaImgsGrid.setHorizontalSpacing(10);
         kanaImgsGrid.setMinimumHeight(0-kanaImgsGrid.getMeasuredHeight());
         kanaImgsGrid.deferNotifyDataSetChanged();
-
+        LinearLayout kanaImgBack= findViewById(R.id.kanaImgBack);
+    if(BasVarJun.equals("juncao")) {
+        int height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 125, getResources().getDisplayMetrics());
+        int width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 170, getResources().getDisplayMetrics());
+        kanaImgBack.setLayoutParams(new RelativeLayout.LayoutParams(width,height));
+    }
         //textoTraduz=null;
         //recebeTexto=null;
         //arrayString=null;

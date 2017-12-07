@@ -7,24 +7,50 @@
     android:background="@color/colorGrayBackground">
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="153dp"
-        android:layout_height="44dp"
+        android:id="@+id/startQuizBtn2"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="36dp"
         android:background="@color/colorBlueBtnsTips"
-        android:text="Button"
+        android:fontFamily="sans-serif"
+        android:text="Iniciar Quiz"
         android:textAllCaps="false"
         android:textColor="@color/colorWhite"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner5" />
+        app:layout_constraintTop_toBottomOf="@+id/spnQuantidade" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:textAlignment="gravity"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/title_activity_main_menu"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+    </android.support.v7.widget.Toolbar>
 
     <Spinner
-        android:id="@+id/spinner5"
+        android:id="@+id/spnQuantidade"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -35,7 +61,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <Spinner
-        android:id="@+id/spinner6"
+        android:id="@+id/vocabPartSpn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -52,6 +78,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="144dp"
         android:text="Escolha a parte :"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.185"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,8 +92,10 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="20dp"
         android:text="Escolha a quantidade :"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.205"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner6" />
+        app:layout_constraintTop_toBottomOf="@+id/vocabPartSpn" />
 </android.support.constraint.ConstraintLayout>

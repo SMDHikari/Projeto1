@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        Toolbar myToolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         ButterKnife.bind(this);
@@ -102,25 +102,20 @@ public class MainActivity extends AppCompatActivity {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-
         if(requestCode == 1 && resultCode == Activity.RESULT_OK){
             int teste = data.getIntExtra("posicaoClicado",1);
-            if(teste>0){
-                Toast.makeText(this,"Botão desativado",Toast.LENGTH_SHORT).show();
-                botãoClicado=false;
+            posicaoDialogOption = data.getIntExtra("clicadoOption", 0);
+            intent = ((dialogtemData) data.getExtras().getParcelable("clicadoOption")).getIntent();
+            if( data.hasExtra("QuizType")){
+                Toast.makeText(this,data.getStringExtra("QuizType"),Toast.LENGTH_SHORT).show();
+                intent.putExtra("QuizType",data.getStringExtra("QuizType"));
             }
-            else {
-                posicaoDialogOption = data.getIntExtra("clicadoOption", 0);
-                intent = ((dialogtemData) data.getExtras().getParcelable("clicadoOption")).getIntent();
-
-                 changeActivity(intent);
-            }
-
+            changeActivity(intent);
 
         }
-
-
     }
+
+
     @Override
     public void onBackPressed() {
         super.onBackPressed();

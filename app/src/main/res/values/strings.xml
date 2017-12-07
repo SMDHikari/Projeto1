@@ -27,6 +27,25 @@
         <item>Todos</item>
     </string-array>
 
+    <!--Arrays quiz-->
+    <string-array name="quantidadeQuiz">
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+
+    <string-array name="parteVocab">
+        <item>parte 1</item>
+        <item>parte 2</item>
+        <item>parte 3</item>
+        <item>parte 4</item>
+        <item>parte 5</item>
+        <item>parte 6 e 9</item>
+        <item>parte 7</item>
+        <item>parte 8</item>
+    </string-array>
+
+
     <!--Array dos Spinners da atividade Kanji-->
     <string-array name="kanjiSpinner1">
         <item>Capitulo 1</item>

@@ -1,21 +1,14 @@
 package hikari.com.projeto1;
 
 import android.app.ListActivity;
-import android.content.Context;
 import android.content.Intent;
 import android.content.res.TypedArray;
-import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.Drawable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Toolbar;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
 
 public class dialogActivity extends ListActivity {
 
@@ -70,14 +63,14 @@ public class dialogActivity extends ListActivity {
                 dialogTitles = getResources().getStringArray(R.array.kanaMenu);
                 imgs = getResources().obtainTypedArray(R.array.kanaMenuImgs);
                 dialogIntent=new Intent[]{new Intent(this,KanaListActivity.class)
-                        ,new Intent(this,QuizActivity.class).putExtra("QuizType","kana")};
+                        ,new Intent(this,QuizConfigActivity.class).putExtra("QuizType","Kana")};
 
             break;
             case 1:
                 dialogTitles = getResources().getStringArray(R.array.kanjiMenu);
                 imgs = getResources().obtainTypedArray(R.array.kanjiMenuImgs);
                 dialogIntent=new Intent[]{new Intent(this,KanjiListActivity.class)
-                        ,new Intent(this,QuizActivity.class).putExtra("QuizType","kanji"),
+                        ,new Intent(this,QuizConfigActivity.class).putExtra("QuizType","Kanji"),
                         new Intent(this,FormeKanjiActivity.class)};
 
                 break;
@@ -85,7 +78,7 @@ public class dialogActivity extends ListActivity {
                 dialogTitles = getResources().getStringArray(R.array.vocabularioMenu);
                 imgs = getResources().obtainTypedArray(R.array.vocabularioMenuImgs);
                 dialogIntent=new Intent[]{new Intent(this,KanaListActivity.class)
-                        ,new Intent(this,QuizActivity.class).putExtra("QuizType","vocabulario")};
+                        ,new Intent(this,QuizConfigActivity.class).putExtra("QuizType","Vocabulario")};
 
                 break;
         }

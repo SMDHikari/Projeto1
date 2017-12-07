@@ -44,8 +44,8 @@ public class AdaptadorDialog extends ArrayAdapter<dialogtemData> {
 
 
             final ViewHolder viewHolder = new ViewHolder();
-            viewHolder.name = (TextView) viewItem.findViewById(R.id.title);
-            viewHolder.flag = (ImageView) viewItem.findViewById(R.id.icon);
+            viewHolder.name = viewItem.findViewById(R.id.title);
+            viewHolder.flag = viewItem.findViewById(R.id.icon);
             viewItem.setTag(viewHolder);
 
         } else {

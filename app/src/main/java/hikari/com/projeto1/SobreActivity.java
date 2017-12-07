@@ -37,7 +37,7 @@ public class SobreActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sobre);
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
         ButterKnife.bind(this);
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        Toolbar myToolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(false);

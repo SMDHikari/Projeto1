@@ -898,7 +898,7 @@
         <item>gya</item>
         <item>9</item>
         <item>hira_jun4</item>
-        <item>hirabas7_t1,hirabas7_t2,hirabas7_t3,hirabas7_t4),hiravar2_t5(bas7),hiravar2_t6(bas7),hirabas36_t1,hirabas36_t2,hirabas36_t3</item>
+        <item>hirabas7_t1,hirabas7_t2,hirabas7_t3,hirabas7_t4,hiravar2_t5,hiravar2_t6,hirabas36_t1,hirabas36_t2,hirabas36_t3</item>
         <item></item>
         <item>juncao</item>
     </string-array>
@@ -907,7 +907,7 @@
         <item>gyu</item>
         <item>8</item>
         <item>hira_jun5</item>
-        <item>hirabas7_t1,hirabas7_t2,hirabas7_t3,hirabas7_t4),hiravar2_t5(bas7),hiravar2_t6(bas7),hirabas37_t1,hirabas37_t2</item>
+        <item>hirabas7_t1,hirabas7_t2,hirabas7_t3,hirabas7_t4,hiravar2_t5,hiravar2_t6,hirabas37_t1,hirabas37_t2</item>
         <item></item>
         <item>juncao</item>
     </string-array>
@@ -916,7 +916,7 @@
         <item>gyo</item>
         <item>8</item>
         <item>hira_jun6</item>
-        <item>hirabas7_t1,hirabas7_t2,hirabas7_t3,hirabas7_t4),hiravar2_t5(bas7),hiravar2_t6(bas7),hirabas38_t1,hirabas38_t2</item>
+        <item>hirabas7_t1,hirabas7_t2,hirabas7_t3,hirabas7_t4,hiravar2_t5,hiravar2_t6,hirabas38_t1,hirabas38_t2</item>
         <item></item>
         <item>juncao</item>
     </string-array>
@@ -952,7 +952,7 @@
         <item>ja</item>
         <item>6</item>
         <item>hira_jun10</item>
-        <item>hirabas12_t1,hiravar7_t2(bas12),hiravar7_t3(bas12),hirabas36_t1,hirabas36_t2,hirabas36_t3</item>
+        <item>hirabas12_t1,hiravar7_t2,hiravar7_t3,hirabas36_t1,hirabas36_t2,hirabas36_t3</item>
         <item></item>
         <item>juncao</item>
     </string-array>
@@ -961,7 +961,7 @@
         <item>ju</item>
         <item>5</item>
         <item>hira_jun11</item>
-        <item>hirabas12_t1,hiravar7_t2(bas12),hiravar7_t3(bas12),hirabas37_t1,hirabas37_t2</item>
+        <item>hirabas12_t1,hiravar7_t2,hiravar7_t3,hirabas37_t1,hirabas37_t2</item>
         <item></item>
         <item>juncao</item>
     </string-array>
@@ -970,7 +970,7 @@
         <item>jo</item>
         <item>5</item>
         <item>hira_jun12</item>
-        <item>hirabas12_t1,hiravar7_t2(bas12),hiravar7_t3(bas12),hirabas38_t1,hirabas38_t2</item>
+        <item>hirabas12_t1,hiravar7_t2,hiravar7_t3,hirabas38_t1,hirabas38_t2</item>
         <item></item>
         <item>juncao</item>
     </string-array>
@@ -2179,11 +2179,12 @@
         <item name="diaImg">kanji_dia</item>
         <item name="sequenciaDiaImgs">kanji_dia_t1,kanji_dia_t2,kanji_dia_t3,kanji_dia_t4</item>
         <item name="FormeKanjidia">forme_dia_1,forme_dia_2,forme_dia_3,forme_dia_4</item>
+        <item>traco01,traco05,traco33,traco33</item>
     </string-array>
 
     <string-array name="lua">
         <item name="traducao">Lua,Mês</item>
-        <item name="on'yomi">ゲツ、ガツ </item>
+        <item name="on'yomi">ゲツ,ガツ </item>
         <item name="kun'yomi">つき</item>
         <item name="tracos">4</item>
         <item name="exemplo">わたしのたんじょうびはらい月です</item>
@@ -2191,12 +2192,13 @@
         <item name="luaImg">kanji_lua</item>
         <item name="sequencialuaImgs">kanji_lua_t1,kanji_lua_t2,kanji_lua_t3,kanji_lua_t4</item>
         <item name="FormeKanjilua">forme_lua_1,forme_lua_2,forme_lua_3,forme_lua_4</item>
+        <item>traco12,traco09,traco33,traco33</item>
     </string-array>
 
 
     <string-array name="arvore">
         <item name="traducao">Árvore</item>
-        <item name="on'yomi"> モク，ボク</item>
+        <item name="on'yomi"> モク,ボク</item>
         <item name="kun'yomi">き</item>
         <item name="tracos">4</item>
         <item name="exemplo">あの木はきれいです</item>
@@ -2204,6 +2206,7 @@
         <item name="arvoreImg">kanji_arvore</item>
         <item name="sequenciaarvoreImgs">kanji_arvore_t1,kanji_arvore_t2,kanji_arvore_t3,kanji_arvore_t4</item>
         <item name="FormeKanjiarvore">forme_arvore_1,forme_arvore_2,forme_arvore_3,forme_arvore_4</item>
+        <item>traco03,traco01,traco19,traco20</item>
     </string-array>
 
 
@@ -2217,19 +2220,21 @@
         <item name="montanhaImg">kanji_montanha</item>
         <item name="sequenciamontanhaImgs">kanji_montanha_t1,kanji_montanha_t2,kanji_montanha_t3</item>
         <item name="FormeKanjimontanha">forme_montanha_1,forme_montanha_2,forme_montanha_3</item>
+        <item>traco01,traco15,traco32</item>
     </string-array>
 
 
     <string-array name="rio">
         <item name="traducao">Rio</item>
         <item name="on'yomi"> セン</item>
-        <item name="kun'yomi">かわ、-がわ</item>
+        <item name="kun'yomi">かわ,-がわ</item>
         <item name="tracos">3</item>
         <item name="exemplo">この川のみずはつめたいです</item>
         <item name="traducaoExemplo">A água desse rio é gelada.</item>
         <item name="rioImg">kanji_rio</item>
         <item name="sequenciarioImgs">kanji_rio_t1,kanji_rio_t2,kanji_rio_t3</item>
         <item name="FormeKanjirio">forme_rio_1,forme_rio_2,forme_rio_3</item>
+        <item>traco12,traco01,traco01</item>
     </string-array>
 
 
@@ -2243,13 +2248,14 @@
         <item name="campoImg">kanji_campo</item>
         <item name="sequenciacampoImgs">kanji_campo_t1,kanji_campo_t2,kanji_campo_t3,kanji_campo_t4,kanji_campo_t5</item>
         <item name="FormeKanjicampo">forme_campo_1,forme_campo_2,forme_campo_3,forme_campo_4,forme_campo_5</item>
+        <item>traco32,traco07,traco32,traco33,traco33</item>
 
     </string-array>
 
 
     <string-array name="pessoa">
         <item name="traducao">Pessoa</item>
-        <item name="on'yomi">ジン、ニン </item>
+        <item name="on'yomi">ジン,ニン </item>
         <item name="kun'yomi">ひと</item>
         <item name="tracos">2</item>
         <item name="exemplo">あの人は山田さんです</item>
@@ -2257,19 +2263,22 @@
         <item name="pessoaImg">kanji_pessoa</item>
         <item name="sequenciapessoaImgs">kanji_pessoa_t1,kanji_pessoa_t2</item>
         <item name="FormeKanjipessoa">forme_pessoa_1,forme_pessoa_2</item>
+        <item></item>
     </string-array>
 
 
     <string-array name="boca">
         <item name="traducao">Boca</item>
         <item name="on'yomi">コウ</item>
-        <item name="kun'yomi">くち、-ぐち</item>
+        <item name="kun'yomi">くち,-ぐち</item>
         <item name="tracos">3</item>
         <item name="exemplo">口をあけてください</item>
         <item name="traducaoExemplo">Abra a boca, por favor.</item>
         <item name="bocaImg">kanji_boca</item>
         <item name="sequenciabocaImgs">kanji_boca_t1,kanji_boca_t2,kanji_boca_t3</item>
         <item name="FormeKanjiboca">forme_boca_1,forme_boca_2,forme_boca_3</item>
+        <item>traco32,traco07,traco33</item>
+
     </string-array>
 
     <string-array name="carro">
@@ -2282,6 +2291,7 @@
         <item name="carroImg">kanji_carro</item>
         <item name="sequenciacarroImgs">kanji_carro_t1,kanji_carro_t2,kanji_carro_t3,kanji_carro_t4,kanji_carro_t5,kanji_carro_t6,kanji_carro_t7</item>
         <item name="FormeKanjicarro">forme_carro_1,forme_carro_2,forme_carro_3,forme_carro_4,forme_carro_5,forme_carro_6,forme_carro_7</item>
+        <item>traco03,traco32,traco6,traco33,traco33,traco03,traco1</item>
     </string-array>
 
 
@@ -2295,6 +2305,7 @@
         <item name="portaoImg">kanji_portao</item>
         <item name="sequenciaportaoImgs">kanji_portao_t1,kanji_portao_t2,kanji_portao_t3,kanji_portao_t4,kanji_portao_t5,kanji_portao_t6,kanji_portao_t7,kanji_portao_t8</item>
         <item name="FormeKanjiportao">forme_portao_1,forme_portao_2,forme_portao_3,forme_portao_4,forme_portao_5,forme_portao_6,forme_portao_7,forme_portao_8</item>
+        <item>traco01,traco34,traco29,traco29,traco26,traco09,traco29,traco29</item>
     </string-array>
 
     <!--Array de referencias para os Kanji do Capitulo1-->
@@ -2321,6 +2332,7 @@
         <item name="fogoImg">kanji_fogo</item>
         <item name="sequenciafogoImgs">kanji_fogo_t1,kanji_fogo_t2,kanji_fogo_t3,kanji_fogo_t4</item>
         <item name="FormeKanjifogo">forme_fogo_1,forme_fogo_2,forme_fogo_3,forme_fogo_4</item>
+        <item>traco27,traco28,traco13,traco20</item>
     </string-array>
 
     <string-array name="agua">
@@ -2333,18 +2345,21 @@
         <item name="aguaImg">kanji_agua</item>
         <item name="sequenciaaguaImgs">kanji_agua_t1,kanji_agua_t2,kanji_agua_t3,kanji_agua_t4</item>
         <item name="FormeKanjiagua">forme_agua_1,forme_agua_2,forme_agua_3,forme_agua_4</item>
+        <item>traco25,traco11,traco28,traco20</item>
+
     </string-array>
 
     <string-array name="ouro">
         <item name="traducao">Ouro,Dinheiro,Prata</item>
         <item name="on'yomi">キン</item>
-        <item name="kun'yomi">かね、-がね</item>
+        <item name="kun'yomi">かね,-がね</item>
         <item name="tracos">8</item>
         <item name="exemplo">私はお金がありません</item>
         <item name="traducaoExemplo">Eu não tenho dinheiro.</item>
         <item name="ouroImg">kanji_ouro</item>
         <item name="sequenciaouroImgs">kanji_ouro_t1,kanji_ouro_t2,kanji_ouro_t3,kanji_ouro_t4,kanji_ouro_t5,kanji_ouro_t6,kanji_ouro_t7,kanji_ouro_t8</item>
         <item name="FormeKanjiouro">forme_ouro_1,forme_ouro_2,forme_ouro_3,forme_ouro_4,forme_ouro_5,forme_ouro_6,forme_ouro_7,forme_ouro_8</item>
+        <item>traco19,traco20,traco33,traco03,traco01,traco27,traco28,traco03</item>
     </string-array>
 
     <string-array name="solo">
@@ -2357,6 +2372,7 @@
         <item name="soloImg">kanji_solo</item>
         <item name="sequenciasoloImgs">kanji_solo_t1,kanji_solo_t2,kanji_solo_t3</item>
         <item name="FormeKanjisolo">forme_solo_1,forme_solo_2,forme_solo_3</item>
+        <item>traco03,traco01,traco03</item>
     </string-array>
 
     <string-array name="crianca">
@@ -2369,6 +2385,7 @@
         <item name="criancaImg">kanji_crianca</item>
         <item name="sequenciacriancaImgs">kanji_crianca_t1,kanji_crianca_t2,kanji_crianca_t3</item>
         <item name="FormeKanjicrianca">forme_crianca_1,forme_crianca_2,forme_crianca_3</item>
+        <item>traco24,traco11,traco03</item>
     </string-array>
 
     <string-array name="mulher">
@@ -2381,11 +2398,12 @@
         <item name="mulherImg">kanji_mulher</item>
         <item name="sequenciamulherImgs">kanji_mulher_t1,kanji_mulher_t2,kanji_mulher_t3</item>
         <item name="FormeKanjimulher">forme_mulher_1,forme_mulher_2,forme_mulher_3</item>
+        <item>traco23,traco16,traco03</item>
     </string-array>
 
     <string-array name="estudo">
         <item name="traducao">Estudo</item>
-        <item name="on'yomi">ガク、ガッ-</item>
+        <item name="on'yomi">ガク,ガッ-</item>
         <item name="kun'yomi">まな-ぶ</item>
         <item name="tracos">8</item>
         <item name="exemplo">すう学はむずかしいです</item>
@@ -2393,18 +2411,20 @@
         <item name="estudoImg">kanji_estudo</item>
         <item name="sequenciaestudoImgs">kanji_estudo_t1,kanji_estudo_t2,kanji_estudo_t3,kanji_estudo_t4,kanji_estudo_t5,kanji_estudo_t6,kanji_estudo_t7,kanji_estudo_t8</item>
         <item name="FormeKanjiestudo">forme_estudo_1,forme_estudo_2,forme_estudo_3,forme_estudo_4,forme_estudo_5,forme_estudo_6,forme_estudo_7,forme_estudo_8</item>
+        <item>traco27,traco27,traco28,traco26,traco06,traco24,traco11,traco03</item>
     </string-array>
 
     <string-array name="viver">
         <item name="traducao">Viver,Nascer</item>
         <item name="on'yomi">セイ</item>
-        <item name="kun'yomi">い-きる、う-まれる</item>
+        <item name="kun'yomi">い-きる,う-まれる</item>
         <item name="tracos">5</item>
         <item name="exemplo">私は学生です</item>
         <item name="traducaoExemplo">Eu sou estudante.</item>
         <item name="viverImg">kanji_viver</item>
         <item name="sequenciaviverImgs">kanji_viver_t1,kanji_viver_t2,kanji_viver_t3,kanji_viver_t4,kanji_viver_t5</item>
         <item name="FormeKanjiviver">forme_viver_1,forme_viver_2,forme_viver_3,forme_viver_4,forme_viver_5</item>
+        <item>traco28,traco33,traco01,traco33,traco03</item>
     </string-array>
 
     <string-array name="anterior">
@@ -2417,18 +2437,20 @@
         <item name="anteriorImg">kanji_anterior</item>
         <item name="sequenciaanteriorImgs">kanji_anterior_t1,kanji_anterior_t2,kanji_anterior_t3,kanji_anterior_t4,kanji_anterior_t5,kanji_anterior_t6</item>
         <item name="FormeKanjianterior">forme_anterior_1,forme_anterior_2,forme_anterior_3,forme_anterior_4,forme_anterior_5,forme_anterior_6</item>
+        <item>traco28,traco33,traco32,traco03,traco31,traco18</item>
     </string-array>
 
     <string-array name="eu">
         <item name="traducao">Eu,Particular</item>
         <item name="on'yomi">シ</item>
-        <item name="kun'yomi">わたし、わたくし</item>
+        <item name="kun'yomi">わたし,わたくし</item>
         <item name="tracos">7</item>
         <item name="exemplo">私は私りつの学こうでべんきょうします</item>
         <item name="traducaoExemplo"> Eu estudo em um colégio particular.</item>
         <item name="euImg">kanji_eu</item>
         <item name="sequenciaeuImgs">kanji_eu_t1,kanji_eu_t2,kanji_eu_t3,kanji_eu_t4,kanji_eu_t5,kanji_eu_t6,kanji_eu_t7</item>
         <item name="FormeKanjieu">forme_eu_1,forme_eu_2,forme_eu_3,forme_eu_4,forme_eu_5,forme_eu_6,forme_eu_7</item>
+        <item>traco21,traco33,traco01,traco19,traco27,traco22,traco27</item>
     </string-array>
     <!--Array de referencias para os Kanji do Capitulo2-->
     <array name="KanjiCapitulo2">
@@ -2456,6 +2478,7 @@
         <item name="umImg">kanji_um</item>
         <item name="sequenciaumImgs">kanji_um_t1</item>
         <item name="FormeKanjium">forme_um_1</item>
+        <item>traco03</item>
     </string-array>
 
     <string-array name="dois">
@@ -2468,6 +2491,7 @@
         <item name="doisImg">kanji_dois</item>
         <item name="sequenciadoisImgs">kanji_dois_t1,kanji_dois_t2</item>
         <item name="FormeKanjidois">forme_dois_1,forme_dois_2</item>
+        <item>traco03,traco03</item>
     </string-array>
 
     <string-array name="tres">
@@ -2480,18 +2504,20 @@
         <item name="tresImg">kanji_tres</item>
         <item name="sequenciatresImgs">kanji_tres_t1,kanji_tres_t2,kanji_tres_t3</item>
         <item name="FormeKanjitres">forme_tres_1,forme_tres_2,forme_tres_3</item>
+        <item>traco03,traco33,traco03</item>
     </string-array>
 
     <string-array name="quatro">
         <item name="traducao">Quatro</item>
         <item name="on'yomi">シ</item>
-        <item name="kun'yomi">よっ-つ、よん、よ</item>
+        <item name="kun'yomi">よっ-つ,よん,よ</item>
         <item name="tracos">5</item>
         <item name="exemplo">いま四じです</item>
         <item name="traducaoExemplo"> São  4 horas.</item>
         <item name="quatroImg">kanji_quatro</item>
         <item name="sequenciaquatroImgs">kanji_quatro_t1,kanji_quatro_t2,kanji_quatro_t3,kanji_quatro_t4,kanji_quatro_t5</item>
         <item name="FormeKanjiquatro">forme_quatro_1,forme_quatro_2,forme_quatro_3,forme_quatro_4,forme_quatro_5</item>
+        <item>traco32,traco07,traco31,traco18,traco33</item>
     </string-array>
 
     <string-array name="cinco">
@@ -2504,11 +2530,12 @@
         <item name="cincoImg">kanji_cinco</item>
         <item name="sequenciacincoImgs">kanji_cinco_t1,kanji_cinco_t2,kanji_cinco_t3,kanji_cinco_t4</item>
         <item name="FormeKanjicinco">forme_cinco_1,forme_cinco_2,forme_cinco_3,forme_cinco_4</item>
+        <item>traco03,traco02,traco06,traco03</item>
     </string-array>
 
     <string-array name="seis">
         <item name="traducao">Seis</item>
-        <item name="on'yomi">ロク、ロッ-</item>
+        <item name="on'yomi">ロク,ロッ-</item>
         <item name="kun'yomi">むっ-つ</item>
         <item name="tracos">4</item>
         <item name="exemplo">六月にテストをうけます</item>
@@ -2516,6 +2543,7 @@
         <item name="seisImg">kanji_seis</item>
         <item name="sequenciaseisImgs">kanji_seis_t1,kanji_seis_t2,kanji_seis_t3,kanji_seis_t4</item>
         <item name="FormeKanjiseis">forme_seis_1,forme_seis_2,forme_seis_3,forme_seis_4</item>
+        <item>traco26,traco03,traco28,traco27</item>
     </string-array>
 
     <string-array name="sete">
@@ -2528,11 +2556,12 @@
         <item name="seteImg">kanji_sete</item>
         <item name="sequenciaseteImgs">kanji_sete_t1,kanji_sete_t2</item>
         <item name="FormeKanjisete">forme_sete_1,forme_sete_2</item>
+        <item>traco04,traco30</item>
     </string-array>
 
     <string-array name="oito">
         <item name="traducao">Oito</item>
-        <item name="on'yomi">ハチ、ハッ-</item>
+        <item name="on'yomi">ハチ,ハッ-</item>
         <item name="kun'yomi">やっ-つ</item>
         <item name="tracos">2</item>
         <item name="exemplo">きゅうかは八月におわります</item>
@@ -2540,11 +2569,12 @@
         <item name="oitoImg">kanji_oito</item>
         <item name="sequenciaoitoImgs">kanji_oito_t1,kanji_oito_t2</item>
         <item name="FormeKanjioito">forme_oito_1,forme_oito_2</item>
+        <item>traco19,traco20</item>
     </string-array>
 
     <string-array name="nove">
         <item name="traducao">Nove</item>
-        <item name="on'yomi">キュウ、ク</item>
+        <item name="on'yomi">キュウ,ク</item>
         <item name="kun'yomi">ここの</item>
         <item name="tracos">2</item>
         <item name="exemplo">私のたんじょうびは九月九日です</item>
@@ -2552,11 +2582,12 @@
         <item name="noveImg">kanji_nove</item>
         <item name="sequencianoveImgs">kanji_nove_t1,kanji_nove_t2</item>
         <item name="FormeKanjinove">forme_nove_1,forme_nove_2</item>
+        <item>traco13,traco17</item>
     </string-array>
 
     <string-array name="dez">
         <item name="traducao">Dez</item>
-        <item name="on'yomi">ジュウ、ジュッ-、ジッ-</item>
+        <item name="on'yomi">ジュウ,ジュッ-,ジッ-</item>
         <item name="kun'yomi">とお</item>
         <item name="tracos">2</item>
         <item name="exemplo">十年まえ日本へいきました</item>
@@ -2564,11 +2595,12 @@
         <item name="dezImg">kanji_dez</item>
         <item name="sequenciadezImgs">kanji_dez_t1,kanji_dez_t2</item>
         <item name="FormeKanjidez">forme_dez_1,forme_dez_2</item>
+        <item>traco03,traco01</item>
     </string-array>
 
     <string-array name="cem">
         <item name="traducao">Cem</item>
-        <item name="on'yomi">ヒャク、-ビャク、-ピャク</item>
+        <item name="on'yomi">ヒャク,-ビャク,-ピャク</item>
         <item name="kun'yomi">もも</item>
         <item name="tracos">6</item>
         <item name="exemplo">これは百円です</item>
@@ -2576,11 +2608,12 @@
         <item name="cemImg">kanji_cem</item>
         <item name="sequenciacemImgs">kanji_cem_t1,kanji_cem_t2,kanji_cem_t3,kanji_cem_t4,kanji_cem_t5,kanji_cem_t6</item>
         <item name="FormeKanjicem">forme_cem_1,forme_cem_2,forme_cem_3,forme_cem_4,forme_cem_5,forme_cem_6</item>
+        <item>traco03,traco28,traco01,traco05,traco33,traco33</item>
     </string-array>
 
     <string-array name="mil">
         <item name="traducao">Mil</item>
-        <item name="on'yomi">セン、-ゼン</item>
+        <item name="on'yomi">セン,-ゼン</item>
         <item name="kun'yomi">ち</item>
         <item name="tracos">3</item>
         <item name="exemplo">こ年は二千十七年です</item>
@@ -2588,11 +2621,12 @@
         <item name="milImg">kanji_mil</item>
         <item name="sequenciamilImgs">kanji_mil_t1,kanji_mil_t2,kanji_mil_t3</item>
         <item name="FormeKanjimil">forme_mil_1,forme_mil_2,forme_mil_3</item>
+        <item>traco21,traco03,traco01</item>
     </string-array>
 
     <string-array name="dezmil">
         <item name="traducao">Dez Mil,Todos</item>
-        <item name="on'yomi">マン、バン</item>
+        <item name="on'yomi">マン,バン</item>
         <item name="kun'yomi">よろず</item>
         <item name="tracos">3</item>
         <item name="exemplo">一万円があります</item>
@@ -2600,6 +2634,7 @@
         <item name="dezmilImg">kanji_dezmil</item>
         <item name="sequenciadezmilImgs">kanji_dezmil_t1,kanji_dezmil_t2,kanji_dezmil_t3</item>
         <item name="FormeKanjidezmil">forme_dezmil_1,forme_dezmil_2,forme_dezmil_3</item>
+        <item>traco03,traco10,traco13</item>
     </string-array>
 
     <string-array name="circulo">
@@ -2612,6 +2647,7 @@
         <item name="ieneImg">kanji_iene</item>
         <item name="sequenciaieneImgs">kanji_iene_t1,kanji_iene_t2,kanji_iene_t3,kanji_iene_t4</item>
         <item name="FormeKanjicirculo">forme_circulo_1,forme_circulo_2,forme_circulo_3,forme_circulo_4</item>
+        <item>traco01,traco08,traco26,traco03</item>
     </string-array>
 
     <string-array name="ano">
@@ -2624,6 +2660,7 @@
         <item name="anoImg">kanji_ano</item>
         <item name="sequenciaanoImgs">kanji_ano_t1,kanji_ano_t2,kanji_ano_t3,kanji_ano_t4,kanji_ano_t5,kanji_ano_t6</item>
         <item name="FormeKanjiano">forme_ano_1,forme_ano_2,forme_ano_3,forme_ano_4,forme_ano_5,forme_ano_6</item>
+        <item>traco28,traco33,traco33,traco26,traco03,traco01</item>
     </string-array>
     <!--Array de referencias para os Kanji do Capitulo3-->
     <array name="KanjiCapitulo3">
@@ -2647,30 +2684,32 @@
     <string-array name="acima">
         <item name="traducao">Acima,Em cima,Superior </item>
         <item name="on'yomi">ジョウ</item>
-        <item name="kun'yomi">うえ、あ-がる、のぼ-る</item>
+        <item name="kun'yomi">うえ,あ-がる,のぼ-る</item>
         <item name="tracos">3</item>
         <item name="exemplo">テーブルの上に本があります</item>
         <item name="traducaoExemplo">Em cima da mesa tem um livro.</item>
         <item name="acimaImg">kanji_acima</item>
         <item name="sequenciaacimaImgs">kanji_acima_t1,kanji_acima_t2,kanji_acima_t3</item>
         <item name="FormeKanjiacima">forme_acima_1,forme_acima_2,forme_acima_3</item>
+        <item>traco29,traco01,traco03</item>
     </string-array>
 
     <string-array name="abaixo">
         <item name="traducao">Abaixo,De baixo,Inferior </item>
-        <item name="on'yomi">カ、ゲ</item>
-        <item name="kun'yomi">した、さ-がる、くだ-る</item>
+        <item name="on'yomi">カ,ゲ</item>
+        <item name="kun'yomi">した,さ-がる,くだ-る</item>
         <item name="tracos">3</item>
         <item name="exemplo">ベッドの下にくつがあります</item>
         <item name="traducaoExemplo">Em baixo da cama tem um sapato.</item>
         <item name="abaixoImg">kanji_abaixo</item>
         <item name="sequenciaabaixoImgs">kanji_abaixo_t1,kanji_abaixo_t2,kanji_abaixo_t3</item>
         <item name="FormeKanjiabaixo">forme_abaixo_1,forme_abaixo_2,forme_abaixo_3</item>
+        <item>traco03,traco01,traco27</item>
     </string-array>
 
     <string-array name="dentro">
         <item name="traducao">Dentro,Meio </item>
-        <item name="on'yomi">チュウ、-ジュウ</item>
+        <item name="on'yomi">チュウ,-ジュウ</item>
         <item name="kun'yomi">なか</item>
         <item name="tracos">4</item>
         <item name="exemplo">かばんの中にノートがあります</item>
@@ -2678,6 +2717,7 @@
         <item name="dentroImg">kanji_dentro</item>
         <item name="sequenciadentroImgs">kanji_dentro_t1,kanji_dentro_t2,kanji_dentro_t3,kanji_dentro_t4</item>
         <item name="FormeKanjidentro">forme_dentro_1,forme_dentro_2,forme_dentro_3,forme_dentro_4</item>
+        <item>traco26,traco06,traco03,traco01</item>
     </string-array>
 
     <string-array name="grande">
@@ -2690,18 +2730,20 @@
         <item name="grandeImg">kanji_grande</item>
         <item name="sequenciagrandeImgs">kanji_grande_t1,kanji_grande_t2,kanji_grande_t3</item>
         <item name="FormeKanjigrande">forme_grande_1,forme_grande_2,forme_grande_3</item>
+        <item>traco03,traco13,traco14</item>
     </string-array>
 
     <string-array name="pequeno">
         <item name="traducao">Pequeno </item>
         <item name="on'yomi">ショウ</item>
-        <item name="kun'yomi">ちい-さい、こ、お</item>
+        <item name="kun'yomi">ちい-さい,こ,お</item>
         <item name="tracos">3</item>
         <item name="exemplo">かの女のくつは小さいです</item>
         <item name="traducaoExemplo">Os sapatos dela são pequenos.</item>
         <item name="pequenoImg">kanji_pequeno</item>
         <item name="sequenciapequenoImgs">kanji_pequeno_t1,kanji_pequeno_t2,kanji_pequeno_t3</item>
         <item name="FormeKanjipequeno">forme_pequeno_1,forme_pequeno_2,forme_pequeno_3</item>
+        <item>traco11,traco28,traco27</item>
     </string-array>
 
     <string-array name="livro">
@@ -2714,6 +2756,7 @@
         <item name="livroImg">kanji_livro</item>
         <item name="sequencialivroImgs">kanji_livro_t1,kanji_livro_t2,kanji_livro_t3,kanji_livro_t4,kanji_livro_t5</item>
         <item name="FormeKanjilivro">forme_livro_1,forme_livro_2,forme_livro_3,forme_livro_4,forme_livro_5</item>
+        <item>traco03,traco01,traco19,traco20,traco33</item>
     </string-array>
 
     <string-array name="metade">
@@ -2726,23 +2769,25 @@
         <item name="metadeImg">kanji_metade</item>
         <item name="sequenciametadeImgs">kanji_metade_t1,kanji_metade_t2,kanji_metade_t3,kanji_metade_t4,kanji_metade_t5</item>
         <item name="FormeKanjimetade">forme_metade_1,forme_metade_2,forme_metade_3,forme_metade_4,forme_metade_5</item>
+        <item>traco27,traco28,traco03,traco03,traco01</item>
     </string-array>
 
     <string-array name="minuto">
         <item name="traducao">Minuto,Dividir,Parte </item>
-        <item name="on'yomi">ブン、ブ、フン、-プン</item>
-        <item name="kun'yomi">わ-ける、わ-かれる、わ-かる</item>
+        <item name="on'yomi">ブン,ブ,フン,-プン</item>
+        <item name="kun'yomi">わ-ける,わ-かれる,わ-かる</item>
         <item name="tracos">4</item>
         <item name="exemplo">まい日五十分をあるきます</item>
         <item name="traducaoExemplo">Eu ando por 50 minutos todos os dias.</item>
         <item name="minutoImg">kanji_minuto</item>
         <item name="sequenciaminutoImgs">kanji_minuto_t1,kanji_minuto_t2,kanji_minuto_t3,kanji_minuto_t4</item>
         <item name="FormeKanjiminuto">forme_minuto_1,forme_minuto_2,forme_minuto_3,forme_minuto_4</item>
+        <item>traco19,traco20,traco10,traco31</item>
     </string-array>
 
     <string-array name="forca">
         <item name="traducao">Força,Poder,Habilidade </item>
-        <item name="on'yomi">リョク、リキ</item>
+        <item name="on'yomi">リョク,リキ</item>
         <item name="kun'yomi">ちがら</item>
         <item name="tracos">2</item>
         <item name="exemplo">私はまほう力があります</item>
@@ -2750,18 +2795,20 @@
         <item name="forcaImg">kanji_forca</item>
         <item name="sequenciaforcaImgs">kanji_forca_t1,kanji_forca_t2</item>
         <item name="FormeKanjiforca">forme_forca_1,forme_forca_2</item>
+        <item>traco10,traco13</item>
     </string-array>
 
     <string-array name="oque">
         <item name="traducao">O que</item>
         <item name="on'yomi">カ</item>
-        <item name="kun'yomi">なん、なに</item>
+        <item name="kun'yomi">なん,なに</item>
         <item name="tracos">7</item>
         <item name="exemplo">いま何じですか</item>
         <item name="traducaoExemplo">Que horas são?</item>
         <item name="oqueImg">kanji_oque</item>
         <item name="sequenciaoqueImgs">kanji_oque_t1,kanji_oque_t2,kanji_oque_t3,kanji_oque_t4,kanji_oque_t5,kanji_oque_t6,kanji_oque_t7</item>
         <item name="FormeKanjioque">forme_oque_1,forme_oque_2,forme_oque_3,forme_oque_4,forme_oque_5,forme_oque_6,forme_oque_7</item>
+        <item>traco28,traco01,traco33,traco11,traco26,traco34,traco29</item>
     </string-array>
     <!--Array de referencias para os Kanji do Capitulo4-->
     <array name="KanjiCapitulo4">
@@ -2781,13 +2828,14 @@
     <string-array name="brilho">
         <item name="traducao">Brilho,Luz </item>
         <item name="on'yomi">メイ</item>
-        <item name="kun'yomi">あか-るい、あ-ける</item>
+        <item name="kun'yomi">あか-るい,あ-ける</item>
         <item name="tracos">8</item>
         <item name="exemplo">私は明るいいろが好きです</item>
         <item name="traducaoExemplo">Eu gosto de cores brilhantes.</item>
         <item name="brilhoImg">kanji_brilho</item>
         <item name="sequenciabrilhoImgs">kanji_brilho_t1,kanji_brilho_t2,kanji_brilho_t3,kanji_brilho_t4,kanji_brilho_t5,kanji_brilho_t6,kanji_brilho_t7,kanji_brilho_t8</item>
         <item name="FormeKanjibrilho">forme_brilho_1,forme_brilho_2,forme_brilho_3,forme_brilho_4,forme_brilho_5,forme_brilho_6,forme_brilho_7,forme_brilho_8</item>
+        <item>traco32,traco05,traco29,traco29,traco12,traco09,traco33,traco33</item>
     </string-array>
 
     <string-array name="descansar">
@@ -2800,6 +2848,7 @@
         <item name="descansarImg">kanji_descansar</item>
         <item name="sequenciadescansarImgs">kanji_descansar_t1,kanji_descansar_t2,kanji_descansar_t3,kanji_descansar_t4,kanji_descansar_t5,kanji_descansar_t6</item>
         <item name="FormeKanjidescansar">forme_descansar_1,forme_descansar_2,forme_descansar_3,forme_descansar_4,forme_descansar_5,forme_descansar_6</item>
+        <item>traco28,traco01,traco03,traco01,traco19,traco20</item>
     </string-array>
 
     <string-array name="corpo">
@@ -2812,23 +2861,25 @@
         <item name="corpoImg">kanji_corpo</item>
         <item name="sequenciacorpoImgs">kanji_corpo_t1,kanji_corpo_t2,kanji_corpo_t3,kanji_corpo_t4,kanji_corpo_t5,kanji_corpo_t6,kanji_corpo_t7</item>
         <item name="FormeKanjicorpo">forme_corpo_1,forme_corpo_2,forme_corpo_3,forme_corpo_4,forme_corpo_5,forme_corpo_6,forme_corpo_7</item>
+        <item>traco28,traco01,traco03,traco01,traco19,traco20,traco33</item>
     </string-array>
 
     <string-array name="gostar">
         <item name="traducao">Gostar,Amar,Favorito </item>
         <item name="on'yomi">コウ</item>
-        <item name="kun'yomi">す-きな、す-く</item>
+        <item name="kun'yomi">す-きな,す-く</item>
         <item name="tracos">6</item>
         <item name="exemplo">私はアニメが好きです</item>
         <item name="traducaoExemplo">Eu gosto de animes.</item>
         <item name="gostarImg">kanji_gostar</item>
         <item name="sequenciagostarImgs">kanji_gostar_t1,kanji_gostar_t2,kanji_gostar_t3,kanji_gostar_t4,kanji_gostar_t5,kanji_gostar_t6</item>
         <item name="FormeKanjigostar">forme_gostar_1,forme_gostar_2,forme_gostar_3,forme_gostar_4,forme_gostar_5,forme_gostar_6</item>
+        <item>traco23,traco16,traco33,traco24,traco11,traco33</item>
     </string-array>
 
     <string-array name="homem">
         <item name="traducao">Homem,Masculino </item>
-        <item name="on'yomi">ダン、ナン</item>
+        <item name="on'yomi">ダン,ナン</item>
         <item name="kun'yomi">おとこ</item>
         <item name="tracos">7</item>
         <item name="exemplo">あの男の人はだれですか</item>
@@ -2836,6 +2887,7 @@
         <item name="homemImg">kanji_homem</item>
         <item name="sequenciahomemImgs">kanji_homem_t1,kanji_homem_t2,kanji_homem_t3,kanji_homem_t4,kanji_homem_t5,kanji_homem_t6,kanji_homem_t7</item>
         <item name="FormeKanjihomem">forme_homem_1,forme_homem_2,forme_homem_3,forme_homem_4,forme_homem_5,forme_homem_6,forme_homem_7</item>
+        <item>traco32,traco07,traco32,traco33,traco33,traco10,traco31</item>
     </string-array>
 
     <string-array name="bosque">
@@ -2848,6 +2900,7 @@
         <item name="bosqueImg">kanji_bosque</item>
         <item name="sequenciabosqueImgs">kanji_bosque_t1,kanji_bosque_t2,kanji_bosque_t3,kanji_bosque_t4,kanji_bosque_t5,kanji_bosque_t6,kanji_bosque_t7,kanji_bosque_t8</item>
         <item name="FormeKanjibosque">forme_bosque_1,forme_bosque_2,forme_bosque_3,forme_bosque_4,forme_bosque_5,forme_bosque_6,forme_bosque_7,forme_bosque_8</item>
+        <item>traco33,traco01,traco19,traco27,traco33,traco01,traco19,traco20</item>
     </string-array>
 
     <string-array name="floresta">
@@ -2860,30 +2913,33 @@
         <item name="florestaImg">kanji_floresta</item>
         <item name="sequenciaflorestaImgs">kanji_floresta_t1,kanji_floresta_t2,kanji_floresta_t3,kanji_floresta_t4,kanji_floresta_t5,kanji_floresta_t6,kanji_floresta_t7,kanji_floresta_t8,kanji_floresta_t9,kanji_floresta_t10,kanji_floresta_t11,kanji_floresta_t12</item>
         <item name="FormeKanjifloresta">forme_floresta_1,forme_floresta_2,forme_floresta_3,forme_floresta_4,forme_floresta_5,forme_floresta_6,forme_floresta_7,forme_floresta_8,forme_floresta_9,forme_floresta_10,forme_floresta_11,forme_floresta_12</item>
+        <item>traco03,traco32,traco19,traco20,traco33,traco32,traco19,traco27,traco33,traco32,traco19,traco20</item>
     </string-array>
 
     <string-array name="entre">
         <item name="traducao">Entre,Intervalo</item>
         <item name="on'yomi">カン</item>
-        <item name="kun'yomi">あいだ、ま</item>
+        <item name="kun'yomi">あいだ,ま</item>
         <item name="tracos">12</item>
         <item name="exemplo">ともだちと一じ間をはなしました</item>
         <item name="traducaoExemplo">Conversei com um amigo por 1 hora.</item>
         <item name="entreImg">kanji_entre</item>
         <item name="sequenciaentreImgs">kanji_entre_t1,kanji_entre_t2,kanji_entre_t3,kanji_entre_t4,kanji_entre_t5,kanji_entre_t6,kanji_entre_t7,kanji_entre_t8,kanji_entre_t9,kanji_entre_t10,kanji_entre_t11,kanji_entre_t12</item>
         <item name="FormeKanjientre">forme_entre_1,forme_entre_2,forme_entre_3,forme_entre_4,forme_entre_5,forme_entre_6,forme_entre_7,forme_entre_8,forme_entre_9,forme_entre_10,forme_entre_11,forme_entre_12</item>
+        <item>traco01,traco34,traco29,traco29,traco26,traco09,traco29,traco29,traco32,traco34,traco29,traco29</item>
     </string-array>
 
     <string-array name="campocultivado">
         <item name="traducao">Campo cultivado</item>
         <item name="on'yomi"></item>
-        <item name="kun'yomi">はたけ、-ばたけ、はた</item>
+        <item name="kun'yomi">はたけ,-ばたけ,はた</item>
         <item name="tracos">9</item>
         <item name="exemplo">あのはな畑はきれいです</item>
         <item name="traducaoExemplo">Aquele campo de flores é bonito.</item>
         <item name="cultivadoImg">kanji_campocultivado</item>
         <item name="sequenciacultivadoImgs">kanji_campocultivado_t1,kanji_campocultivado_t2,kanji_campocultivado_t3,kanji_campocultivado_t4,kanji_campocultivado_t5,kanji_campocultivado_t6,kanji_campocultivado_t7,kanji_campocultivado_t8,kanji_campocultivado_t9</item>
-        <item name="FormeKanjirocha">forme_rocha_1,forme_rocha_2,forme_rocha_3,forme_rocha_4,forme_rocha_5,forme_rocha_6,forme_rocha_7,forme_rocha_8</item>
+        <item name="sequenciacultivadoImgs">forme_campocultivado_1,forme_campocultivado_2,forme_campocultivado_3,forme_campocultivado_4,forme_campocultivado_5,forme_campocultivado_6,forme_campocultivado_7,forme_campocultivado_8,forme_campocultivado_9</item>
+        <item>traco28,traco28,traco12,traco27,traco01,traco05,traco01,traco33,traco33</item>
     </string-array>
 
     <string-array name="rocha">
@@ -2895,8 +2951,9 @@
         <item name="traducaoExemplo">Essa rocha é grande.</item>
         <item name="rochaImg">kanji_rocha</item>
         <item name="sequenciarochaImgs">kanji_rocha_t1,kanji_rocha_t2,kanji_rocha_t3,kanji_rocha_t4,kanji_rocha_t5,kanji_rocha_t6,kanji_rocha_t7,kanji_rocha_t8</item>
-        <item name="FormeKanjirocha">kanji_rocha_t1,kanji_rocha_t2,kanji_rocha_t3,kanji_rocha_t4,kanji_rocha_t5,kanji_rocha_t6,kanji_rocha_t7,kanji_rocha_t8</item>
-    </string-array>
+        <item name="FormeKanjirocha">forme_rocha_1,forme_rocha_2,forme_rocha_3,forme_rocha_4,forme_rocha_5,forme_rocha_6,forme_rocha_7,forme_rocha_8</item>
+        <item>traco26,traco35,traco26,traco03,traco19,traco26,traco06,traco33</item>
+    ]</string-array>
 
     <!--Array de referencias para os Kanji do Capitulo5-->
     <array name="KanjiCapitulo5">
