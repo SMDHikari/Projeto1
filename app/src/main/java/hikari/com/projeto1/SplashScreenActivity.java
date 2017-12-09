@@ -1,16 +1,23 @@
 package hikari.com.projeto1;
 
+import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.database.DatabaseUtils;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.os.Environment;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.widget.TextView;
+
+import java.io.File;
 
 public class SplashScreenActivity extends AppCompatActivity {
     private SQLiteDatabase bancoDados;
@@ -21,6 +28,7 @@ public class SplashScreenActivity extends AppCompatActivity {
     String[] hiraList, kataList;
     SimpleDatabaseHelper dbh;
     TextView carregando;
+    final int controleRequest=1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,10 +38,44 @@ public class SplashScreenActivity extends AppCompatActivity {
         dbh = new SimpleDatabaseHelper(this);
         setSupportActionBar(myToolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
+        TextView toolbar_title =  findViewById(R.id.toolbar_title);
+        toolbar_title.setText("Seito");
         kanjiList = new String[][]{getResources().getStringArray(R.array.KanjiCapitulo1), getResources().getStringArray(R.array.KanjiCapitulo2), getResources().getStringArray(R.array.KanjiCapitulo3), getResources().getStringArray(R.array.KanjiCapitulo4), getResources().getStringArray(R.array.KanjiCapitulo5)};
         hiraList = getResources().getStringArray(R.array.hiraTodos);
         kataList = getResources().getStringArray(R.array.kataTodos);
-        bancoDados= openOrCreateDatabase("app",Context.MODE_PRIVATE,null);
+        String[] vocabuList = getResources().getStringArray(R.array.vocabulario);
+        String storage_folder = "/myapp/db";
+        /*
+        Requerimento de permissão para escrever na memória externa( não utilizado por enquanto)
+        int permissionCheck = ContextCompat.checkSelfPermission(this,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        if (ContextCompat.checkSelfPermission(this,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                != PackageManager.PERMISSION_GRANTED) {
+
+            // Should we show an explanation?
+            if (ActivityCompat.shouldShowRequestPermissionRationale(this,
+                    Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+
+                // Show an explanation to the user *asynchronously* -- don't block
+                // this thread waiting for the user's response! After the user
+                // sees the explanation, try again to request the permission.
+
+            } else {
+
+                // No explanation needed, we can request the permission.
+
+                ActivityCompat.requestPermissions(this,
+                        new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                        controleRequest);
+
+                // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
+                // app-defined int constant. The callback method gets the
+                // result of the request.
+            }
+        }*/
+
+
         //inicializa o Banco de dados
         try {
             bancoDados = openOrCreateDatabase("app", Context.MODE_PRIVATE, null);
@@ -72,10 +114,41 @@ public class SplashScreenActivity extends AppCompatActivity {
                     "    sequencia_tracos VARCHAR,\n" +
                     "    aviso varchar" +
                     ");");
+            /*bancoDados.execSQL("CREATE TABLE IF not exists vocabulario(\n"+
+                    " id_vocab INTEGER PRIMARY KEY, \n"+
+                    " palavra VARCHAR,"+
+                    " traducao VARCHAR,"+
+                    " parte VARCHAR)");*/
 
         } catch (Exception e) {
             e.printStackTrace();
         }
+        //inicializa o cursor para verificar a quantidade de rows "nome" na tabela kanji
+
+       /* cursor = bancoDados.rawQuery("SELECT count(id_vocab) FROM vocabulario", null);
+        cursor.moveToFirst();
+
+        if (icount <= 0) {
+            //Inserir dados kanji
+            for (int i = 0; i <= vocabuList.length; i++) {
+
+                int id = this.getResources().getIdentifier(vocabuList[i], "array", this.getPackageName());
+                getString = getResources().getStringArray(id);
+                bancoDados.execSQL("INSERT INTO vocabulario(palavra,traducao," +
+                        "parte) " +
+                        "VALUES (\"" + getString[0] +
+                        "\",\"" + getString[1] +
+                        "\",\"" + getString[2] +
+                        "\")");
+            }
+        }*/
+
+
+
+
+
+
+
 
 
         //inicializa o cursor para verificar a quantidade de rows "nome" na tabela kanji
@@ -83,9 +156,10 @@ public class SplashScreenActivity extends AppCompatActivity {
         cursor = bancoDados.rawQuery("SELECT count(id_kana) FROM katakana", null);
         cursor.moveToFirst();
         int icount = cursor.getInt(0);
-
-
         String[] getString;
+
+
+
 
 
         //caso não exista nenhum valor na tabela, se adiciona os valores corretos dos kanjis a partir do xml
@@ -203,4 +277,30 @@ public class SplashScreenActivity extends AppCompatActivity {
             //startActivity(intent);
 
         }
+        /*
+        Requerimento de permissão para escrever na memória externa( não utilizado por enquanto)
+    @Override
+    public void onRequestPermissionsResult(int requestCode,
+                                           String permissions[], int[] grantResults) {
+        switch (requestCode) {
+            case controleRequest: {
+                // If request is cancelled, the result arrays are empty.
+                if (grantResults.length > 0
+                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+
+                    // permission was granted, yay! Do the
+                    // contacts-related task you need to do.
+
+                } else {
+
+                    // permission denied, boo! Disable the
+                    // functionality that depends on this permission.
+                }
+                return;
+            }
+
+            // other 'case' lines to check for other
+            // permissions this app might request
+        }
+    }*/
     }

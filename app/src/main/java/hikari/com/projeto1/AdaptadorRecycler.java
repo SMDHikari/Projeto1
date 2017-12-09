@@ -19,8 +19,10 @@ import java.util.ArrayList;
 
 public class AdaptadorRecycler extends RecyclerView.Adapter<AdaptadorRecycler.ViewHolder> implements RecyclerView.OnItemTouchListener {
     private ArrayList<ItemData> mDataset;
+    private ArrayList<VocabularioItem> vDataSet;
     private boolean listaVertical;
     private String basVarJun;
+    private boolean vocab=false;
     static private int selectedPosition=-1;
 
     static public void setSelectedPosition(int recebido){
@@ -34,6 +36,13 @@ public class AdaptadorRecycler extends RecyclerView.Adapter<AdaptadorRecycler.Vi
     public AdaptadorRecycler(ArrayList<ItemData> mDataset,boolean listaVertical){
         this.mDataset=mDataset;
         this.listaVertical=listaVertical;
+        basVarJun="";
+    }
+    public AdaptadorRecycler(ArrayList<VocabularioItem> vDataSet,boolean listaVertical,boolean vocab){
+        this.vDataSet=vDataSet;
+        this.listaVertical=listaVertical;
+        this.vocab=vocab;
+        basVarJun="";
     }
     public AdaptadorRecycler(ArrayList<ItemData> mDataset,boolean listaVertical,String basVarJun){
         this.mDataset=mDataset;
@@ -51,8 +60,12 @@ public class AdaptadorRecycler extends RecyclerView.Adapter<AdaptadorRecycler.Vi
                 itemLayoutView = LayoutInflater.from(parent.getContext()).inflate(R.layout.vertical_list_item_jun, null);
             }
             else{
+                if(vocab==true){
+                    itemLayoutView = LayoutInflater.from(parent.getContext()).inflate(R.layout.vocab_list_item, null);
+                }
+                else{
                 itemLayoutView = LayoutInflater.from(parent.getContext()).inflate(R.layout.vertical_list_item, null);
-            }
+            }}
         }
         else{
             if(basVarJun.equals("juncao")) {
@@ -71,8 +84,13 @@ public class AdaptadorRecycler extends RecyclerView.Adapter<AdaptadorRecycler.Vi
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         if(listaVertical==true) {
+            if(vocab==true){
+                holder.mTextView.setText(vDataSet.get(position).getTitulo());
+                holder.mTextView2.setText(vDataSet.get(position).getTraducao());
+            }
+            else{
             holder.mTextView.setText(mDataset.get(position).getTitle());
-        }
+        }}
         holder.imgViewIcon.setImageResource(mDataset.get(position).getImage());
         if(listaVertical==false){
             if(selectedPosition==position)
@@ -88,7 +106,11 @@ public class AdaptadorRecycler extends RecyclerView.Adapter<AdaptadorRecycler.Vi
 
     @Override
     public int getItemCount() {
-        return mDataset.size();
+        if(vocab==false){
+        return mDataset.size();}
+        else{
+            return vDataSet.size();
+        }
     }
 
     @Override
@@ -110,15 +132,24 @@ public class AdaptadorRecycler extends RecyclerView.Adapter<AdaptadorRecycler.Vi
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         public TextView mTextView;
+        public TextView mTextView2;
         public ImageView imgViewIcon;
         public LinearLayout linearLayout;
         public ViewHolder(View itemView) {
             super(itemView);
+            if(vocab==false){
             mTextView= itemView.findViewById(R.id.itemTextID);
             imgViewIcon= itemView.findViewById(R.id.itemImageID);
             linearLayout= itemView.findViewById(R.id.linearHorizList);
-            itemView.setOnClickListener(this);
-            imgViewIcon.setOnClickListener(this);
+                itemView.setOnClickListener(this);
+                imgViewIcon.setOnClickListener(this);
+            }
+            else{
+                mTextView= itemView.findViewById(R.id.itemTitleID);
+                mTextView2= itemView.findViewById(R.id.itemTradID);
+                linearLayout= itemView.findViewById(R.id.linearHorizList);
+            }
+
 
         }
 

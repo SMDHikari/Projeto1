@@ -2,7 +2,6 @@ package hikari.com.projeto1;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.TypedArray;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -13,13 +12,11 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LayoutAnimationController;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 
 import java.util.ArrayList;
@@ -42,6 +39,7 @@ public class KanaListActivity extends AppCompatActivity{
     private AdaptadorRecyclerViewSection mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
     private ArrayList<ItemData> arrayKanas;
+    ItemDataFactory factory = new ItemDataFactory();
     ArrayList<ArrayList<ItemData>> arrayKanaSectioner=new ArrayList<ArrayList<ItemData>>();
     private SQLiteDatabase bancoDados;
     Cursor cursor;
@@ -52,7 +50,6 @@ public class KanaListActivity extends AppCompatActivity{
     static {
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
     }
-    //private int[][] imgs;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,14 +68,8 @@ public class KanaListActivity extends AppCompatActivity{
 
             e.printStackTrace();
         }
-        //imgs = new int[][]{{R.array.hiraBasicoImg,R.array.hiraVarImg,R.array.hiraJunImg},{R.array.kataBasicoImg,R.array.kataVarImg,R.array.kataJunImg}};
-        //kanaList = new int[][]{{R.array.hiraBasico,R.array.hiraVar,R.array.hiraJun},{R.array.kataBasico,R.array.kataVar,R.array.kataJun}};
         iniciarRecycler();
 
-
-        /*Implementação do ClickListener (não existe naturalmente no RecyclerView)
-        * Resto do código da implementação, estão na interface ClickListener e na innerClass
-        * RecyclerTouchListener no MainActivity.*/
 
         recyclerView.addOnItemTouchListener(new RecyclerTouchListener(this,
                 recyclerView, new ClickListener() {
@@ -105,7 +96,6 @@ public class KanaListActivity extends AppCompatActivity{
                     intent.putExtra("kanaClicado",idClicado);
                     intent.putExtra("kanaSpn2",OptionSpn2);
                     startActivity(intent);
-                    Toast.makeText(getApplicationContext(),String.valueOf(idClicado),Toast.LENGTH_SHORT).show();
                 }
             }
 
@@ -235,11 +225,12 @@ public class KanaListActivity extends AppCompatActivity{
                 for(int x=0;x<cursor.getCount();x++){
                     int imageId = getResources().getIdentifier(cursor.getString(indiceColunaImg), "drawable", this.getPackageName());
                     String titulo =cursor.getString(indiceColunaNome);
-                    arrayKanas.add(new KanItemData(titulo
+                    ItemData itemData= factory.getItemData("Kan");
+                    ((KanItemData)itemData).iniciar(titulo
                             ,imageId
                             ,cursor.getInt(indiceColunaTracos)
-                            ,cursor.getInt(indiceColunaID)
-                    ));
+                            ,cursor.getInt(indiceColunaID));
+                    arrayKanas.add(itemData);
                     cursor.moveToNext();
                 }
             }catch (Exception e){
@@ -316,12 +307,13 @@ public class KanaListActivity extends AppCompatActivity{
             for(int x=0;x<cursor.getCount();x++){
                 int imageId = getResources().getIdentifier(cursor.getString(indiceColunaImg), "drawable", this.getPackageName());
                 String[] titulo =cursor.getString(indiceColunaTrad).split(",");
-                arrayKanas.add(new KanItemData(titulo[0]
+                ItemData itemData= factory.getItemData("Kan");
+                ((KanItemData)itemData).iniciar(titulo[0]
                         ,imageId
                         ,cursor.getInt(indiceColunaTracos)
                         ,cursor.getInt(indiceColunaID)
-                        ,cursor.getString(indiceColunaBarVarJun)
-                ));
+                        ,cursor.getString(indiceColunaBarVarJun));
+                arrayKanas.add(itemData);
                 cursor.moveToNext();
             }
         }catch (Exception e) {

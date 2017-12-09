@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -69,7 +70,7 @@ public class QuizActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
-
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
         Intent intent = getIntent();
         QuizType = intent.getStringExtra("QuizType");
         quantidadeQuiz= intent.getIntExtra("quantidade",10);
@@ -104,7 +105,7 @@ public class QuizActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         ButterKnife.bind(this);
-        TextView toolbar_title = (TextView) findViewById(R.id.toolbar_title);
+        TextView toolbar_title =  findViewById(R.id.toolbar_title);
         toolbar_title.setText(QuizType+ " Quiz");
         atualizarTexto();
 
@@ -258,6 +259,7 @@ public class QuizActivity extends AppCompatActivity {
                     intent.putExtra("nomesImagems",nomesImagems);
                     intent.putExtra("quantidadeQuiz",quantidadeQuiz);
                     startActivity(intent);
+                    finish();
                 }else {
                     if (QuizType.equals("Kana")) {
                         iniciarKanaQuiz();
@@ -300,5 +302,22 @@ public class QuizActivity extends AppCompatActivity {
 
 
         }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        if (item.getItemId() == android.R.id.home) {
+            finish();
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
     }
 }

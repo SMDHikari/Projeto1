@@ -3,7 +3,9 @@ package hikari.com.projeto1;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
+import android.view.MenuItem;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -26,7 +28,21 @@ public class ResultadoQuizActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resultado_quiz);
         Intent intent= this.getIntent();
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
         ButterKnife.bind(this);
+        Toolbar myToolbar = findViewById(R.id.my_toolbar);
+        setSupportActionBar(myToolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        TextView toolbar_title =  findViewById(R.id.toolbar_title);
+        toolbar_title.setText("Resultado Quiz");
+
+
+
+
+
+
+
 
 
         int quantidadeQuiz= intent.getIntExtra("quantidadeQuiz",0);
@@ -55,5 +71,22 @@ public class ResultadoQuizActivity extends AppCompatActivity {
                 new AdaptadorSimpleListView(questoes, this);
         resultadoList.setAdapter(adapter);
 
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        if (item.getItemId() == android.R.id.home) {
+            finish();
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
     }
 }

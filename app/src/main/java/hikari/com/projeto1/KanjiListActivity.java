@@ -38,6 +38,8 @@ public class KanjiListActivity extends AppCompatActivity implements Runnable{
     private RecyclerView.LayoutManager mLayoutManager;
     private ArrayList<ItemData> arrayKanji;
     ArrayList<ArrayList<ItemData>> arrayKanjisSectioner=new ArrayList<ArrayList<ItemData>>();
+
+    ItemDataFactory factory = new ItemDataFactory();
     Boolean textChanged;
     int OptionSpn1=0;
     private SQLiteDatabase bancoDados;
@@ -256,11 +258,12 @@ public class KanjiListActivity extends AppCompatActivity implements Runnable{
                   for(int x=0;x<cursor.getCount();x++){
                       int imageId = getResources().getIdentifier(cursor.getString(indiceColunaImg), "drawable", this.getPackageName());
                       String[] titulo =cursor.getString(indiceColunaTrad).split(",");
-                      arrayKanji.add(new KanItemData(titulo[0]
+                      ItemData itemData= factory.getItemData("Kan");
+                      ((KanItemData)itemData).iniciar(titulo[0]
                               ,imageId
                               ,cursor.getInt(indiceColunaTracos)
-                              ,cursor.getInt(indiceColunaID)
-                      ));
+                              ,cursor.getInt(indiceColunaID));
+                      arrayKanji.add(itemData);
                       cursor.moveToNext();
                   }
                 }catch (Exception e){
@@ -322,11 +325,12 @@ public class KanjiListActivity extends AppCompatActivity implements Runnable{
             for(int x=0;x<cursor.getCount();x++){
                 int imageId = getResources().getIdentifier(cursor.getString(indiceColunaImg), "drawable", this.getPackageName());
                 String[] titulo =cursor.getString(indiceColunaTrad).split(",");
-                arrayKanji.add(new KanItemData(titulo[0]
+                ItemData itemData= factory.getItemData("Kan");
+                ((KanItemData)itemData).iniciar(titulo[0]
                         ,imageId
                         ,cursor.getInt(indiceColunaTracos)
-                        ,cursor.getInt(indiceColunaID)
-                ));
+                        ,cursor.getInt(indiceColunaID));
+                arrayKanji.add(itemData);
                 cursor.moveToNext();
             }
         }catch (Exception e) {

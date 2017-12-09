@@ -4,11 +4,13 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.VectorDrawable;
 import android.support.annotation.NonNull;
 
+import java.io.Serializable;
+
 /**
  * Created by Gustavo on 28/10/2017.
  */
 
-public class KanItemData extends ItemData {
+public class KanItemData extends ItemData implements  Serializable, Comparable<ItemData> {
     private String title;
     private int image;
     private VectorDrawable imageV;
@@ -16,16 +18,16 @@ public class KanItemData extends ItemData {
     private int idTabela;
     private String bas_var_jun = "";
 
-    public KanItemData(String title, int image, int tracos, int idTabela){
+    public void iniciar(String title, int image, int tracos, int idTabela){
         this.title=title;
         this.image=image;
         this.tracos=tracos;
         this.idTabela=idTabela;
     }
-    public KanItemData(int image){
+    public void iniciar(int image){
         this.image = image;
     }
-    public KanItemData(String title, int image, int tracos, int idTabela,String bas_var_jun){
+    public void iniciar(String title, int image, int tracos, int idTabela,String bas_var_jun){
         this.title=title;
         this.image=image;
         this.tracos=tracos;
@@ -51,14 +53,13 @@ public class KanItemData extends ItemData {
     }
 
     @Override
-    int getID() {
+    public int getID() {
         return idTabela;
     }
 
     @Override
-    int compareTo(KanItemData compareKanji) {
+    public int compareTo(KanItemData compareKanji) {
         int compareTracos=(compareKanji).getTracos();
-        /* For Ascending order*/
         return this.tracos-compareTracos;
     }
 

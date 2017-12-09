@@ -1,6 +1,10 @@
 package hikari.com.projeto1;
 
+import android.content.Context;
+import android.content.Intent;
 import android.content.res.TypedArray;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +13,9 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.animation.AnimationUtils;
+import android.view.animation.LayoutAnimationController;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
@@ -16,21 +23,23 @@ import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnItemSelected;
 
 public class VocabularioListActivity extends AppCompatActivity {
     @BindView(R.id.capituloSpn)
     Spinner capituloSpn;
-    @BindView(R.id.conteudoSpn)
-    Spinner conteudoSpn;
+    @BindView(R.id.parteSpn)
+    Spinner parteSpn;
     @BindView(R.id.recyclerVocabulario)
-    RecyclerView recyclerVocabulario;
+    RecyclerView recyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
-    private ArrayList<ItemData> arrayKanas;
+    private ArrayList<VocabularioItem> arrayVocab;
     int OptionSpn1=0,OptionSpn2=0;
+    private SQLiteDatabase bancoDados;
+    Cursor cursor;
 
     //MODIFICAR PARA OS VALORES DAS STRINGS DO VOCABULARIO
-    //private int[][] vocabList={{R.array.placeholder,R.array.hiraBasico,R.array.hiraVar,R.array.hiraJun},{R.array.placeholder,R.array.kataBasico,R.array.kataVar,R.array.kataJun}};
 
 
     @Override
@@ -42,25 +51,61 @@ public class VocabularioListActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         ButterKnife.bind(this);
+        try{
+            bancoDados = openOrCreateDatabase("app", Context.MODE_PRIVATE,null);
 
+        }catch(Exception e){
+
+            e.printStackTrace();
+        }
+        iniciarRecycler();
+
+
+        /*Implementação do ClickListener (não existe naturalmente no RecyclerView)
+        * Resto do código da implementação, estão na interface ClickListener e na innerClass
+        * RecyclerTouchListener no MainActivity.*/
+
+
+    }
+    public void iniciarRecycler(){
         mLayoutManager= new LinearLayoutManager(this);
-        recyclerVocabulario.setLayoutManager(mLayoutManager);
-        atualizarLista(OptionSpn1,OptionSpn2);
-        recyclerVocabulario.addItemDecoration(new SpacesItemDecoration(10));
-        recyclerVocabulario.setHasFixedSize(true);
+        recyclerView.setLayoutManager(mLayoutManager);
+        atualizarLista();
+        recyclerView.addItemDecoration(new SpacesItemDecoration(10));
+        recyclerView.setHasFixedSize(false);
+        recyclerView.setItemViewCacheSize(0);
+        recyclerView.setDrawingCacheEnabled(true);
+        recyclerView.setDrawingCacheQuality(View.DRAWING_CACHE_QUALITY_HIGH);
+        recyclerView.getRecycledViewPool().clear();
+
+
 
         //Definindo Spinners e inicializando valores dos spinners
-        ArrayAdapter<CharSequence> adapterSpn1 = ArrayAdapter.createFromResource(this,
-                R.array.kanaSpinner1, R.layout.spinner_item_top);
+        ArrayAdapter<CharSequence> adapterSpn1 = ArrayAdapter.createFromResource(   this,
+                R.array.vocabSpn1, R.layout.spinner_item_top);
         ArrayAdapter<CharSequence> adapterSpn2 = ArrayAdapter.createFromResource(this,
-                R.array.kanaSpinner2, R.layout.spinner_item_top);
+                R.array.vocabSpn2, R.layout.spinner_item_top);
         // Specificando layout do dropdown
         adapterSpn1.setDropDownViewResource(R.layout.spinner_item_dropdown);
         adapterSpn2.setDropDownViewResource(R.layout.spinner_item_dropdown);
 
         // Aplicando o adaptador no spinner
         capituloSpn.setAdapter(adapterSpn1);
-        conteudoSpn.setAdapter(adapterSpn2);
+        parteSpn.setAdapter(adapterSpn2);
+
+
+        runLayoutAnimation(recyclerView);
+
+
+    }
+    private void runLayoutAnimation(final RecyclerView recyclerView) {
+        final Context context = recyclerView.getContext();
+        final LayoutAnimationController controller =
+                AnimationUtils.loadLayoutAnimation(context, R.anim.layout_animation_fall_down);
+
+        recyclerView.setLayoutAnimation(controller);
+        recyclerView.getAdapter().notifyDataSetChanged();
+        recyclerView.scheduleLayoutAnimation();
     }
 
     @Override
@@ -78,34 +123,41 @@ public class VocabularioListActivity extends AppCompatActivity {
         }
         return false;
     }
+    @OnItemSelected({R.id.capituloSpn,R.id.parteSpn})
+    public void OnItemSelected(Spinner spn, int position){
+        switch(spn.getId()){
+            case R.id.capituloSpn:
+                break;
+            case R.id.parteSpn:
+                    atualizarLista();
+                break;
+        }
+    }
 
-    public void atualizarLista(int escolhaSpinner1, int escolhaSpinner2){
+    public void atualizarLista(){
         //Modificar para atualizar as listas de acordo com os vocabulrios da lista
         //Utilizar a variavel "vocabList" para um controle melhor
-        /*
-        arrayKanas=new ArrayList<ItemData>();
-        ArrayList<int[]> todos= new ArrayList<int[]>();
-        TypedArray imgsTyped;
-        if(escolhaSpinner2==0){
-            for(int i=0;i< imgs[escolhaSpinner1].length;i++){
-                imgsTyped=getResources().obtainTypedArray(imgs[escolhaSpinner1][i]);
-                for(int x=0;x<getResources().getIntArray(imgs[escolhaSpinner1][i]).length;x++){
-                    Bitmap bitmap = BitmapFactory.decodeResource(getResources(),imgsTyped.getResourceId(x,-1));
-                    arrayKanas.add(new KanItemData(getResources().getStringArray(kanaList[escolhaSpinner1][i])[x],bitmap));
-                }
-            }
-        }
-        else{
-            imgsTyped = getResources().obtainTypedArray(imgs[escolhaSpinner1][escolhaSpinner2]);
-            for(int i=0;i<getResources().getStringArray(kanaList[escolhaSpinner1][escolhaSpinner2]).length;i++){
-                Bitmap bitmap = BitmapFactory.decodeResource(getResources(),imgsTyped.getResourceId(i,-1));
-                arrayKanas.add(new KanItemData(getResources().getStringArray(kanaList[escolhaSpinner1][escolhaSpinner2])[i],bitmap));
-            }
-        }
+        cursor= bancoDados.rawQuery("select palavra, traducao from vocabulario where parte like \"%"+(parteSpn.getSelectedItemPosition()+1)+"%\"",null);
+        int indiceColunaNome=cursor.getColumnIndex("palavra");
+        int indiceColunaTrad=cursor.getColumnIndex("traducao");
+        cursor.moveToFirst();
+        try{
+            arrayVocab=new ArrayList<VocabularioItem>();
 
-        mAdapter= new AdaptadorRecycler(arrayKanas);
+            for(int x=0;x<cursor.getCount();x++){
+                String titulo =cursor.getString(indiceColunaNome);
+                String traducao =cursor.getString(indiceColunaTrad);
+                arrayVocab.add(new VocabularioItem(titulo,traducao));
+                cursor.moveToNext();
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+
+        }
+        mAdapter= new AdaptadorRecycler(arrayVocab,true,true);
         mAdapter.notifyDataSetChanged();
-        recyclerVocabulario.setAdapter(mAdapter);
-*/
+        recyclerView.setAdapter(mAdapter);
+        runLayoutAnimation(recyclerView);
+
     }
 }

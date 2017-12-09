@@ -45,11 +45,11 @@ public class AdaptadorSimpleListView extends BaseAdapter {
                 .inflate(R.layout.resultado_list_item, parent, false);
         quizQuestions quizQ = questoes.get(position);
 
-        ImageView imagemItem = (ImageView)
+        ImageView imagemItem =
                 view.findViewById(R.id.imagemItem);
-        TextView nome = (TextView)
+        TextView nome =
                 view.findViewById(R.id.textoItem);
-        ImageView imagemBool = (ImageView)
+        ImageView imagemBool =
                 view.findViewById(R.id.certoErradoItem);
         imagemItem.setImageResource(quizQ.getQuestaoImg());
         nome.setText(quizQ.getresposta());

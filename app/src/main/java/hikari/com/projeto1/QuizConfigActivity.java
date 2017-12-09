@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.text.InputType;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -58,13 +59,16 @@ public class QuizConfigActivity extends AppCompatActivity {
         QuizType = intent.getStringExtra("QuizType");
         if(QuizType.equals("Kana")){
             setContentView(R.layout.activity_quiz_kana);
+            overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
             hiraKata="hiragana";
             basVarJun="basico";
         }else if(QuizType.equals("Kanji")){
             setContentView(R.layout.activity_quiz_kanji);
+            overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
             capituloKanji=1;
         }else{
             setContentView(R.layout.activity_quiz_vocab);
+            overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
         }
 
         ButterKnife.bind(this);
@@ -76,11 +80,12 @@ public class QuizConfigActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         ButterKnife.bind(this);
-        TextView toolbar_title = (TextView) findViewById(R.id.toolbar_title);
+        TextView toolbar_title =  findViewById(R.id.toolbar_title);
         toolbar_title.setText(QuizType+ " Quiz");
 
 
     }
+
 
     public void adapters(String quizType){
         //Definindo Spinners e inicializando valores dos spinners
@@ -119,6 +124,17 @@ public class QuizConfigActivity extends AppCompatActivity {
 
 
 
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        if (item.getItemId() == android.R.id.home) {
+            finish();
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
+            return true;
+        }
+        return false;
     }
 
     @Override

@@ -15,7 +15,8 @@ public class dialogActivity extends ListActivity {
     private String[] dialogTitles;
     private TypedArray imgs;
     boolean clicado = false;
-    private ArrayList<dialogtemData> items;
+    private ArrayList<dialogItemData> items;
+    ItemDataFactory factory = new ItemDataFactory();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +27,7 @@ public class dialogActivity extends ListActivity {
         int botaoClicado = intent.getIntExtra("botaoClicado",0);
         String tituloClicado= intent.getStringExtra("titulo");
         populateDialogList(botaoClicado);
-        ArrayAdapter<dialogtemData> adapter = new AdaptadorDialog(this,items);
+        ArrayAdapter<dialogItemData> adapter = new AdaptadorDialog(this,items);
         this.setTitle(tituloClicado);
         int dividerId = this.getResources()
                 .getIdentifier("android:id/titleDivider", null, null);
@@ -54,7 +55,7 @@ public class dialogActivity extends ListActivity {
     }
 
     private void populateDialogList(int botaoClicado) {
-        items = new ArrayList<dialogtemData>();
+        items = new ArrayList<dialogItemData>();
         Intent[] dialogIntent= new Intent[0];
 
 
@@ -77,13 +78,17 @@ public class dialogActivity extends ListActivity {
             case 2:
                 dialogTitles = getResources().getStringArray(R.array.vocabularioMenu);
                 imgs = getResources().obtainTypedArray(R.array.vocabularioMenuImgs);
-                dialogIntent=new Intent[]{new Intent(this,KanaListActivity.class)
+                dialogIntent=new Intent[]{new Intent(this,VocabularioListActivity.class)
                         ,new Intent(this,QuizConfigActivity.class).putExtra("QuizType","Vocabulario")};
 
                 break;
         }
         for(int i = 0; i < dialogTitles.length; i++){
-            items.add(new dialogtemData(dialogTitles[i],  imgs.getResourceId(i,0),dialogIntent[i]));
+            ItemData itemData= factory.getItemData("Dialog");
+            ((dialogItemData)itemData).iniciar(dialogTitles[i],imgs.getResourceId(i,0),dialogIntent[i]);
+            items.add( (dialogItemData)itemData);
+
+                    //new dialogItemData(dialogTitles[i],  imgs.getResourceId(i,0),dialogIntent[i]));
         }
     }
 }

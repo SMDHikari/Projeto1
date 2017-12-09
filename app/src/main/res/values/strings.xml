@@ -1,9 +1,10 @@
 <resources>
-    <string name="app_name">Projeto1</string>
-    <string name="title_activity_main_menu">Hikari</string>
+    <string name="app_name">Seito</string>
+    <string name="title_activity_main_menu">Nihongo no Seito</string>
     <string name="title_activity_kanji">Kanji</string>
     <string name="title_activity_quiz">Quiz</string>
     <string name="title_activity_kana">Kana</string>
+    <string name="title_forme_kanji">Forme o Kanji</string>
     <string name="title_activity_sobre">Sobre</string>
     <string name="title_activity_vocabulario">Vocabulário</string>
     <string name="main_button_sobre">Sobre o NLE</string>
@@ -11,6 +12,15 @@
     <string name="main_button_kanji">Kanji</string>
     <string name="main_button_vocab">Vocabulário</string>
 
+
+    <string-array name="vocabSpn2">
+        <item>きょうしつのことば1</item>
+        <item>きょうしつのことば２</item>
+        <item>きょうしつのことば３</item>
+    </string-array>
+    <string-array name="vocabSpn1">
+        <item>Parte 1 - にほんご</item>
+    </string-array>
 
     <string name="teste_db">teste</string>
 

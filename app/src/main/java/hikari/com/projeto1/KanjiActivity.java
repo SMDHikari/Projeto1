@@ -35,6 +35,7 @@ public class KanjiActivity extends AppCompatActivity {
     ArrayList<KanItemData> arrayKanji= new ArrayList<KanItemData>();
     private AdaptadorRecycler mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
+    ItemDataFactory factory = new ItemDataFactory();
 
     @BindView(R.id.kanjiImgs)
     MyGridView kanjiImgsGrid;
@@ -151,11 +152,12 @@ public class KanjiActivity extends AppCompatActivity {
         cursor.moveToFirst();
         for(int x=0;x<cursor.getCount();x++){
             int idImagem = this.getResources().getIdentifier(cursor.getString(indiceColunaImg), "drawable", this.getPackageName());
-            arrayKanji.add(new KanItemData(""
+            ItemData itemData= factory.getItemData("Kan");
+            ((KanItemData)itemData).iniciar(""
                     ,idImagem
                     ,cursor.getInt(indiceColunaTracos)
-                    ,cursor.getInt(indiceColunaID)
-            ));
+                    ,cursor.getInt(indiceColunaID));
+            arrayKanji.add((KanItemData)itemData);
             cursor.moveToNext();
         }
         //limpeza de memória do imgsTyped
@@ -218,7 +220,7 @@ public class KanjiActivity extends AppCompatActivity {
         int indiceColunaLeituraOn=cursor.getColumnIndex("leitura_on");
         int indiceColunaLeituraKun=cursor.getColumnIndex("leitura_kun");
         cursor.moveToFirst();
-        Toast.makeText(this,cursor.getString(indiceColunaLeituraOn),Toast.LENGTH_SHORT).show();
+
         int imageId = 0;
         cursor.moveToFirst();
         String[] sequenciaImgsString,arrayString;
@@ -253,9 +255,10 @@ public class KanjiActivity extends AppCompatActivity {
                 leituraKun= cursor.getString(indiceColunaLeituraKun);
 
 
-        kanjiImgsGrid.setNumColumns(4);
+        //kanjiImgsGrid.setNumColumns(4);
         kanjiImgsGrid.setAdapter(new ImageAdapter(this,idSequenciaImgs));
-        kanjiImgsGrid.setHorizontalSpacing(-250);
+        int mNoOfColumns = Utility.calculateNoOfColumns(getApplicationContext());
+        kanjiImgsGrid.setNumColumns(mNoOfColumns);
         kanjiImgsGrid.setMinimumHeight(kanjiImgsGrid.getMeasuredHeight());
         kanjiImgsGrid.deferNotifyDataSetChanged();
         kanjiImg.setBackground(getResources().getDrawable(R.drawable.quadrado));

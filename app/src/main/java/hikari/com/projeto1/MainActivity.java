@@ -8,15 +8,9 @@ import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.GestureDetector;
-import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.ListAdapter;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import butterknife.BindView;
@@ -76,11 +70,12 @@ public class MainActivity extends AppCompatActivity {
                     break;
 
                 case R.id.vocabularioBtn:
-                    menuIntent = new Intent(this, dialogActivity.class);
+                    Toast.makeText(this,"Desativado",Toast.LENGTH_SHORT).show();
+                    /*menuIntent = new Intent(this, dialogActivity.class);
                     menuIntent.putExtra("botaoClicado", 2);
                     menuIntent.putExtra("titulo", "Vocabulário");
                     posicaoClick = "vocabularioBtn";
-                    startActivityForResult(menuIntent, 1);
+                    startActivityForResult(menuIntent, 1);*/
 
                     break;
                 case R.id.sobreBtn:
@@ -105,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
         if(requestCode == 1 && resultCode == Activity.RESULT_OK){
             int teste = data.getIntExtra("posicaoClicado",1);
             posicaoDialogOption = data.getIntExtra("clicadoOption", 0);
-            intent = ((dialogtemData) data.getExtras().getParcelable("clicadoOption")).getIntent();
+            intent = ((dialogItemData) data.getExtras().getParcelable("clicadoOption")).getIntent();
             if( data.hasExtra("QuizType")){
                 Toast.makeText(this,data.getStringExtra("QuizType"),Toast.LENGTH_SHORT).show();
                 intent.putExtra("QuizType",data.getStringExtra("QuizType"));

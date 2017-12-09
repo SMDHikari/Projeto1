@@ -36,7 +36,6 @@
             android:layout_weight="5"
             android:paddingLeft="40dp"
             android:text="TextView"
-            android:textAlignment="textStart"
             android:textColor="@color/colorBlack"
             android:textSize="20sp" />
 

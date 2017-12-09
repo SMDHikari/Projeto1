@@ -39,7 +39,7 @@ public class KanaActivity extends AppCompatActivity {
     private RecyclerView.LayoutManager mLayoutManager;
     @BindView(R.id.gridViewKana)
     MyGridView kanaImgsGrid;
-
+    ItemDataFactory factory = new ItemDataFactory();
     @BindView(R.id.kanaImg)
     ImageView kanaImg;
     @BindView(R.id.kanaNome)
@@ -152,12 +152,14 @@ public class KanaActivity extends AppCompatActivity {
         cursor.moveToFirst();
         for(int x=0;x<cursor.getCount();x++){
             int idImagem = this.getResources().getIdentifier(cursor.getString(indiceColunaImg), "drawable", this.getPackageName());
-            arrayKana.add(new KanItemData(""
+            ItemData itemData= factory.getItemData("Kan");
+            ((KanItemData)itemData).iniciar(""
                     ,idImagem
                     ,cursor.getInt(indiceColunaTracos)
                     ,cursor.getInt(indiceColunaID)
-                    ,cursor.getString(indiceColunaBarVarJun)
-            ));
+                    ,cursor.getString(indiceColunaBarVarJun));
+
+            arrayKana.add((KanItemData)itemData);
             cursor.moveToNext();
         }
         //limpeza de memória do imgsTyped
@@ -224,14 +226,17 @@ public class KanaActivity extends AppCompatActivity {
         sequenciaImgsString = cursor.getString(indiceColunaSequenciaImg).split(",");
         Drawable[] idSequenciaImgs= new Drawable[sequenciaImgsString.length];
         cursor.moveToFirst();
-        Toast.makeText(this,sequenciaImgsString[0],Toast.LENGTH_SHORT).show();
         for(int x=0;x<sequenciaImgsString.length;x++){
             idSequenciaImgs[x]= getResources().getDrawable(getResources().getIdentifier(sequenciaImgsString[x], "drawable", this.getPackageName()));
         }
         //alertKanaText.setText();
-        kanaImgsGrid.setNumColumns(4);
+        //kanaImgsGrid.setNumColumns(4);
+
+
         kanaImgsGrid.setAdapter(new ImageAdapter(this,idSequenciaImgs));
         kanaImgsGrid.setHorizontalSpacing(10);
+        int mNoOfColumns = Utility.calculateNoOfColumns(getApplicationContext());
+        kanaImgsGrid.setNumColumns(mNoOfColumns);
         kanaImgsGrid.setMinimumHeight(0-kanaImgsGrid.getMeasuredHeight());
         kanaImgsGrid.deferNotifyDataSetChanged();
         LinearLayout kanaImgBack= findViewById(R.id.kanaImgBack);

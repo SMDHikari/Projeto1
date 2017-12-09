@@ -219,6 +219,467 @@
         <item>katajun35</item>
         <item>katajun36</item>
     </string-array>
+    <string-array name="vocabulario">
+        <item>estudante</item>
+        <item>professor</item>
+        <item>participantes</item>
+        <item>todos</item>
+        <item>amigos</item>
+        <item>pessoa_lado</item>
+        <item>escola</item>
+        <item>sala_aula</item>
+        <item>aula</item>
+        <item>escritorio</item>
+        <item>classe</item>
+        <item>cadeira</item>
+        <item>carteira</item>
+        <item>caneta</item>
+        <item>borracha</item>
+        <item>caderno</item>
+        <item>dicionario</item>
+        <item>celular</item>
+        <item>livro_didatico</item>
+        <item>pagina</item>
+        <item>computador </item>
+        <item>lousa</item>
+        <item>pergunta</item>
+        <item>resposta</item>
+        <item>numero</item>
+        <item>circuloVocab</item>
+        <item>xis</item>
+        <item>exemplo</item>
+        <item>dialogar</item>
+        <item>conversar</item>
+        <item>falar</item>
+        <item>ouvir</item>
+        <item>ver</item>
+        <item>ler</item>
+        <item>escrever</item>
+        <item>desenhar</item>
+        <item>praticar</item>
+        <item>estudar_antes</item>
+        <item>revisao</item>
+        <item>licao</item>
+        <item>prova</item>
+        <item>teste</item>
+        <item>fzr_pergunta</item>
+        <item>explicar</item>
+        <item>pedir</item>
+        <item>verificar</item>
+        <item>copiar</item>
+        <item>poderia_ensinar</item>
+        <item>significa</item>
+        <item>esqueci</item>
+        <item>mostrar</item>
+        <item>emprestar</item>
+        <item>ainda</item>
+        <item>atraso</item>
+        <item>faltar</item>
+        <item>repetir</item>
+        <item>falar_devagar</item>
+        <item>entendi</item>
+        <item>n_entendi</item>
+    </string-array>
+
+
+    <string-array name="estudante">
+        <item name="palavra">がくせい</item>
+        <item name="traducao">Estudante</item>
+        <item name="parte">きょうしつのことば１</item>
+</string-array>
+
+<string-array name="professor">
+<item name="palavra">せんせい</item>
+<item name="traducao"> Professor </item>
+</string-array>
+
+<string-array name="participantes">
+<item name="palavra">じゅこうしゃ</item>
+<item name="traducao"> Participantes </item>
+<item name="parte">きょうしつのことば１</item>
+
+    </string-array>
+
+<string-array name="todos">
+<item name="palavra">みんなさん</item>
+<item name="traducao"> Todos</item>
+<item name="parte">きょうしつのことば１</item>
+
+    </string-array>
+
+<string-array name="amigos">
+<item name="palavra">ともだち</item>
+<item name="traducao">Amigos</item>
+<item name="parte">きょうしつのことば１</item>
+
+    </string-array>
+
+<string-array name="pessoa_lado">
+<item name="palavra">となりのひと</item>
+<item name="traducao">A pessoa ao seu lado</item>
+<item name="parte">きょうしつのことば１</item>
+
+    </string-array>
+
+<string-array name="escola">
+<item name="palavra">がっこう</item>
+<item name="traducao">Escola</item>
+<item name="parte">きょうしつのことば１</item>
+
+    </string-array>
+
+<string-array name="sala_aula">
+<item name="palavra">きょうしつ</item>
+<item name="traducao">Sala de aula</item>
+<item name="parte">きょうしつのことば１</item>
+
+    </string-array>
+
+<string-array name="aula">
+<item name="palavra">じゅぎょう</item>
+<item name="traducao">Aula</item>
+<item name="parte">きょうしつのことば１</item>
+
+    </string-array>
+
+<string-array name="escritorio">
+<item name="palavra">じむしつ</item>
+<item name="traducao">Escritório</item>
+<item name="parte">きょうしつのことば１</item>
+
+    </string-array>
+
+<string-array name="classe">
+<item name="palavra">クラス</item>
+<item name="traducao">Classe</item>
+<item name="parte">きょうしつのことば１</item>
+
+    </string-array>
+
+<string-array name="cadeira">
+<item name="palavra">いす</item>
+<item name="traducao">Cadeira</item>
+<item name="parte">きょうしつのことば１</item>
+
+    </string-array>
+
+<string-array name="carteira">
+<item name="palavra">つくえ</item>
+<item name="traducao">Carteira</item>
+<item name="parte">きょうしつのことば１</item>
+
+    </string-array>
+
+<string-array name="caneta">
+<item name="palavra">ペン</item>
+<item name="traducao">Caneta</item>
+<item name="parte">きょうしつのことば１</item>
+
+    </string-array>
+
+<string-array name="borracha">
+<item name="palavra">けしごむ</item>
+<item name="traducao">Borracha</item>
+<item name="parte">きょうしつのことば１</item>
+
+    </string-array>
+
+<string-array name="caderno">
+<item name="palavra">ノート</item>
+<item name="traducao">Caderno</item>
+<item name="parte">きょうしつのことば１</item>
+
+    </string-array>
+
+<string-array name="dicionario">
+<item name="palavra">じしょ</item>
+<item name="traducao">Dicionário</item>
+<item name="parte">きょうしつのことば１</item>
+
+    </string-array>
+
+<string-array name="celular">
+<item name="palavra">けいたいでんわ</item>
+<item name="traducao">Celular</item>
+<item name="parte">きょうしつのことば１</item>
+
+    </string-array>
+
+<string-array name="livro_didatico">
+<item name="palavra">きょうかしょ</item>
+<item name="traducao">Livro didático</item>
+<item name="parte">きょうしつのことば１</item>
+
+    </string-array>
+
+<string-array name="pagina">
+<item name="palavra">ページ</item>
+<item name="traducao">Página</item>
+<item name="parte">きょうしつのことば１</item>
+
+    </string-array>
+
+<string-array name="computador">
+<item name="palavra">コンピューター</item>
+<item name="traducao">Computador </item>
+<item name="parte">きょうしつのことば１</item>
+
+    </string-array>
+
+<string-array name="lousa">
+<item name="palavra">ホワイトボード</item>
+<item name="traducao">Lousa branca </item>
+<item name="parte">きょうしつのことば１</item>
+
+    </string-array>
+<string-array name="pergunta">
+<item name="palavra">もんだい</item>
+<item name="traducao">Pergunta </item>
+<item name="parte">きょうしつのことば２</item>
+
+    </string-array>
+
+<string-array name="resposta">
+<item name="palavra">こたえ</item>
+<item name="traducao">Resposta </item>
+<item name="parte">きょうしつのことば２</item>
+
+    </string-array>
+
+<string-array name="numero">
+<item name="palavra">ばんごう</item>
+<item name="traducao">Número </item>
+<item name="parte">きょうしつのことば２</item>
+
+    </string-array>
+
+<string-array name="circuloVocab">
+<item name="palavra">まる</item>
+<item name="traducao">Círculo(certo)</item>
+<item name="parte">きょうしつのことば２</item>
+
+    </string-array>
+
+<string-array name="xis">
+<item name="palavra">ばつ</item>
+<item name="traducao">Xis(errado)</item>
+<item name="parte">きょうしつのことば２</item>
+
+    </string-array>
+
+
+
+<string-array name="exemplo">
+<item name="palavra">れい</item>
+<item name="traducao">Exemplo</item>
+<item name="parte">きょうしつのことば２</item>
+
+    </string-array>
+
+<string-array name="dialogar">
+<item name="palavra">かいわをします</item>
+<item name="traducao">Dialogar</item>
+<item name="parte">きょうしつのことば２</item>
+
+    </string-array>
+
+<string-array name="conversar">
+<item name="palavra">はなします</item>
+<item name="traducao">Conversar</item>
+<item name="parte">きょうしつのことば２</item>
+
+    </string-array>
+
+<string-array name="falar">
+<item name="palavra">いいます</item>
+<item name="traducao">Falar</item>
+<item name="parte">きょうしつのことば２</item>
+
+    </string-array>
+
+<string-array name="ouvir">
+<item name="palavra">ききます</item>
+<item name="traducao">Ouvir</item>
+<item name="parte">きょうしつのことば２</item>
+
+    </string-array>
+
+<string-array name="ver">
+<item name="palavra">みます</item>
+<item name="traducao">Ver</item>
+<item name="parte">きょうしつのことば２</item>
+
+    </string-array>
+
+<string-array name="ler">
+<item name="palavra">よみます</item>
+<item name="traducao">Ler</item>
+<item name="parte">きょうしつのことば２</item>
+
+    </string-array>
+
+<string-array name="escrever">
+<item name="palavra">かきます(書きます)</item>
+<item name="traducao">Escrever</item>
+<item name="parte">きょうしつのことば２</item>
+
+    </string-array>
+
+<string-array name="desenhar">
+<item name="palavra">かきます(描きます)</item>
+<item name="traducao">Desenhar</item>
+<item name="parte">きょうしつのことば２</item>
+
+    </string-array>
+
+<string-array name="praticar">
+<item name="palavra">れんしゅうをします</item>
+<item name="traducao">Praticar</item>
+<item name="parte">きょうしつのことば２</item>
+
+    </string-array>
+
+<string-array name="estudar_antes">
+<item name="palavra">よしゅう</item>
+<item name="traducao">Estudar antes da aula</item>
+<item name="parte">きょうしつのことば２</item>
+
+    </string-array>
+
+<string-array name="revisao">
+<item name="palavra">ふくしゅう</item>
+<item name="traducao">Revisão</item>
+<item name="parte">きょうしつのことば２</item>
+
+    </string-array>
+
+<string-array name="licao">
+<item name="palavra">しゅくだい</item>
+<item name="traducao">Lição de casa</item>
+<item name="parte">きょうしつのことば２</item>
+
+    </string-array>
+
+<string-array name="prova">
+<item name="palavra">しけん</item>
+<item name="traducao">Prova</item>
+<item name="parte">きょうしつのことば２</item>
+
+    </string-array>
+
+<string-array name="teste">
+<item name="palavra">テスト</item>
+<item name="traducao">Teste</item>
+<item name="parte">きょうしつのことば２</item>
+
+    </string-array>
+
+<string-array name="fzr_pergunta">
+<item name="palavra">しつもんをします</item>
+<item name="traducao">Fazer uma pergunta</item>
+<item name="parte">きょうしつのことば２</item>
+
+    </string-array>
+
+<string-array name="explicar">
+<item name="palavra">せつめをします</item>
+<item name="traducao">Explicar</item>
+<item name="parte">きょうしつのことば２</item>
+
+    </string-array>
+
+<string-array name="pedir">
+<item name="palavra">そうだんをします</item>
+<item name="traducao">Pedir opinião</item>
+<item name="parte">きょうしつのことば２</item>
+
+    </string-array>
+
+<string-array name="verificar">
+<item name="palavra">チェッコをします</item>
+<item name="traducao">Verificar</item>
+<item name="parte">きょうしつのことば２</item>
+
+    </string-array>
+
+<string-array name="copiar">
+<item name="palavra">コピーをします</item>
+<item name="traducao">Copiar</item>
+<item name="parte">きょうしつのことば２</item>
+
+    </string-array>
+<string-array name="poderia_ensinar">
+<item name="palavra">~をおしえてください</item>
+<item name="traducao">Por favor, poderia ensinar-me~?</item>
+<item name="parte">きょうしつのことば３</item>
+
+    </string-array>
+
+<string-array name="significa">
+<item name="palavra">~ってどういういみですか</item>
+<item name="traducao">O que significa~?</item>
+<item name="parte">きょうしつのことば３</item>
+    </string-array>
+
+<string-array name="esqueci">
+<item name="palavra">~をわすれました</item>
+<item name="traducao">Esqueci~</item>
+<item name="parte">きょうしつのことば３</item>
+    </string-array>
+
+<string-array name="mostrar">
+<item name="palavra">~をみせてください</item>
+<item name="traducao">Por favor, poderia mostrar-me~?</item>
+<item name="parte">きょうしつのことば３</item>
+    </string-array>
+
+<string-array name="emprestar">
+<item name="palavra">~をかしてください</item>
+<item name="traducao">Poderia emprestar-me~?</item>
+<item name="parte">きょうしつのことば３</item>
+    </string-array>
+
+<string-array name="ainda">
+<item name="palavra">まだです</item>
+<item name="traducao">Ainda não</item>
+<item name="parte">きょうしつのことば３</item>
+    </string-array>
+
+<string-array name="atraso">
+<item name="palavra">おくれます</item>
+<item name="traducao">Atrasar-se</item>
+<item name="parte">きょうしつのことば３</item>
+    </string-array>
+<string-array name="faltar">
+<item name="palavra">やすみます</item>
+<item name="traducao">Faltar</item>
+<item name="parte">きょうしつのことば３</item>
+    </string-array>
+
+<string-array name="repetir">
+<item name="palavra">もういちどいってください</item>
+<item name="traducao">Poderia repetir, por favor?</item>
+<item name="parte">きょうしつのことば３</item>
+    </string-array>
+
+<string-array name="falar_devagar">
+<item name="palavra">もうすこしゆっくりいってください</item>
+<item name="traducao">Poderia falar mais devagar, por favor? </item>
+<item name="parte">きょうしつのことば３</item>
+</string-array>
+
+<string-array name="entendi">
+<item name="palavra">わかりました</item>
+<item name="traducao">Entendi </item>
+<item name="parte">きょうしつのことば３</item>
+</string-array>
+
+<string-array name="n_entendi">
+<item name="palavra">わかりません</item>
+<item name="traducao">Não entendi </item>
+<item name="parte">きょうしつのことば３</item>
+</string-array>
+
 
     <!--Arrays de texto e imagens para as opções da KanaListActivity--><!--.....................................................................-->
 
@@ -644,7 +1105,7 @@
         <item>ga</item>
         <item>5</item>
         <item>hira_var1</item>
-        <item>hirabas6_t1,hirabas6_t2,hirabas6_t3,hiravar1_t4,hiravar1_t5</item>
+        <item>hiravar1_t1,hiravar1_t2,hiravar1_t3,hiravar1_t4,hiravar1_t5</item>
         <item></item>
         <item>variavel</item>
     </string-array>
@@ -653,7 +1114,7 @@
         <item>gi</item>
         <item>6</item>
         <item>hira_var2</item>
-        <item>hirabas7_t1,hirabas7_t2,hirabas7_t3,hirabas7_t4,hiravar2_t5,hiravar2_t6)</item>
+        <item>hiravar2_t1,hiravar2_t2,hiravar2_t3,hiravar2_t4,hiravar2_t5,hiravar2_t6</item>
         <item>Também pode ser escrito desta forma: ぎ</item>
         <item>variavel</item>
     </string-array>
@@ -662,7 +1123,7 @@
         <item>gu</item>
         <item>3</item>
         <item>hira_var3</item>
-        <item>hirabas8_t1,hiravar3_t2,hiravar3_t3</item>
+        <item>hiravar3_t1,hiravar3_t2,hiravar3_t3</item>
         <item></item>
         <item>variavel</item>
     </string-array>
@@ -671,7 +1132,7 @@
         <item>ge</item>
         <item>5</item>
         <item>hira_var4</item>
-        <item>hirabas9_t1,hirabas9_t2,hirabas9_t3,hiravar4_t4,hiravar4_t5</item>
+        <item>hiravar4_t1,hiravar4_t2,hiravar4_t3,hiravar4_t4,hiravar4_t5</item>
         <item></item>
         <item>variavel</item>
     </string-array>
@@ -680,7 +1141,7 @@
         <item>go</item>
         <item>4</item>
         <item>hira_var5</item>
-        <item>hirabas10_t1,hirabas10_t2,hiravar5_t3,hiravar5_t4</item>
+        <item>hiravar5_t1,hiravar5_t2,hiravar5_t3,hiravar5_t4</item>
         <item></item>
         <item>variavel</item>
     </string-array>
@@ -689,7 +1150,7 @@
         <item>za</item>
         <item>5</item>
         <item>hira_var6</item>
-        <item>hirabas11_t1,hirabas11_t2,hirabas11_t3,hiravar6_t4,hiravar6_t5</item>
+        <item>hiravar6_t1,hiravar6_t2,hiravar6_t3,hiravar6_t4,hiravar6_t5</item>
         <item>Também pode ser escrito desta forma: ざ</item>
         <item>variavel</item>
     </string-array>
@@ -698,7 +1159,7 @@
         <item>ji</item>
         <item>3</item>
         <item>hira_var7</item>
-        <item>hirabas12_t1,hiravar7_t2,hiravar7_t3</item>
+        <item>hiravar7_t1,hiravar7_t2,hiravar7_t3</item>
         <item></item>
         <item>variavel</item>
     </string-array>
@@ -707,7 +1168,7 @@
         <item>zu</item>
         <item>4</item>
         <item>hira_var8</item>
-        <item>hirabas13_t1,hirabas13_t2,hiravar8_t3,hiravar8_t4</item>
+        <item>hiravar8_t1,hiravar8_t2,hiravar8_t3,hiravar8_t4</item>
         <item></item>
         <item>variavel</item>
     </string-array>
@@ -716,7 +1177,7 @@
         <item>ze</item>
         <item>5</item>
         <item>hira_var9</item>
-        <item>hirabas14_t1,hirabas14_t2,hirabas14_t3,hiravar9_t4,hiravar9_t5</item>
+        <item>hiravar9_t1,hiravar9_t2,hiravar9_t3,hiravar9_t4,hiravar9_t5</item>
         <item></item>
         <item>variavel</item>
     </string-array>
@@ -725,7 +1186,7 @@
         <item>zo</item>
         <item>3</item>
         <item>hira_var10</item>
-        <item>hirabas15_t1,hiravar10_t2,hiravar10_t3</item>
+        <item>hiravar10_t1,hiravar10_t2,hiravar10_t3</item>
         <item></item>
         <item>basvariavelico</item>
     </string-array>
@@ -734,7 +1195,7 @@
         <item>da</item>
         <item>6</item>
         <item>hira_var11</item>
-        <item>hirabas16_t1,hirabas16_t2,hirabas16_t3,hirabas16_t4,hiravar11_t5,hiravar11_t6</item>
+        <item>hiravar11_t1,hiravar11_t2,hiravar11_t3,hiravar11_t4,hiravar11_t5,hiravar11_t6</item>
         <item></item>
         <item>variavel</item>
     </string-array>
@@ -743,7 +1204,7 @@
         <item>ji</item>
         <item>4</item>
         <item>hira_var12</item>
-        <item>hirabas17_t1,hirabas17_t2,hiravar12_t3,hiravar12_t4</item>
+        <item>hiravar12_t1,hiravar12_t2,hiravar12_t3,hiravar12_t4</item>
         <item></item>
         <item>variavel</item>
     </string-array>
@@ -752,7 +1213,7 @@
         <item>zu</item>
         <item>3</item>
         <item>hira_var13</item>
-        <item>hirabas18_t1,hiravar13_t2,hiravar13_t3</item>
+        <item>hiravar13_t1,hiravar13_t2,hiravar13_t3</item>
         <item></item>
         <item>variavel</item>
     </string-array>
@@ -761,7 +1222,7 @@
         <item>de</item>
         <item>3</item>
         <item>hira_var14</item>
-        <item>hirabas19_t1,hiravar14_t2,hiravar14_t3</item>
+        <item>hiravar14_t1,hiravar14_t2,hiravar14_t3</item>
         <item></item>
         <item>variavel</item>
     </string-array>
@@ -770,7 +1231,7 @@
         <item>do</item>
         <item>4</item>
         <item>hira_var15</item>
-        <item>hirabas20_t1,hirabas20_t2,hiravar15_t3,hiravar15_t4</item>
+        <item>hiravar15_t1,hiravar15_t2,hiravar15_t3,hiravar15_t4</item>
         <item></item>
         <item>variavel</item>
     </string-array>
@@ -779,7 +1240,7 @@
         <item>ba</item>
         <item>5</item>
         <item>hira_var16</item>
-        <item>hirabas26_t1,hirabas26_t2,hirabas26_t3,hiravar16_t4,hiravar16_t5</item>
+        <item>hiravar16_t1,hiravar16_t2,hiravar16_t3,hiravar16_t4,hiravar16_t5</item>
         <item>Não confundir com ぼ(bo)</item>
         <item>variavel</item>
     </string-array>
@@ -788,7 +1249,7 @@
         <item>bi</item>
         <item>3</item>
         <item>hira_var17</item>
-        <item>hirabas27_t1,hiravar17_t2,hiravar17_t3</item>
+        <item>hiravar17_t1,hiravar17_t2,hiravar17_t3</item>
         <item></item>
         <item>variavel</item>
     </string-array>
@@ -797,7 +1258,7 @@
         <item>bu</item>
         <item>6</item>
         <item>hira_var18</item>
-        <item>hirabas28_t1,hirabas28_t2,hirabas28_t3,hirabas28_t4,hiravar18_t5,hiravar18_t6</item>
+        <item>hiravar18_t1,hiravar18_t2,hiravar18_t3,hiravar18_t4,hiravar18_t5,hiravar18_t6</item>
         <item></item>
         <item>bavariavelsico</item>
     </string-array>
@@ -806,7 +1267,7 @@
         <item>be</item>
         <item>3</item>
         <item>hira_var19</item>
-        <item>hirabas29_t1,hiravar19_t2,hiravar19_t3</item>
+        <item>hiravar19_t1,hiravar19_t2,hiravar19_t3</item>
         <item></item>
         <item>variavel</item>
     </string-array>
@@ -815,7 +1276,7 @@
         <item>bo</item>
         <item>6</item>
         <item>hira_var20</item>
-        <item>hirabas30_t1,hirabas30_t2,hirabas30_t3,hirabas30_t4,hiravar20_t5,hiravar20_t6</item>
+        <item>hiravar20_t1,hiravar20_t2,hiravar20_t3,hiravar20_t4,hiravar20_t5,hiravar20_t6</item>
         <item>Não confundir com ば(ba)</item>
         <item>variavel</item>
     </string-array>
@@ -824,7 +1285,7 @@
         <item>pa</item>
         <item>4</item>
         <item>hira_var21</item>
-        <item>hirabas26_t1,hirabas26_t2,hirabas26_t3,hiravar21_t4</item>
+        <item>hiravar21_t1,hiravar21_t2,hiravar21_t3,hiravar21_t4</item>
         <item>Não confundir com ぽ(po)</item>
         <item>variavel</item>
     </string-array>
@@ -833,7 +1294,7 @@
         <item>pi</item>
         <item>2</item>
         <item>hira_var22</item>
-        <item>hirabas27_t1,hiravar22_t2</item>
+        <item>hiravar22_t1,hiravar22_t2</item>
         <item></item>
         <item>variavel</item>
     </string-array>
@@ -842,7 +1303,7 @@
         <item>pu</item>
         <item>5</item>
         <item>hira_var23</item>
-        <item>hirabas28_t1,hirabas28_t2,hirabas28_t3,hirabas28_t4,hiravar23_t5</item>
+        <item>hiravar23_t1,hiravar23_t2,hiravar23_t3,hiravar23_t4,hiravar23_t5</item>
         <item></item>
         <item>variavel</item>
     </string-array>
@@ -851,7 +1312,7 @@
         <item>pe</item>
         <item>2</item>
         <item>hira_var24</item>
-        <item>hirabas29_t1,hiravar24_t2</item>
+        <item>hiravar24_t1,hiravar24_t2</item>
         <item></item>
         <item>variavel</item>
     </string-array>
@@ -860,7 +1321,7 @@
         <item>po</item>
         <item>5</item>
         <item>hira_var25</item>
-        <item>hirabas30_t1,hirabas30_t2,hirabas30_t3,hirabas30_t4,hiravar25_t5</item>
+        <item>hiravar25_t1,hiravar25_t2,hiravar25_t3,hiravar25_t4,hiravar25_t5</item>
         <item>Não confundir com ぱ(pa)</item>
         <item>variavel</item>
     </string-array>
@@ -898,7 +1359,7 @@
         <item>gya</item>
         <item>9</item>
         <item>hira_jun4</item>
-        <item>hirabas7_t1,hirabas7_t2,hirabas7_t3,hirabas7_t4,hiravar2_t5,hiravar2_t6,hirabas36_t1,hirabas36_t2,hirabas36_t3</item>
+        <item>hiravar2_t1,hhiravar2_t2,hiravar2_t3,hiravar2_t4,hiravar2_t5,hiravar2_t6,hirabas36_t1,hirabas36_t2,hirabas36_t3</item>
         <item></item>
         <item>juncao</item>
     </string-array>
@@ -907,7 +1368,7 @@
         <item>gyu</item>
         <item>8</item>
         <item>hira_jun5</item>
-        <item>hirabas7_t1,hirabas7_t2,hirabas7_t3,hirabas7_t4,hiravar2_t5,hiravar2_t6,hirabas37_t1,hirabas37_t2</item>
+        <item>hiravar2_t1,hhiravar2_t2,hiravar2_t3,hiravar2_t4,hiravar2_t5,hiravar2_t6,hirabas37_t1,hirabas37_t2</item>
         <item></item>
         <item>juncao</item>
     </string-array>
@@ -916,7 +1377,7 @@
         <item>gyo</item>
         <item>8</item>
         <item>hira_jun6</item>
-        <item>hirabas7_t1,hirabas7_t2,hirabas7_t3,hirabas7_t4,hiravar2_t5,hiravar2_t6,hirabas38_t1,hirabas38_t2</item>
+        <item>hiravar2_t1,hhiravar2_t2,hiravar2_t3,hiravar2_t4,hiravar2_t5,hiravar2_t6,hirabas38_t1,hirabas38_t2</item>
         <item></item>
         <item>juncao</item>
     </string-array>
@@ -952,7 +1413,7 @@
         <item>ja</item>
         <item>6</item>
         <item>hira_jun10</item>
-        <item>hirabas12_t1,hiravar7_t2,hiravar7_t3,hirabas36_t1,hirabas36_t2,hirabas36_t3</item>
+        <item>hiravar7_t1,hiravar7_t2,hiravar7_t3,hirabas36_t1,hirabas36_t2,hirabas36_t3</item>
         <item></item>
         <item>juncao</item>
     </string-array>
@@ -961,7 +1422,7 @@
         <item>ju</item>
         <item>5</item>
         <item>hira_jun11</item>
-        <item>hirabas12_t1,hiravar7_t2,hiravar7_t3,hirabas37_t1,hirabas37_t2</item>
+        <item>hiravar7_t1,hiravar7_t2,hiravar7_t3,hirabas37_t1,hirabas37_t2</item>
         <item></item>
         <item>juncao</item>
     </string-array>
@@ -970,7 +1431,7 @@
         <item>jo</item>
         <item>5</item>
         <item>hira_jun12</item>
-        <item>hirabas12_t1,hiravar7_t2,hiravar7_t3,hirabas38_t1,hirabas38_t2</item>
+        <item>hiravar7_t1,hiravar7_t2,hiravar7_t3,hirabas38_t1,hirabas38_t2</item>
         <item></item>
         <item>juncao</item>
     </string-array>
@@ -1004,27 +1465,27 @@
 
     <string-array name="hirajun16">
         <item>ja</item>
-        <item>6</item>
+        <item>7</item>
         <item>hira_jun16</item>
-        <item>hirabas17_t1,hirabas17_t2,hiravar12_t4,hirabas36_t1,hirabas36_t2,hirabas36_t3</item>
+        <item>hiravar12_t1,hiravar12_t2,hiravar12_t3,hiravar12_t4,hirabas36_t1,hirabas36_t2,hirabas36_t3</item>
         <item></item>
         <item>juncao</item>
     </string-array>
 
     <string-array name="hirajun17">
         <item>ju</item>
-        <item>5</item>
+        <item>6</item>
         <item>hira_jun17</item>
-        <item>hirabas17_t1,hirabas17_t2,hiravar12_t4,hirabas37_t1,hirabas37_t2</item>
+        <item>hiravar12_t1,hiravar12_t2,hiravar12_t3,hiravar12_t4,hirabas37_t1,hirabas37_t2</item>
         <item></item>
         <item>juncao</item>
     </string-array>
 
     <string-array name="hirajun18">
         <item>jo</item>
-        <item>5</item>
+        <item>6</item>
         <item>hira_jun18</item>
-        <item>hirabas17_t1,hirabas17_t2,hiravar12_t4,hirabas38_t1,hirabas38_t2</item>
+        <item>hiravar12_t1,hiravar12_t2,hiravar12_t3,hiravar12_t4,hirabas38_t1,hirabas38_t2</item>
         <item></item>
         <item>juncao</item>
     </string-array>
@@ -1087,7 +1548,7 @@
         <item>bya</item>
         <item>6</item>
         <item>hira_jun25</item>
-        <item>hirabas27_t1,hiravar17_t2,hiravar17_t3,hirabas36_t1,hirabas36_t2,hirabas36_t3</item>
+        <item>hiravar17_t1,hiravar17_t2,hiravar17_t3,hirabas36_t1,hirabas36_t2,hirabas36_t3</item>
         <item></item>
         <item>juncao</item>
     </string-array>
@@ -1096,7 +1557,7 @@
         <item>byu</item>
         <item>5</item>
         <item>hira_jun26</item>
-        <item>hirabas27_t1,hiravar17_t2,hiravar17_t3,hirabas37_t1,hirabas37_t2</item>
+        <item>hiravar17_t1,hiravar17_t2,hiravar17_t3,hirabas37_t1,hirabas37_t2</item>
         <item></item>
         <item>juncao</item>
     </string-array>
@@ -1105,7 +1566,7 @@
         <item>byo</item>
         <item>5</item>
         <item>hira_jun27</item>
-        <item>hirabas27_t1,hiravar17_t2,hiravar17_t3,hirabas38_t1,hirabas38_t2</item>
+        <item>hiravar17_t1,hiravar17_t2,hiravar17_t3,hirabas38_t1,hirabas38_t2</item>
         <item></item>
         <item>juncao</item>
     </string-array>
@@ -1114,7 +1575,7 @@
         <item>pya</item>
         <item>5</item>
         <item>hira_jun28</item>
-        <item>hirabas27_t1,hiravar22_t2,hirabas36_t1,hirabas36_t2,hirabas36_t3</item>
+        <item>hiravar22_t1,hiravar22_t2,hirabas36_t1,hirabas36_t2,hirabas36_t3</item>
         <item></item>
         <item>juncao</item>
     </string-array>
@@ -1123,7 +1584,7 @@
         <item>pyu</item>
         <item>4</item>
         <item>hira_jun29</item>
-        <item>hirabas27_t1,hiravar22_t2,hirabas37_t1,hirabas37_t2</item>
+        <item>hiravar22_t1,hiravar22_t2,hirabas37_t1,hirabas37_t2</item>
         <item></item>
         <item>juncao</item>
     </string-array>
@@ -1132,7 +1593,7 @@
         <item>pyo</item>
         <item>4</item>
         <item>hira_jun30</item>
-        <item>hirabas27_t1,hiravar22_t2,hirabas38_t1,hirabas38_t2</item>
+        <item>hiravar22_t1,hiravar22_t2,hirabas38_t1,hirabas38_t2</item>
         <item></item>
         <item>juncao</item>
     </string-array>

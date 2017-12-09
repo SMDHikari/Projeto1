@@ -10,7 +10,6 @@
         android:layout_width="53dp"
         android:layout_height="53dp"
         android:layout_weight="1"
-        android:background="@drawable/quadrado"
         android:orientation="horizontal">
 
         <ImageView
@@ -18,8 +17,7 @@
             android:layout_width="53dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="5dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/hiravar9_t1" />
+            android:layout_weight="1" />
     </LinearLayout>
 
     <TextView
