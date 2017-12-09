@@ -46,10 +46,10 @@ public class SplashScreenActivity extends AppCompatActivity {
         String[] vocabuList = getResources().getStringArray(R.array.vocabulario);
         String storage_folder = "/myapp/db";
         /*
-        Requerimento de permissão para escrever na memória externa( não utilizado por enquanto)
+        Requerimento de permissão para escrever na memória externa( não utilizado por enquanto)*/
         int permissionCheck = ContextCompat.checkSelfPermission(this,
                 Manifest.permission.WRITE_EXTERNAL_STORAGE);
-        if (ContextCompat.checkSelfPermission(this,
+        /*if (ContextCompat.checkSelfPermission(this,
                 Manifest.permission.WRITE_EXTERNAL_STORAGE)
                 != PackageManager.PERMISSION_GRANTED) {
 
@@ -277,30 +277,5 @@ public class SplashScreenActivity extends AppCompatActivity {
             //startActivity(intent);
 
         }
-        /*
-        Requerimento de permissão para escrever na memória externa( não utilizado por enquanto)
-    @Override
-    public void onRequestPermissionsResult(int requestCode,
-                                           String permissions[], int[] grantResults) {
-        switch (requestCode) {
-            case controleRequest: {
-                // If request is cancelled, the result arrays are empty.
-                if (grantResults.length > 0
-                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
 
-                    // permission was granted, yay! Do the
-                    // contacts-related task you need to do.
-
-                } else {
-
-                    // permission denied, boo! Disable the
-                    // functionality that depends on this permission.
-                }
-                return;
-            }
-
-            // other 'case' lines to check for other
-            // permissions this app might request
-        }
-    }*/
     }
